@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greenfield District</title>
+    
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
+</head>
+<body>
+    
+    <div class="main-container main-logo-container">
+        
+        <nav class="left-container">
+            
+            <div class="left-holder">
+                
+                <div class="logo-holder">
+                    
+                     <img src="../images/gdc-logo.png" alt="Greenfield">
+                    
+                </div>
+                
+                <div class="link-container">
+                    
+                    <ul class="link-list clearfix">
+                       
+                        <li class='active-li'>
+                           
+                            <span>
+
+                                <a href="#"><i class="fa fa-home"></i>Home</a>
+
+                            </span>
+
+                        </li>
+                        
+                        <li>
+                           
+                            <span>
+                            
+                                <a href="#" class='hasSlider' data-slider='link2' data-level='2'>
+
+                                    <i class="fa fa-building-o"></i>Company
+                                    
+    
+                                </a>
+                                
+                                <i class="fa fa-angle-right company-caret"></i>
+                                
+                            </span>
+                        
+                        </li>
+                        
+                        <li>
+                        
+                            <span>
+                            
+                                <a href="#"><i class="fa fa-file-text"></i>Reservations</a>
+                                
+                            </span>
+                            
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+                  <footer class="footer-login-container2">
+                
+                <div class="copyright-holder2">
+                    
+                    &copy; 2014 Greenfield Development Corporation
+                    
+                </div>
+                
+                <div class="vendor-holder2">
+                    
+                    Powered by: <a href="http://www.yondu.com">YONDU</a>
+                    
+                </div>
+                
+            </footer>
+            
+            </div>
+            
+            <div class="nav-slider-container" id='link-slider'>
+                
+                <div class="nav-slider-holder" id="link2-slider">
+                    
+                    <div class="list-scroll" id='list1'>
+                        
+                         <span id='up'>
+                            <i class="fa fa-sort-asc"></i>
+                        </span>
+                        
+                        <ul id="list">
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#" class='hasSlider' data-slider='link53'>Link 2</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li><a href="#">9</a></li>
+                          <li><a href="#">10</a></li>
+                          <li><a href="#">11</a></li>
+                          <li><a href="#">12</a></li>
+                          <li><a href="#">13</a></li>
+                        </ul>
+                        
+                         <span id='down'>
+                            <i class="fa fa-sort-desc"></i>
+                        </span>
+
+                    </div>
+                   
+                </div>
+                
+                 
+                 <div class="nav-slider-container" id='link-slider2'>
+                
+                    <div class="nav-slider-holder2" id="link53-slider">
+
+                       LINK
+
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+            
+           
+            
+        </nav>
+        
+        <div class="right-container">
+                
+            <header class='header-container'>
+                
+                <span class="page-title-container">
+                    
+                    <h2>Featured Projects</h2>
+                    
+                </span>
+                
+                <span class="header-option-holder">
+                    
+                    <ul class="header-option clearfix">
+                        <li><i class="fa fa-cog"></i></li>
+                        <li><i class="fa fa-sign-out"></i></li>
+                    </ul>
+                    
+                </span>
+                
+            </header>
+                
+            <div class="right-holder">
+                      
+                <div class="image-gallery-container">
+
+                    <ul class="image-gallery-list clearfix">
+                        <li data-img-link="project1"></li>
+                        <li data-img-link="project2"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                       
+                    </ul>  
+
+                </div>
+                
+            </div>
+            
+            <div class="image-gallery-full-container">
+                
+                <div class="image-gallery-full-holder" id='project1'>
+                    
+                    PROJECT 1
+                    
+                </div>
+                
+                 <div class="image-gallery-full-holder" id='project2'>
+                    
+                    PROJECT 2
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src='../js/jquery-1.11.1.min.js'></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/main.js"></script>
+   
+    <script>
+        
+        $(document).ready(function(e){
+           
+             $().navigationSlider();
+            
+             $().imageGallery();
+                
+             $("#list1").scrollList();
+            
+        });
+        
+    </script>
+    
+</body>
+</html>

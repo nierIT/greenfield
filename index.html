@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greenfield District</title>
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
+</head>
+<body>
+    
+    <div class="main-container main-logo-container">
+        
+        <div class="left-container-login">
+            
+            <div class="left-holder-login">
+                
+                <div class="logo-container">
+                    
+                    <img src="images/gdc-logo.png" alt="Greenfield">
+                    
+                </div>
+                
+            </div>
+            
+            <footer class="footer-login-container">
+                
+                <div class="copyright-holder">
+                    
+                    &copy; 2014 Greenfield Development Corporation
+                    
+                </div>
+                
+                <div class="vendor-holder">
+                    
+                    Powered by: <a href="http://www.yondu.com">YONDU</a>
+                    
+                </div>
+                
+            </footer>
+            
+        </div>
+        
+        <div class="right-container-login">
+                
+            <div class="form-container-login">
+                
+                <form action="" class='login-form' id='home-login'>
+                   
+                    <ul class="form-list clearfix">
+                       
+                        <li>
+                            
+                            <div class="login-txtbox-holder">
+                                
+                                <input type="text" placeholder='Username' id='username'>
+                                
+                                <label class='clearfix' for="username"><i class="fa fa-user"></i></label>
+                                
+                            </div>
+                            
+                        </li>
+                        
+                        <li class='no-margin'> <!--ADD "opacity-one" class to display error message-->
+                           
+                           <span class="error-msg-login-holder">
+                               
+                               Invalid Username
+                               
+                           </span>
+ 
+                        </li>
+                        
+                        <li>
+                            
+                            <div class="login-txtbox-holder">
+                                
+                                <input type="password" placeholder='Password' id='password'>
+                                
+                                <label for="password"><i class="fa fa-unlock-alt"></i></label>
+                                
+                            </div>
+                            
+                        </li>
+                        
+                        <li class='no-margin'> <!--ADD "opacity-one" class to display error message-->
+                         
+                           <span class="error-msg-login-holder">
+                               
+                               Invalid Password
+                               
+                           </span>
+                            
+                        </li>
+                        
+                        <li><input type="submit" value='Login' class='btn-login'></li>
+                        
+                        <li>
+                            
+                            <span class="forgot-link-holder login-link" id='forgot'>
+                                
+                                Forgot Password?
+                                
+                            </span>
+                            
+                            <span class="terms-link-holder login-link terms">
+                                
+                                Terms of Use
+                                
+                            </span>
+                            
+                        </li>
+                        
+                    </ul>
+                    
+                </form>
+                
+                 <form action="" class='forgot-form display-none' id='forgot-login'>
+                   
+                       <table class="forgot-table">
+                          
+                           <tbody>
+                              
+                               <tr>
+                                   <td><label for='email'>Email:</label></td>
+                                   <td><input type="email" id='email' class='forgot-input'></td>
+                               </tr>
+                               
+                               <tr>
+                                   <td><label for='secu-question'>Select Security Question:</label></td>
+                                   <td><select name="" id="secu-question" class='forgot-input'>
+                                       <option value="0" selected>Select Question</option>
+                                       <option value="1">What is your name?</option>
+                                   </select></td>
+                               </tr>
+                               
+                               <tr>
+                                   <td><label for='answer'>Answer:</label></td>
+                                   <td><input type="text" id='answer'  class='forgot-input'></td>
+                               </tr>
+                               
+                               <tr>
+                                   <td></td>
+                                   <td><input type="submit" value='Change Password' class='btn-login'></td>
+                               </tr>
+                           </tbody>
+                           
+                       </table>
+                    
+                </form>
+                
+            </div>
+            
+        </div>
+        
+       <div class="mainModalContainer">
+
+			<div class="termsHolder"> 
+
+				<div class="overlay"></div>
+
+				<div class="modalContent modal-terms">
+
+					<div class="closeHolder">
+
+						<i class="fa fa-times"></i>
+                        
+                        Close
+                        
+					</div>
+					
+
+					<div class="messageContainer">
+
+						<div class="messageHolder">
+
+							<h3>Terms of Use</h3>
+							
+							<div class="terms-message">
+							    
+							    <p>The content of this website, including but not limited to images, designs, pictures, logos or any written and visual material, is the property of Greenfield Development Corporation. and is protected by copyright, trademark and other intellectual property laws. </p>
+							    
+							    <p>Any information contained herein may not be reproduced, transmitted, distributed, displayed, sold, published, broadcasted, circulated or used in any manner without the prior written consent of Greenfield Development Corporation. </p>
+							    
+							    <p>Greenfield Development Corporation. at its sole discretion, may choose to change the terms, conditions and operation of this website at any time.</p>
+							    
+							</div>
+
+						</div>
+
+					</div>
+					
+
+				</div>
+
+			</div>
+       
+       </div>
+        
+    </div>
+    
+    <script src='js/jquery-1.11.1.min.js'></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+   
+    <script>
+        
+        $(document).ready(function(e){
+           
+            $().loginForm();
+            
+           $("terms").modalShow();
+            
+        });
+        
+    </script>
+    
+</body>
+</html>
