@@ -441,7 +441,7 @@ select.forgot-input{
 .image-gallery-container{
      width: 100%;
     float: none;
-    margin: 0 auto;
+    margin: 45px auto 0;
 }
 
 .image-gallery-list{
@@ -460,6 +460,21 @@ select.forgot-input{
     
     width: 342px;
     height: 275px;
+    overflow: hidden;
+}
+
+.image-gallery-list li span.gallery-label{
+    position: relative;
+    bottom: 75px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 0 15px 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.image-gallery-list li img{
+    width: 100%;    
 }
 
 .header-option-holder{
