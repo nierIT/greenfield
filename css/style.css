@@ -327,6 +327,18 @@ select.forgot-input{
     margin: 18px 30px 0 0;
 }
 
+.company-caret2{
+    color: #666666; 
+    padding: 0 0 0 25px;
+    font-size: 14px;
+    line-height: 52px;
+    
+    float: right;
+
+    margin: 2px 5px 0 0;
+    color: white;
+}
+
 .link-list li a i{
     font-size: 20px;  
     margin: 0 10px 0 0;
@@ -364,7 +376,7 @@ select.forgot-input{
 }
 
 .active-slider{
-    display: block;
+    display: table;
 }
 
 .link-slider-slide{
@@ -461,11 +473,12 @@ select.forgot-input{
     width: 342px;
     height: 275px;
     overflow: hidden;
+    position: relative;
 }
 
 .image-gallery-list li span.gallery-label{
-    position: relative;
-    bottom: 75px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
@@ -474,7 +487,8 @@ select.forgot-input{
     text-transform: capitalize;
 }
 .image-gallery-list li img{
-    width: 100%;    
+    width: 100%;
+    height: 100%;
 }
 
 .header-option-holder{
@@ -525,12 +539,15 @@ select.forgot-input{
 }
 
 .list-scroll{
-    width: 100%;   
+    width: 100%;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;  
 }
 
 ul#list {
     width: 100%;
-    height: 200px;
+    height: 276px;
     overflow-y: hidden;
     position: relative;
 }
@@ -541,18 +558,47 @@ ul#list li{
     cursor: pointer;
 }
 
+ul#list li span{
+    width: 83%;
+    margin: 0 10px;
+    border-bottom: 1px solid white;
+    padding: 12px 10px;
+    font-size: 14px;
+}
+
+ul#list li a{
+    color:white;    
+}
+
+ul#list li:last-child,
+.no-border-bottom span{
+     border-bottom:none!important;
+}
+
 #up,#down{
      width: 100%;   
     height: 20px;
+    text-align: center;
 }
 
 #up i{
     display: none;
 }
+
 #up i, #down i{
-     cursor: pointer;
+    cursor: pointer;
+    opacity: 0.5;
+    color: rgb(27, 27, 27);
+    font-size: 20px;
 }
 
+#up i:hover, #down i:hover{
+     opacity: 1;
+}
+
+.active-second{
+    background: #88AD57;    
+}
 
 .link-container{
     margin: 50px 0 0;
