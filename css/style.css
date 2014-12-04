@@ -9,6 +9,11 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 body{
     height: 100%;
     width: 100%;
@@ -47,9 +52,14 @@ select.forgot-input{
 
 .main-logo-container{
    background: url('../images/bg.jpeg') no-repeat;
-    background-size: cover;
+   -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
     background-attachment: fixed;
     overflow: hidden;
+    position: relative;
+    height: initial;
 }
 
 .left-container-login{
@@ -604,6 +614,29 @@ ul#list li:last-child,
     margin: 50px 0 0;
     width: 100%;
     overflow: hidden;
+}
+
+.bread-container{
+    width: 100%;
+    background: rgba(204, 204, 204, 0.5);
+    height: 46px;
+}
+
+.bread-holder{
+    float: left;
+    line-height: 20px;
+    margin: 13px 0 0 35px;
+    font-size: 13px;
+}
+
+.bread-list li + li:before{
+    padding: 0 3px 0 10px;
+    content:"> ";
+}
+
+.right-content{
+    width: 100%;
+    height: 100%;
 }
 /** END CONTENT **/
 
