@@ -59,6 +59,9 @@ select.forgot-input{
     background-attachment: fixed;
     overflow: hidden;
     position: relative;
+}
+
+.main-init-height{
     height: initial;
 }
 
