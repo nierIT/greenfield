@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <div class="main-container main-logo-container main-init-height">
+    <div class="main-container main-logo-container">
         
         <nav class="left-container">
             
@@ -812,12 +812,38 @@
                 <span class="header-option-holder">
                     
                     <ul class="header-option clearfix">
-                       <li><i class="fa fa-question-circle"></i></li>
-                        <li><i class="fa fa-cog"></i></li>
+                       <li id='help'><i class="fa fa-question-circle"></i></li>
+                        <li id='settings'><i class="fa fa-cog"></i></li>
                         <li><i class="fa fa-sign-out"></i></li>
                     </ul>
                     
                 </span>
+                
+                <div id="help-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                    
+                    <ul class="header-list clearfix">
+                       
+                        <li><a href="#">F.A.Q</a></li>
+                        
+                        <li><a href="#">Manual</a></li>
+                        
+                    </ul>
+
+                </div>
+
+                <div id="settings-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                        
+                     <ul class="header-list clearfix">
+                       
+                        <li><a href="#">Settings</a></li>
+                        
+                    </ul>
+
+                </div> 
                 
             </header>
                 
@@ -890,7 +916,7 @@
                             </span>
                             
                         </li>
-                       
+                        
                     </ul>  
 
                 </div>
@@ -930,6 +956,8 @@
              $().imageGallery();
                 
              $(".list-scroll").scrollList();
+            
+            $().dropHeader();
             
              //$("#list2").scrollList();
             

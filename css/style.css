@@ -9,17 +9,43 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
-html, body {
-    height: 100%;
-    width: 100%;
+.clear { clear: both; }
+
+html{
+ height: 100%; 
 }
 
+.left-abs{
+    position: absolute;
+    width: 240px;
+    background: white;
+    height: 100%;   
+}
+
+.right-abs{
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    position: absolute;
+    top:104px;
+    left: 240px;
+    height: calc(100% - 104px);
+    height: 100%;
+}
 body{
     height: 100%;
     width: 100%;
     position: relative;
-    overflow: hidden;
-    overflow-y: auto;
+    background: url('../images/bg.jpeg') no-repeat;
+   -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-attachment: fixed;
+    overflow: auto;
+  /*  overflow: hidden;
+    overflow-y: auto;*/
+    
+    /*display: inline-table;*/
 }
 
 .main-container{
@@ -51,14 +77,12 @@ select.forgot-input{
 /** LOGIN **/
 
 .main-logo-container{
-   background: url('../images/bg.jpeg') no-repeat;
-   -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    position: relative;
+   
+    overflow: auto;
+    overflow-x: hidden;
+   /* position: relative;*/
+    
+    /* display: inline-table; */
 }
 
 .main-init-height{
@@ -96,6 +120,10 @@ select.forgot-input{
 .footer-login-container2{
     bottom: 10px;
     position: absolute;   
+}
+
+.test {
+    display: block;
 }
 
 .copyright-holder,
@@ -285,6 +313,9 @@ select.forgot-input{
     position: absolute;
     z-index: 2;
     
+    
+   /* height: inherit;
+position: relative;*/
 }
 
 .left-holder{
@@ -433,7 +464,7 @@ select.forgot-input{
 /** CONTENT **/
 
 .right-container{
-    height: 100%;
+    
     width: calc(100% - 240px);
     position: relative;
     left: 240px;
@@ -457,6 +488,7 @@ select.forgot-input{
 
 .right-holder{
     height: calc(100% - 60px);
+    /*height: 100%;*/
     width: 100%;
     position: relative;
     opacity: 1;
@@ -511,6 +543,7 @@ select.forgot-input{
 
 .header-option li{
      padding: 0 10px; 
+    cursor: pointer;
 }
 
 .header-option li i{
@@ -632,6 +665,16 @@ ul#list li:last-child,
     font-size: 13px;
 }
 
+.back-holder{
+    float: right;
+    font-size: 14px;
+    margin: 13px 55px 0 0;
+}
+
+.back-holder i{
+     font-size:20px;   
+}
+
 .bread-list li + li:before{
     padding: 0 3px 0 10px;
     content:"> ";
@@ -639,8 +682,154 @@ ul#list li:last-child,
 
 .right-content{
     width: 100%;
-    height: 100%;
+    height: calc(100% - 46px);
 }
+
+.info-container{
+    width: 100%;  
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.75);
+   padding: 35px 0 0;
+   /* height: calc(100% - 20px);*/
+}
+
+.info-left{
+     width: 48%;
+    margin: 0 0 0 10px; 
+}
+
+.info-right{
+     width: 48%; 
+}
+
+.info-left-img-holder{
+    max-width: 377px; 
+    height: 674px;
+   /* height: 640px;*/
+    margin: 0 auto;
+    float: none;
+}
+
+.info-left-img-holder img{
+    width: 100%;
+}
+
+.info-right-holder{
+    height: 534px;
+    /*width: 550px;*/
+    overflow: auto; 
+    position: relative;
+    top: 55px;
+    padding: 0 60px 0 30px;
+}
+
+.thumb-list li{
+    cursor: pointer;
+    width: 97px;
+    height: 97px;
+    margin: 10px 5px;
+}
+
+.thumb-list li img{
+    height: 100%;
+    width: 100%;
+}
+
+.project-info-content{
+ font-size: 13px;   
+}
+
+.project-info-content p{
+    margin: 20px 0;
+}
+
+.project-thumbnails{
+    width: 100%;
+    margin: 50px 0 40px;   
+}
+
+.project-button-holder{
+     width: 215px;   
+}
+
+div.info-right-holder::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+div.info-right-holder::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 10px 10px 50px rgba(63, 63, 63, 1);
+    border-radius: 10px;
+}
+ 
+div.info-right-holder::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 130px rgba(178, 178, 178, 1); 
+}
+
+
+.header-drop-container{
+    position: absolute;
+    right: 50px;
+    top: 56px;
+    z-index: 20;
+}
+
+ul.header-list li:first-child{
+    border-top:none;
+}
+
+ul.header-list li {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid black;
+    font-size: 13px;
+}
+
+ul.header-list li a {
+    display: block;
+    padding: 5px 15px;
+}
+.arrow-up {
+    position: relative;
+    top: -5px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+}
+
+.header-drop{
+    background: white;
+    border-radius: 5px;
+}
+
+#help-drop-holder{
+    position: absolute;
+    right: 85px;
+    top: 54px;
+    display: none;
+    z-index: 2;
+}
+
+#settings-drop-holder{
+    position: absolute;
+   right: 72px;
+    top: 54px;
+    display: none;
+    z-index: 2;
+}
+
+/* table v2 .sample{
+ width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.sample tr td{
+     font-size: 10pt;   
+}*/
 /** END CONTENT **/
 
 /*MODALS*/
@@ -690,10 +879,20 @@ ul#list li:last-child,
   cursor: pointer;
   float: right;
   margin: 10px 0 0;
+    
+  -webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    transition: all .3s ease-in-out;  
 }
 
 .closeHolder:hover{
   color: red;
+    
+    -webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    transition: all .3s ease-in-out;
 }
 
 /*END MODALS*/

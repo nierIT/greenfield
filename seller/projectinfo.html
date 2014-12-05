@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
-<body>
+<body class='clearfix'>
     
-    <div class="main-container main-logo-container">
+    <div class="left-abs"></div>
+    <!--<div class="right-abs"></div>-->
+    <div class="main-container main-logo-container ">
         
         <nav class="left-container">
             
@@ -26,7 +28,7 @@
                     
                     <ul class="link-list clearfix">
                        
-                        <li class='active-li'>
+                        <li>
                            
                             <span>
 
@@ -36,7 +38,7 @@
 
                         </li>
                         
-                        <li>
+                        <li class='active-li'>
                            
                             <span>
                             
@@ -65,22 +67,25 @@
                     </ul>
                     
                 </div>
-                
-                  <footer class="footer-login-container2">
-                
-                <div class="copyright-holder2">
+                  
+                <footer class="footer-login-container2">
+                                <div class="copyright-holder2">
+
+                        &copy; 2014 Greenfield Development Corporation
+
+                    </div>
+
+                    <div class="vendor-holder2">
+
+                        Powered by: <a href="http://www.yondu.com">YONDU</a>
+
+                    </div>
+
+                </footer>
                     
-                    &copy; 2014 Greenfield Development Corporation
-                    
-                </div>
+              
                 
-                <div class="vendor-holder2">
-                    
-                    Powered by: <a href="http://www.yondu.com">YONDU</a>
-                    
-                </div>
                 
-            </footer>
             
             </div>
             
@@ -812,12 +817,38 @@
                 <span class="header-option-holder">
                     
                     <ul class="header-option clearfix">
-                        <li><i class="fa fa-question-circle"></i></li>
-                        <li><i class="fa fa-cog"></i></li>
+                        <li id='help'><i class="fa fa-question-circle"></i></li>
+                        <li id='settings'><i class="fa fa-cog"></i></li>
                         <li><i class="fa fa-sign-out"></i></li>
                     </ul>
                     
                 </span>
+                
+                <div id="help-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                    
+                    <ul class="header-list clearfix">
+                       
+                        <li><a href="#">F.A.Q</a></li>
+                        
+                        <li><a href="#">Manual</a></li>
+                        
+                    </ul>
+
+                </div>
+
+                <div id="settings-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                        
+                     <ul class="header-list clearfix">
+                       
+                        <li><a href="#">Settings</a></li>
+                        
+                    </ul>
+
+                </div> 
                 
             </header>
                 
@@ -849,11 +880,114 @@
                         
                     </span>
                     
+                     <span class="back-holder">
+                         
+                         <a href="#"><i class="fa fa-arrow-circle-left"></i> Back</a>
+                         
+                    </span>
+                    
                 </div>
                 
                 <div class="right-content">
                     
-                    
+                    <div class="info-container">
+                        
+                        <div class="info-left">
+                        
+                            <div class="info-left-img-holder">
+                                
+                                 <img src="../images/zitan1.jpg" alt="Zitan">
+                                
+                            </div>
+                           
+                        </div>
+                        
+                        <div class="info-right">
+                            
+                            <div class="info-right-holder">
+                                
+                                 <div class="project-info-name">
+                                
+                                    <h1>Zitan</h1>
+
+                                </div>
+
+                                <div class="project-info-content">
+
+                                    <p>
+
+                                        Zitan is a part of the newly masterplanned Greenfield District, 
+                                        a 12-hectare property bounded by EDSA, Shaw Boulevard, Sheridan 
+                                        and Reliance Streets. 
+
+                                    </p>
+
+                                    <p>
+                                        Through the smart and connected blueprint of the 
+                                        Greenfield District, Zitan is part of a technoogically 
+                                        advanced urban center that measures up to, if not surpasses, 
+                                        the highest urban planning standards in the world.
+                                    </p>
+
+                                    <p>
+
+                                        Through Greenfield’s vision of world-class sustainable development 
+                                        that simultaneously works with nature and employs the latest 
+                                        technological advancements, Greenfield District shall stand as the 
+                                        highest standard-bearer of cosmopolitan living in the years to come.
+
+                                    </p>
+
+                                    <p>
+
+                                        Through Greenfield’s vision of world-class sustainable development 
+                                        that simultaneously works with nature and employs the latest 
+                                        technological advancements, Greenfield District shall stand as the 
+                                        highest standard-bearer of cosmopolitan living in the years to come.
+
+                                    </p>
+
+                                    <p>
+
+                                        Through Greenfield’s vision of world-class sustainable development 
+                                        that simultaneously works with nature and employs the latest 
+                                        technological advancements, Greenfield District shall stand as the 
+                                        highest standard-bearer of cosmopolitan living in the years to come.
+
+                                    </p>
+
+                                </div>
+
+                                <div class="project-thumbnails">
+
+                                    <ul class="thumb-list">
+
+                                        <li><img src="../images/zitan%201.jpg" alt="Zitan"></li>
+                                        <li><img src="../images/zitan%202.jpg" alt="Zitan"></li>
+                                        <li><img src="../images/zitan%203.jpg" alt="Zitan"></li>
+                                        <li><img src="../images/zitan%204.jpg" alt="Zitan"></li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="project-button-holder">
+
+                                    <a href="#">
+
+                                        <button class='btn-login'>View Available Units</button>
+
+                                    </a>
+
+                                </div>
+                            
+                            </div>
+                           
+                            
+                        </div>
+                        
+                        
+                    </div>
+
                 </div>
                 
             </div>
@@ -873,6 +1007,8 @@
              $().navigationSlider();
                 
              $(".list-scroll").scrollList();
+            
+             $().dropHeader();
             
              //$("#list2").scrollList();
             
