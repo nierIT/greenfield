@@ -354,7 +354,7 @@
 
              arrayCounter[listId] = 1;
 
-             $(listId + ' span#down').stop().click(function(event){
+             $(listId + ' span#down i').stop().click(function(event){
                  
                  $(listId + ' span#up').children().show();
                  
@@ -385,13 +385,13 @@
 
                      if(tempShown[listId] + 1 == totalList[listId]){
                          
-                          $(this).children().hide();
+                          $(this).hide();
                          
                      }
                      
                  }else{
                      
-                      $(this).children().hide();
+                      $(this).hide();
                      
                  }
                  
@@ -401,7 +401,7 @@
              });
             
              
-              $(listId + ' span#up').stop().click(function(event){
+              $(listId + ' span#up i').stop().click(function(event){
                     
                   event.stopPropagation();
 
@@ -438,13 +438,13 @@
                      
                      if(tempShown2[listId] === 1){
                          
-                          $(this).children().hide();
+                          $(this).hide();
                          
                      }
                      
                  }else{
                      
-                      $(this).children().hide();
+                      $(this).hide();
                      
                  }
                    
