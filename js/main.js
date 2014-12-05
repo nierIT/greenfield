@@ -320,7 +320,7 @@
 
          $(containerID).each(function(){
 
-            event.stopPropagation();
+           
             
             var listId = '#'+$(this).attr('id');
 
