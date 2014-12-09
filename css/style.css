@@ -204,6 +204,7 @@ select.forgot-input{
 
 .login-txtbox-holder input:focus,
 .btn-login:focus,
+.btn-floorplan:focus
 .forgot-input:focus{
     outline: 0;
 }
@@ -246,6 +247,16 @@ select.forgot-input{
     cursor: pointer;
 }
 
+.btn-floorplan{
+    width: 100%;
+    color: white;
+    background: #8ac43f;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
 .forgot-link-holder,
 .terms-link-holder{
     cursor: pointer;
@@ -272,7 +283,7 @@ select.forgot-input{
     width: 100%;
 }
 
-.forgot-table tbody tr td{
+.forgot-table tbody lower-info-btn-containertr td{
     padding: 15px 0;
 }
 
@@ -303,6 +314,22 @@ select.forgot-input{
 
 .messageHolder h3{
     font-weight: bold;
+}
+
+.imgHolder{
+    width: 100%;
+    height: 430px;  
+    margin: 20px 0 0;
+}
+
+.imgHolder img{
+    width: 100%;
+    height: 100%;
+}
+
+.modal-thumb{
+    width: 700px!important;
+    height: 500px!important;
 }
 /** END LOGIN **/
 
@@ -621,7 +648,8 @@ ul#list li:last-child,
      border-bottom:none!important;
 }
 
-#up,#down{
+#up,#down,
+#up2,#down2{
      width: 100%;   
     height: 20px;
     text-align: center;
@@ -631,14 +659,16 @@ ul#list li:last-child,
     display: none;
 }
 
-#up i, #down i{
+#up i, #down i,
+#up2 i, #down2 i{
     cursor: pointer;
     opacity: 0.5;
     color: rgb(27, 27, 27);
     font-size: 20px;
 }
 
-#up i:hover, #down i:hover{
+#up i:hover, #down i:hover,
+#up2 i:hover, #down2 i:hover{
      opacity: 1;
 }
 
@@ -669,6 +699,11 @@ ul#list li:last-child,
     float: right;
     font-size: 14px;
     margin: 13px 55px 0 0;
+    
+}
+
+.back-holder a{
+    color: #333333;
 }
 
 .back-holder i{
@@ -815,12 +850,29 @@ ul.header-list li a {
 
 #settings-drop-holder{
     position: absolute;
-   right: 72px;
+    right: 72px;
     top: 54px;
     display: none;
     z-index: 2;
 }
 
+.upper-info-container{
+     width: 100%;   
+}
+
+ul.floor-list li{
+    width: 54px;
+    height: 38px;
+    background: #cccccc;
+    border: 1px solid #b2b2b2;
+    text-align: center;
+    color: #4c4c4c;
+    line-height: 40px;
+}
+
+ul.floor-list li.active-floor{
+    background: #ffff66;
+}
 /* table v2 .sample{
  width: 100%;
     height: 100%;
@@ -830,11 +882,162 @@ ul.header-list li a {
 .sample tr td{
      font-size: 10pt;   
 }*/
+
+.floor-container{
+     width: 54px;
+     position: relative;
+     top:62px;
+     left: 15px;
+}
+
+.unit-container{
+    width: 90%;
+    overflow-x: auto;
+    position: relative;
+    left: 30px; 
+}
+
+table.unit-table{
+    width: 99%;
+    border-collapse: collapse;
+    border:none;
+}
+
+table.unit-table tbody tr td{
+    padding:10px;
+    font-size: 14px;
+    text-align: center;
+    border-color: #797979;
+}
+
+table.unit-table thead tr.unit-letter td{
+    padding:10px;
+    font-size: 14px;
+    background: #666666;
+    border-color: #666666;
+    color: white;
+    text-align: center;
+}
+
+table.unit-table thead tr.unit-view td{
+     padding:10px;
+    background: #999999;
+    border-color: white;
+    border-bottom: none;
+    border-top: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+}
+
+table.unit-table thead tr.unit-view td:first-child{
+    border-left: none;
+}
+
+table.unit-table thead tr.unit-view td:last-child{
+    border-right: none;
+}
+.sold-unit{
+ background: #3366ff;
+    color: white;
+}
+
+.tab-unit-container{
+    position: relative;
+    left: 83px;   
+}
+
+ul.tab-unit-list li{
+    border-top: none;
+    border: 1px solid #797979;
+    padding: 13px 40px;
+    font-size: 14px;
+    background: #999999;
+    color: white;
+    cursor: pointer;
+}
+
+ul.tab-unit-list li.active-tab-unit{
+     background: #333333;   
+}
+
+td.legend-color{
+   width: 30px;
+    padding: 0px;
+}
+
+.white{
+    background: white;   
+}
+
+.green{
+    background: #009900;
+}
+
+.blue{
+    background:#3366ff;   
+}
+
+.orange{
+    background:#cc6600;
+}
+
+.lower-info-holder{
+    position: relative;
+    left: 80px;
+    padding: 25px 0;
+    width: 90%;
+}
+.legend-container{
+   
+    float: left;
+}
+
+table.legend-table tbody tr td{
+    padding: 3px 0;
+    font-size: 14px;
+}
+
+table.legend-table thead th{
+    text-align: left;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+table.legend-table thead th:last-child{
+    padding: 10px 0 0 10px;
+}
+
+table.legend-table tbody tr td:first-child{
+    font-weight: bold;    
+    padding: 0 80px 0 0;
+}
+
+table.legend-table tbody tr td:last-child{
+    padding: 3px 0 0 10px;    
+}
+
+.lower-info-btn-container{
+    float: right;
+    padding: 20px 45px 15px 0px;
+}
+
+.lower-info-btn-container a button{
+    margin: 10px 0;  
+    padding: 20px 0;
+}
+
+.lower-info-container{
+    width: 100%;
+    
+}
 /** END CONTENT **/
 
 /*MODALS*/
 
-.termsHolder{
+.termsHolder,
+.thumb-listHolder{
  position: fixed;
   display: none;
   width: 100%;
@@ -848,6 +1051,7 @@ ul.header-list li a {
   height: 100%;
   background: #333;
   opacity: 0.8;
+    z-index: 2;
 }
 
 .modalContent {
@@ -860,10 +1064,12 @@ ul.header-list li a {
   left: 0;
   right: 0;
   margin: auto;
+  z-index: 3;
 }
 
 .messageContainer{
   width: 100%;
+  position: relative;
 }
 
 .messageHolder{
@@ -879,6 +1085,10 @@ ul.header-list li a {
   cursor: pointer;
   float: right;
   margin: 10px 0 0;
+  color: #666666;
+    
+  font-size: 12px!important;
+  line-height: 21px;
     
   -webkit-transition: all .3s ease-in-out ;
     -moz-transition: all .3s ease-in-out ;
@@ -895,4 +1105,29 @@ ul.header-list li a {
     transition: all .3s ease-in-out;
 }
 
+.prevImg{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    display: table-cell;
+    line-height: 505px;
+    padding: 0 10px;   
+}
+
+.nextImg{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    display: table-cell;
+    line-height: 505px;
+    padding: 0 10px;   
+}
+
+.prevImg i,
+.nextImg i{
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
 /*END MODALS*/
