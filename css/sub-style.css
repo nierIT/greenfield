@@ -1,0 +1,126 @@
+.reservation-content {
+    text-align: center;
+    padding-left:50px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.reservation-content > .filter {
+    font-size: 13px;
+    line-height: 37px;
+    margin-right: 20px;
+}
+
+.list-selection > select {
+    height: 36px;
+    width: 250px;
+
+}
+
+
+select {
+    padding-left:10px;
+}
+
+.input-group {
+    margin-left: 60px;
+}
+
+.input-group > input {
+    height: 32px;
+    width: 250px;
+    padding: 0px;
+    padding-left:10px;
+    
+}
+
+.btn-default {
+    margin-left: 10px;
+    padding: 9px 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #8ac43f;
+  
+}
+
+.table-group {
+    width: 100%;
+  
+   
+}
+.table-group > table {
+    width: 100%;
+    border-spacing: 0;
+
+}
+
+
+
+.table-group > table > tbody > tr > td:first-child,
+.table-group > table > thead > tr > th:first-child{
+    text-align: left;
+    text-indent: 50px;
+}
+
+
+.table-group > table > thead > tr > th {
+    width: 37%;
+    background-color: #bcbcbc;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid #c9c9c9;
+    margin: 0;
+    padding: 0;  
+}
+
+.table-group > table > thead > tr > th:last-child {
+    width: auto !important;
+}
+
+.table-group > table > tbody > tr > td {
+    width: 37%;
+    text-align: center;  
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid #bcbcbc;
+    margin: 0;
+    padding: 0;
+}
+
+.table-group > table > tbody > tr > td:last-child {
+    width: auto;
+}
+
+
+.table-group thead {
+
+
+
+
+ 
+}
+	
+.table-group tbody.scrollContent {
+
+}
+	
+
+
+
+
+.table-group > table > tbody > tr > td > a{
+    line-height: 50px;
+    text-decoration: underline;
+}
+
+.table-group > table > tbody > tr:nth-child(even) {
+    background: #f2f2f2;
+}
+.table-group > table > tbody > tr:nth-child(odd) {
+    background: #e4e4e4;
+}
+
+.table-group  table {
+    height: 300px;
+}
