@@ -683,5 +683,49 @@
        });
        
    }
+   
+    $.fn.switchImage = function(){
+        
+        $('.imageswitch').each(function(){
+        
+            $(this).click(function(){
+                
+                var element = this;
+                
+                var id = $(element).attr('class').split(' ')[1].split('-')[1];
+                
+                var src = $('img.imageswitch-'+id).attr('src');
+                
+                
+                if(id === 1){
+                    
+                    var oldid = id;
+                    id = oldid + 1;
+                    
+                    var newsrc = $('img.imageswitch-'+id).attr('src');
+                    
+                    $('img.imageswitch-'+id).attr('src',src);
+                    
+                    $('img.imageswitch-'+oldid).attr('src',newsrc);
+                    
+                    
+                }else{
+                    
+                     var oldid = id;
+                    id = oldid - 1;
+                    
+                    var newsrc = $('img.imageswitch-'+id).attr('src');
+                    
+                    $('img.imageswitch-'+id).attr('src',src);
+                    
+                    $('img.imageswitch-'+oldid).attr('src',newsrc);
+                    
+                }
+                
+            });
+            
+        });
+        
+    }
      
 })(jQuery);
