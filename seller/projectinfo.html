@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
+    
 </head>
 <body class='clearfix'>
     
@@ -961,11 +962,11 @@
                                 <div class="project-thumbnails">
 
                                     <ul class="thumb-list">
-
-                                        <li><img src="../images/zitan%201.jpg" alt="Zitan"></li>
-                                        <li><img src="../images/zitan%202.jpg" alt="Zitan"></li>
-                                        <li><img src="../images/zitan%203.jpg" alt="Zitan"></li>
-                                        <li><img src="../images/zitan%204.jpg" alt="Zitan"></li>
+                                            <!-- data-img-lg attribute has the image link of the larger version of image -->
+                                        <li><img src="../images/zitan%201.jpg" alt="Zitan" data-img-lg='../images/zitan-12.jpg'></li>
+                                        <li><img src="../images/zitan%202.jpg" alt="Zitan" data-img-lg='../images/zitan%202.jpg'></li>
+                                        <li><img src="../images/zitan%203.jpg" alt="Zitan" data-img-lg='../images/zitan%203.jpg'></li>
+                                        <li><img src="../images/zitan%204.jpg" alt="Zitan" data-img-lg='../images/zitan%204.jpg'></li>
                                     </ul>
 
                                 </div>
@@ -974,7 +975,7 @@
 
                                     <a href="#">
 
-                                        <button class='btn-login'>View Available Units</button>
+                                       <a href='availableunits.html'><button class='btn-login' >View Available Units</button></a> 
 
                                     </a>
 
@@ -994,6 +995,54 @@
               
         </div>
         
+        
+        <div class="mainModalContainer">
+
+			<div class="thumb-listHolder"> 
+
+				<div class="overlay"></div>
+
+				<div class="modalContent modal-terms modal-thumb">
+
+					<div class="closeHolder">
+
+						<i class="fa fa-times"></i>
+                        
+                        Close
+                        
+					</div>
+					
+
+					<div class="messageContainer">
+                        
+                        <div class="prevImg">
+							    
+                            <i class="fa fa-angle-left"></i>
+
+                        </div>
+
+                        <div class="nextImg">
+
+                            <i class="fa fa-angle-right"></i>
+
+                        </div>
+							
+						<div class="imgHolder">
+
+                          
+							
+							
+
+						</div>
+
+					</div>
+					
+
+				</div>
+
+			</div>
+       
+       </div>
     </div>
     
     <script src='../js/jquery-1.11.1.min.js'></script>
@@ -1010,8 +1059,9 @@
             
              $().dropHeader();
             
-             //$("#list2").scrollList();
+             $("thumb-list").thumbnailShow();
             
+             //$("#list2").scrollList();
             
         });
         
