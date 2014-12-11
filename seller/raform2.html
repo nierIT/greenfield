@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | View Floor Plan</title>
+    <title>Greenfield Development Corporation | RA Form</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
@@ -807,50 +808,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-                
-                <span class="page-title-container">
+              
+                    <span class="page-title-container">
                     
-                    <h2>Zitan</h2>
-                    
-                </span>
-                
-                <span class="header-option-holder">
-                    
-                    <ul class="header-option clearfix">
-                        <li id='help'><i class="fa fa-question-circle"></i></li>
-                        <li id='settings'><i class="fa fa-cog"></i></li>
-                        <li><i class="fa fa-sign-out"></i></li>
-                    </ul>
-                    
-                </span>
-                
-                <div id="help-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                    
-                    <ul class="header-list clearfix">
-                       
-                        <li><a href="#">F.A.Q</a></li>
-                        
-                        <li><a href="#">Manual</a></li>
-                        
-                    </ul>
+                        <h2>Zitan</h2>
 
-                </div>
+                    </span>
 
-                <div id="settings-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                        
-                     <ul class="header-list clearfix">
-                       
-                        <li><a href="#">Settings</a></li>
-                        
-                    </ul>
+                    <span class="header-option-holder">
 
-                </div>   
-        
-                
+                        <ul class="header-option clearfix">
+                            <li id='help'><i class="fa fa-question-circle"></i></li>
+                            <li id='settings'><i class="fa fa-cog"></i></li>
+                            <li><i class="fa fa-sign-out"></i></li>
+                        </ul>
+
+                    </span>
+
+                    <div id="help-drop-holder" class='header-drop'>
+
+                        <div class="arrow-up"></div>
+
+                        <ul class="header-list clearfix">
+
+                            <li><a href="#">F.A.Q</a></li>
+
+                            <li><a href="#">Manual</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="settings-drop-holder" class='header-drop'>
+
+                        <div class="arrow-up"></div>
+
+                         <ul class="header-list clearfix">
+
+                            <li><a href="#">Settings</a></li>
+
+                        </ul>
+
+                    </div>  
+
+
             </header>
                 
             <div class="right-holder">
@@ -861,7 +862,7 @@
                         
                         <ul class="bread-list clearfix">
                             
-                            <li>
+                             <li>
                                 
                                <a href="home.html">Home</a>
                                 
@@ -880,9 +881,16 @@
                             
                             <li>
                                 
-                                <a href="viewfloorplan.html">View Floor Plan</a>
+                                <a href="#">Pre - Qualification</a>
                                 
                             </li>
+                            
+                             <li>
+                                
+                                <a href="#">Reservation Agreement</a>
+                                
+                            </li>
+                            
                             
                         </ul>
                         
@@ -898,132 +906,126 @@
                 
                 <div class="right-content">
                     
-                    <div class="info-container">
+                    <div class="form-title-container">
                         
-                        <div class="left-floorplan-container">
-                            
-                            <div class="floorplan-lg">
-                                
-                                <div class="floor-lg-holder">
-                                    
-                                    <img src="../images/fp1.png" alt="Zitan" class='imageswitch imageswitch-1'>
-                                    
-                                </div>
-                                
-                            </div>
-                            
-                            <div class="floorplan-small">
-                                
-                                <div class="floorplan-small-holder">
-                                    
-                                     <img src="../images/fp2.png" alt="Zitan" class='imageswitch imageswitch-2'>
-                                     
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
+                       <div class="form-title-holder">
+                           
+                          Reservation Form
+                           
+                       </div> 
                         
-                        <div class="right-floorplan-container">
-                            
-                            <div class="floorplan-label-container">
-                                
-                                <span class="floorplan-view-label">
-                                    
-                                    <a href="#">Open 360 view</a>
-                                    
-                                </span>
+                       <div class="form-title-holder step-holder">
+                           
+                          Step 
+                          
+                          <ul class="step-list clearfix">
+                              <li></li>
+                                <li><span class="line"></span></li>
+                              <li  class='active-step'></li>
+                               <li><span class="line"></span></li>
+                              <li></li>
+                               <li><span class="line"></span></li>
+                              <li></li>
+                               <li><span class="line"></span></li>
+                              <li></li>
+                          </ul>
+                         
+                       </div> 
+                       
+                    </div>
+                    
+                    
+                    <div class="info-container prequalify-main">
+                        
+                       <div class="prequalify-form-container-left">
+                           
+                           <form action="" class='clearfix'>
+                               
+                               <div class="form-container">
                                    
-                                <span class="floorplan-buyers-label">
+                                    <h4>Purchase Price Computation</h4>
                                     
-                                   Interested Buyers: 3
+                                   
+                                   <div class="left-form-table">
+                                       
+                                       <table class="purchase-price-table">
+                                          <thead>
+                                              
+                                               <tr class='headerrow'>
+                                                   <td colspan="2">Total Contract Price</td>
+                                               </tr>
+                                           
+                                          </thead>
+                                          <tbody>
+                                              
+                                               <tr class='headerrow'class='headerrow'>
+                                                   <td>List Price (w/VAT)</td>
+                                                   <td>Php:<span>1,000.000.00</span></td>
+                                               </tr>
+                                               <tr>
+                                                   <td>List Price (w/o VAT)</td>
+                                                   <td>Php:<span>880.000.00</span></td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Less: Discount (Schedule 1)</td>
+                                                   <td>Php:<span>0.00</span></td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Add: Interest</td>
+                                                   <td>Php:<span>0.00</span></td>
+                                               </tr>
+                                               <tr class='headerrow'>
+                                                   <td>Total Selling Price</td>
+                                                   <td>Php:<span>1,000.000.00</span></td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Add: VAT: <span></span>%</td>
+                                                   <td>Php:<span>0.00</span></td>
+                                               </tr>
+                                               <tr class='headerrow'>
+                                                   <td>Total Contract Price:</td>
+                                                   <td>Php:<span>1,200.000.00</span></td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Add: Other Charges</td>
+                                                   <td>Php:<span>0.00</span></td>
+                                               </tr>
+                                               <tr class='headerrow'>
+                                                   <td>TCP + other Charges</td>
+                                                   <td>Php:<span>1,200.000.00</span></td>
+                                               </tr>
+                                               
+                                          </tbody>
+                                           
+                                       </table>
+                                       
+                                   </div>
                                     
-                                </span>       
-                                    
-                            </div>
+                               </div>
+                             
+                               
                             
-                            <div class="unit-details-container">
-                                
-                                <div class="unit-details-holder">
-                                    
-                                    <table class="unit-details-table">
-                                        <thead>
-                                            <tr>
-                                                <td colspan='2'>Unit Details</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Unit Code:</td>
-                                                <td>BAL0906</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Unit Type:</td>
-                                                <td>2BR</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Total Area:</td>
-                                                <td>90.830</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Unit Area:</td>
-                                                <td>71.920</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-                                
-                                <div class="unit-details-holder">
-                                    
-                                    <table class="unit-details-table">
-                                        <thead>
-                                            <tr >
-                                                <td colspan='2'>Estimated Forex Prices</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Php Price:</td>
-                                                <td>9,520,234.23</td>
-                                            </tr>
-                                            <tr>
-                                                <td>USD Price:</td>
-                                                <td>212,235.28</td>
-                                            </tr>
-                                            <tr>
-                                                <td>GBP Price:</td>
-                                                <td>134,234.20</td>
-                                            </tr>
-                                            <tr>
-                                                <td>EUR Price:</td>
-                                                <td>164,231.14</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SGD Price:</td>
-                                                <td>281,234.21</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AuD Price:</td>
-                                                <td>321,213.40</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-                                
-                            </div>
+                           </form>
+                           
+                           
+                       </div>
+                        
+                        <div class="prequalify-form-container-right">
                             
-                            <div class="prequalify-container">
+                            <span class="note-container">
                                 
-                                <div class="prequalify-holder">
-                                    
-                                    <a href='prequalify.html'><button class='btn-login'>Pre - Qualify</button></a> 
-                                    
-                                </div>
+                                *Note:<br/>
+                                Please fill all required fields
                                 
-                                
-                            </div>
+                            </span>
+                            
+                           <span class="next-holder">
+
+                                <a href='raform.html'><button class='btn-login'>Next</button></a> 
+
+                           </span>
+                               
+                           
                             
                         </div>
                         
@@ -1051,7 +1053,8 @@
             
              $().dropHeader();
             
-             $().switchImage();
+             $( "#datepicker" ).datepicker();
+            
              //$("#list2").scrollList();
             
             
