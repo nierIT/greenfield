@@ -719,6 +719,12 @@ ul#list li:last-child,
 .bread-list li + li:before{
     padding: 0 3px 0 10px;
     content:"> ";
+    
+}
+
+.bread-list li:last-child{
+    
+    
 }
 
 .right-content{
