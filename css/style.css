@@ -9,8 +9,14 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
-.clear { clear: both; }
+.newline{
+   margin: 10px 0; 
+}
 
+h4{
+ font-weight: bold!important;
+    color: #333333;
+}
 html{
  height: 100%; 
 }
@@ -31,6 +37,7 @@ html{
     height: calc(100% - 104px);
     height: 100%;
 }
+
 body{
     height: 100%;
     width: 100%;
@@ -1257,6 +1264,7 @@ ul.step-list{
     float: right;
     margin: 1px 0 0 15px;
 }
+
 ul.step-list li:nth-child(odd){
     border-radius: 50%;
     width: 16px;
@@ -1277,10 +1285,17 @@ span.line{
     margin: 8px 0;
 }
 
-.form-container{
-     padding: 0 10px 0 35px;   
+.form-container,
+.information-container{
+     padding: 0 10px 0 35px; 
+    /*width: 100%;*/
 }
 
+.information-container{
+    font-size: 13px;
+    height: 534px;
+    overflow: auto;
+}
 .upper-prop-info{
     margin: 40px 0 0;
 }
@@ -1289,9 +1304,9 @@ span.line{
     width: initial;
 }
 
-.form-four-field li:first-child *:not(span),
-.form-three-field li:first-child *:not(span){
-    width: 245px; 
+.form-four-field li:first-child *:not(span):not(i),
+.form-three-field li:first-child *:not(span):not(i){
+    width: 245px!important; 
     padding: 6px 5px;
 }
 
@@ -1299,7 +1314,8 @@ span.line{
     padding: 6px 5px;
 }
 
-.form-three-field li *:not(span){
+.form-three-field li *:not(span):not(i),
+.form-three-field li:first-child *:not(span):not(i){
     padding: 6px 5px;
     width: 227px;
 }
@@ -1330,7 +1346,9 @@ span.line{
      margin: 15px 10px 15px 0;   
 }
 
-.unit-type-holder{
+.unit-type-holder,
+.instruct,
+.registered-as{
      width: 100%;   
 }
 
@@ -1347,9 +1365,17 @@ span.line{
      color:#333333;
 }
 
+.form-label,
+.form-text{
+     width: 100%;   
+}
+
+.form-text{
+    padding: 6px 0;
+}
+
 table.purchase-price-table{
     border-collapse: collapse; 
-    margin: 35px 0 0;
 }
 
 table.purchase-price-table tr td span{
@@ -1360,16 +1386,109 @@ table.purchase-price-table tr td span{
 table.purchase-price-table tr td{
     font-size: 13px;
     color:#333333;
+   
 }
+
+table.purchase-price-table tr td select{
+    padding: 6px 5px;
+}
+table.purchase-price-table tr td:first-child{
+     padding: 5px 55px 5px 0;
+}
+
 tr.headerrow td,
 tr.headerrow td *{
     font-size: 14px;
     color:#333333;
     font-weight: bold;
+   
+}
+
+thead tr.headerrow td{
+     padding: 40px 0 10px!important;
+}
+
+tr.headerrow td{
+     padding: 20px 0!important;
+}
+
+.vat-underline{
+    text-decoration: underline;
+    display: inline;
+    float: none!important;
+    margin: 0!important;
+}
+
+.payment-table{
+    margin: 0 0 0 80px;
+}
+
+.datepicker-info{
+    width: 230px!important;
+}
+
+.datepicker-info input{
+    padding: 0!important;
+    width: 195px!important;
 }
 /*ul.step-list li:after{
     content: "-";
 }*/
+
+.registered-as{
+    
+}
+
+.registered-as span{
+    width: 100%;   
+}
+
+.registered-as span textarea{
+     width: 278px;
+    height: 55px;
+    resize: none;
+}
+
+.label-of-container{
+    font-weight: bold;
+    width: 100%;
+}
+
+.info-field li{
+    width: 242px;
+}
+
+.custom-picker{
+     width: 100%!important;      padding: 5px;
+}
+
+.custom-onep,
+.individual-buyer-container{
+ width: 100%;   
+}
+.form-of-container{
+ width: 100%;   
+}
+
+.ra-date{
+    width: 32%;
+    margin: 0 30px 0 0;   
+}
+
+.ra-abroad{
+    width: 27%;
+    margin: 0 30px 0 0;
+    float: left;
+}
+
+.ra-currency{
+    width: 30%;
+    float: left;   
+}
+
+.toggle-holder{
+     margin: 5px 0 0;   
+}
 /** END CONTENT **/
 
 /*MODALS*/

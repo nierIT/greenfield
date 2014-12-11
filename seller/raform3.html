@@ -921,9 +921,9 @@
                           <ul class="step-list clearfix">
                               <li></li>
                                 <li><span class="line"></span></li>
-                              <li  class='active-step'></li>
-                               <li><span class="line"></span></li>
                               <li></li>
+                               <li><span class="line"></span></li>
+                              <li class='active-step'></li>
                                <li><span class="line"></span></li>
                               <li></li>
                                <li><span class="line"></span></li>
@@ -943,84 +943,21 @@
                                
                                <div class="form-container">
                                    
-                                    <h4>Purchase Price Computation</h4>
+                                    <h4>Financing Terms</h4>
                                     
-                                   
                                    <div class="left-form-table">
                                        
                                        <table class="purchase-price-table">
-                                          <thead>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td colspan="2">Total Contract Price</td>
-                                               </tr>
-                                           
-                                          </thead>
-                                          <tbody>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td>List Price (w/VAT)</td>
-                                                   <td>Php:<span>1,000.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>List Price (w/o VAT)</td>
-                                                   <td>Php:<span>880.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Less: Discount (Schedule 1)</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: Interest</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>Total Selling Price</td>
-                                                   <td>Php:<span>1,000.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: VAT: <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>%</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>Total Contract Price:</td>
-                                                   <td>Php:<span>1,200.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: Other Charges</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>TCP + other Charges</td>
-                                                   <td>Php:<span>1,200.000.00</span></td>
-                                               </tr>
-                                               
-                                          </tbody>
-                                           
-                                       </table>
-                                       
-                                   </div>
-                                   
-                                   <div class="left-form-table payment-table">
-                                       
-                                       <table class="purchase-price-table">
-                                          <thead>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td colspan="2">Payment Terms:</td>
-                                               </tr>
-                                           
-                                          </thead>
                                           <tbody>
                                               
                                                <tr>
-                                                   <td coslpan='2'>Schedule 1</td>
+                                                   <td coslpan='2'>Select</td>
                                                </tr>
                                                <tr>
                                                    <td>
                                                        
                                                        <select name="" id="">
-                                                           <option value="">Deferred Cash</option>
+                                                           <option value="">Spot Cash</option>
                                                        </select>
                                                        
                                                    </td>
@@ -1073,7 +1010,7 @@
                             
                            <span class="next-holder">
 
-                                <a href='raform3.html'><button class='btn-login'>Next</button></a> 
+                                <a href='raform4.html'><button class='btn-login'>Next</button></a> 
 
                            </span>
                                
@@ -1105,6 +1042,7 @@
             
              $().dropHeader();
             
+             $( "#datepicker" ).datepicker();
             
              //$("#list2").scrollList();
             

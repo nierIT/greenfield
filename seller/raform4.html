@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/960.css">
+    <link rel="stylesheet" href="../css/onepcssgrid.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
+    
 </head>
 <body class='clearfix'>
     
@@ -921,11 +924,11 @@
                           <ul class="step-list clearfix">
                               <li></li>
                                 <li><span class="line"></span></li>
+                              <li></li>
+                               <li><span class="line"></span></li>
+                              <li></li>
+                               <li><span class="line"></span></li>
                               <li  class='active-step'></li>
-                               <li><span class="line"></span></li>
-                              <li></li>
-                               <li><span class="line"></span></li>
-                              <li></li>
                                <li><span class="line"></span></li>
                               <li></li>
                           </ul>
@@ -943,118 +946,284 @@
                                
                                <div class="form-container">
                                    
-                                    <h4>Purchase Price Computation</h4>
-                                    
-                                   
-                                   <div class="left-form-table">
-                                       
-                                       <table class="purchase-price-table">
-                                          <thead>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td colspan="2">Total Contract Price</td>
-                                               </tr>
-                                           
-                                          </thead>
-                                          <tbody>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td>List Price (w/VAT)</td>
-                                                   <td>Php:<span>1,000.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>List Price (w/o VAT)</td>
-                                                   <td>Php:<span>880.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Less: Discount (Schedule 1)</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: Interest</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>Total Selling Price</td>
-                                                   <td>Php:<span>1,000.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: VAT: <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>%</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>Total Contract Price:</td>
-                                                   <td>Php:<span>1,200.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: Other Charges</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>TCP + other Charges</td>
-                                                   <td>Php:<span>1,200.000.00</span></td>
-                                               </tr>
-                                               
-                                          </tbody>
-                                           
-                                       </table>
-                                       
-                                   </div>
-                                   
-                                   <div class="left-form-table payment-table">
-                                       
-                                       <table class="purchase-price-table">
-                                          <thead>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td colspan="2">Payment Terms:</td>
-                                               </tr>
-                                           
-                                          </thead>
-                                          <tbody>
-                                              
-                                               <tr>
-                                                   <td coslpan='2'>Schedule 1</td>
-                                               </tr>
-                                               <tr>
-                                                   <td>
-                                                       
-                                                       <select name="" id="">
-                                                           <option value="">Deferred Cash</option>
-                                                       </select>
-                                                       
-                                                   </td>
-                                               </tr>
-                                               <tr>
-                                                   <td>List Price (w/o VAT)</td>
-                                                   <td>Php:<span class='vat-underline'></span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                                <tr>
-                                                   <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               
-                                               <tr class='headerrow'>
-                                                   <td>Total SC Discount:</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               
-                                          </tbody>
-                                           
-                                       </table>
-                                       
-                                   </div>
+                                    <h4>Buyer's Information</h4>
                                     
                                </div>
                              
+                               <div class="information-container">
+                                   
+                                    <span class="instruct">In connection with my/our reservation and purchase of the Property, I/We would like the purchase to be registered as follows:</span>
+                                    
+                                    <div class="registered-as">
+                                        
+                                        <span>
+                                            
+                                            <input type="checkbox" id='sole'>
+                                            <label for="sole">Solely in my name</label>
+                                            
+                                        </span>
+                                        
+                                        <span>
+                                            
+                                            <input type="checkbox" id='both'>
+                                            <label for="both">in both our names as spouses / as co-owners</label>
+                                            
+                                        </span>
+                                        
+                                        <span>
+                                            
+                                            <input type="checkbox" id='corpo'>
+                                            <label for="corpo">in the name of the corporation</label>
+                                            
+                                        </span>
+                                        
+                                         <span>
+                                            
+                                            <input type="checkbox" id='other'>
+                                            <label for="other">others</label>
+                                                                         
+                                        </span>
+                                        
+                                        <span>
+                                           
+                                            <textarea name="" id=""></textarea>
+                                            
+                                        </span>
+                                        
+                                    </div>
+                                    
+                                    <div class="individual-buyer-container">
+                                        
+                                        <div class="label-of-container">
+                                            
+                                            Individual Buyer:
+                                            
+                                        </div>
+                                        
+                                        <div class="form-of-container">
+                                               
+                                            <div class="onepcssgrid-1000 custom-onep">
+
+                                               <div class="onerow">
+                                                  <div class="col4">
+                                                   
+                                                        <span class="form-label">Last Name:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                   </div>
+                                                  <div class="col4">
+                                                      
+                                                      <span class="form-label">First Name:</span>
+                                                      <input type="text" class='form-text'>
+                                                      
+                                                  </div>
+                                                  <div class="col4 last">
+                                                       <span class="form-label">Middle Name:</span>
+                                                    <input type="text" class='form-text'>
+                                                      
+                                                  </div>
+                                                 
+                                               </div>
+                                               
+                                               <div class="onerow">
+                                                 
+                                                  <div class="col3">
+                                                   
+                                                         <span class="form-label">Birthdate:</span>
+                                                    
+                                                         <span class="datepicker-container custom-picker">
+
+                                                            <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+
+                                                            <i class="fa fa-calendar"></i>
+
+                                                        </span>
+                                                        
+                                                   </div>
+                                                   
+                                                  <div class="col2">
+                                                      
+                                                      <span class="form-label">Age:</span>
+                                                    <input type="text" class='form-text'>
+                                                      
+                                                  </div>
+                                                  
+                                                  <div class="col3">
+                                                       
+                                                        <span class="form-label">Citizenship:</span>
+                                                        <input type="text" class='form-text'>
+                                                      
+                                                  </div>
+                                                  
+                                                  <div class="col2">
+                                                       
+                                                        <span class="form-label">Civil Status:</span>
+                                                        <select name="" id="" class='form-text'>
+                                                            <option value="">Single</option>
+                                                            <option value="">Married</option>
+                                                            <option value="">Widow</option>
+                                                        </select>
+                                                      
+                                                  </div>
+                                                  
+                                                  <div class="col2 last">
+                                                       
+                                                        <span class="form-label">Gender:</span>
+                                                        <select name="" id="" class='form-text'>
+                                                            <option value="">Male</option>
+                                                            <option value="">Female</option>
+                                                        </select>
+                                                      
+                                                  </div>
+                                                 
+                                               </div>
+                                               
+                                               <div class="onerow">
+                                                  <div class="col9">
+                                                   
+                                                        <span class="form-label">Permanent Home Address (No., Street, City, Municipality, Province):</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                   </div>
+                                                  <div class="col3 last">
+                                                      
+                                                      <span class="form-label">Home Phone:</span>
+                                                      <input type="text" class='form-text'>
+                                                           
+                                                  </div>
+                                               </div>
+                                               
+                                               <div class="onerow">
+                                                  <div class="col9">
+                                                   
+                                                        <span class="form-label">Mailing Address (No., Street, City, Municipality, Province):</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                   </div>
+                                                  <div class="col3 last">
+                                                      
+                                                      <span class="form-label">Cellphone:</span>
+                                                      <input type="text" class='form-text'>
+                                                           
+                                                  </div>
+                                               </div>
+                                               
+                                               <div class="onerow">
+                                                  <div class="col5">
+                                                   
+                                                        <span class="form-label">Passport No./Any valid Government issued ID:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                   </div>
+                                                   <div class="col2">
+                                                   
+                                                        <span class="form-label">Place of Issue:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                   </div>
+                                                   <div class="col3">
+                                                   
+                                                        <span class="form-label">Date of Issue:</span>
+                                                        <span class="datepicker-container custom-picker">
+
+                                                            <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+
+                                                            <i class="fa fa-calendar"></i>
+
+                                                        </span>
+                                                        
+                                                   </div>
+                                                  <div class="col2 last">
+                                                      
+                                                      <span class="form-label">TIN No.:</span>
+                                                      <input type="text" class='form-text'>
+                                                           
+                                                  </div>
+                                               </div>
+                                               
+                                               <div class="onerow">
+                                                  <div class="col2">
+                                                   
+                                                        <span class="form-label">Occupation:</span>
+                                                        <select name="" id="" class="form-text">
+                                                            <option value="">Self-employed</option>
+                                                            <option value="">Employed</option>
+                                                            <option value="">Unemployed</option>
+                                                            <option value="">Retired</option>
+                                                        </select>
+                                                          <span class='toggle-holder'>
+                                                            
+                                                            Financier: <input type="text" class='form-text'>
+                                                        </span>
+                                                        
+                                                        
+                                                   </div>
+                                                   <div class="col3">
+                                                   
+                                                        <span class="form-label">Employee Type:</span>
+                                                         <select name="" id="" class="form-text">
+                                                            <option value="">Local</option>
+                                                            <option value="">OFW</option>
+                                                        </select>
+                                                        <span class='toggle-holder'>
+                                                            
+                                                            Country:<input type="text" class='form-text'>
+                                                        </span>
+                                                        
+                                                   </div>
+                                                   
+                                                   <div class="col7 last">
+                                                   
+                                                        <span class="form-label">If principal borrower is an OFW:</span>
+                                                        <span class='ra-date'>
+                                                            Date current contract ends:
+                                                            
+                                                            <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+                                                            
+                                                        </span>
+                                                        
+                                                        <span class='ra-abroad'>
+                                                            
+                                                            Total no. of yrs. Abroad:<input type="text" class='form-text'>
+                                                        </span>
+                                                        
+                                                        <span class='ra-currency'>
+                                                            
+                                                            Currency of income:<input type="text" class='form-text'>
+                                                        </span>
+                                                        
+                                                   </div>
+                                                   
+                                                </div>
+                                               
+                                               <div class="onerow">
+                                                  <div class="col3">
+                                                   
+                                                        <span class="form-label">Mailing Address (No., Street, City, Municipality, Province):</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                   </div>
+                                                  <div class="col9 last">
+                                                      
+                                                      <span class="form-label">Cellphone:</span>
+                                                      <input type="text" class='form-text'>
+                                                           
+                                                  </div>
+                                               </div>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                               </div>
                                
                             
                            </form>
@@ -1105,6 +1274,7 @@
             
              $().dropHeader();
             
+             $( "#datepicker" ).datepicker();
             
              //$("#list2").scrollList();
             
