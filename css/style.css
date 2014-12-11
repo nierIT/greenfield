@@ -1154,6 +1154,228 @@ span.floorplan-buyers-label{
     margin: 0 auto;
 }
 
+.form-title-container{
+    width: 100%;
+    padding: 13px 0;
+    background: rgba(245, 245, 245, 0.6);
+}
+
+.form-title-holder{
+    margin: 0 0 0 35px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+}
+
+.step-holder{
+    margin: 0 0 0 50px;
+    font-size: 13px;
+}
+
+.prequalify-main{
+   padding: 0 0 80px;  
+    position: relative;
+}
+
+.prequalify-form-container-left{
+    float: left;
+    padding: 50px 0 0;
+    width: calc(100% - 222px);
+}
+
+.prequalify-form-container-right{
+   height: 100%;
+    width: 222px;
+    right: 0;
+    position: absolute;
+    background: #F2F2F2;
+}
+
+.note-container{
+    color: #FF6600;
+    font-size: 13px;
+    margin: 50px 0 0 20px;
+}
+
+.next-container{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+.next-holder{
+     width: 188px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+.left-form,
+.right-form{
+    width: 40%;
+    padding: 0 40px;
+}
+
+.form-list li span{
+    width: 100%;  
+    color: #333333;
+    padding: 5px;
+    
+}
+
+.form-list2 li:first-child{
+    
+}
+/*.form-list2 li span{
+    width: initial;
+}*/
+.form-element{
+    margin: 10px 0 0;    
+}
+
+.form-element .biggerwidth{
+    width: 375px!important;    
+}
+
+.form-element select{
+    width: 200px;
+    padding: 6px 5px;
+}
+
+.datepicker-container{
+    width: 200px!important;
+    background: white;
+    border: 1px solid #A9A9A9;;
+}
+
+.datepicker-container i{
+    font-size: 22px;  
+    float: right;
+}
+
+.datepicker-container input{
+     border: none;   
+}
+
+ul.step-list{
+    display: inline;
+    float: right;
+    margin: 1px 0 0 15px;
+}
+ul.step-list li:nth-child(odd){
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+   /* margin-right: 20px;*/
+    background: white;
+    border: 1px solid #999999;
+}
+
+ul.step-list li.active-step{
+    background: #FF9900!important;
+}
+
+span.line{
+    width: 20px;
+    border-top: 1px solid #999999;
+    margin: 8px 0;
+}
+
+.form-container{
+     padding: 0 10px 0 35px;   
+}
+
+.upper-prop-info{
+    margin: 40px 0 0;
+}
+
+.form-list2 li{
+    width: initial;
+}
+
+.form-four-field li:first-child *:not(span),
+.form-three-field li:first-child *:not(span){
+    width: 245px; 
+    padding: 6px 5px;
+}
+
+.form-four-field li *:not(span){
+    padding: 6px 5px;
+}
+
+.form-three-field li *:not(span){
+    padding: 6px 5px;
+    width: 227px;
+}
+
+.form-list2 li:first-child{
+     width: 248px;  
+     margin: 15px 10px 15px 0;   
+}
+
+.form-list2 li:nth-child(2){
+     width: 171px;  
+     margin: 15px 10px 15px 0;   
+}
+
+.form-list3 li:nth-child(2),
+.form-list3 li:nth-child(3){
+     width: 242px;  
+     margin: 15px 10px 15px 0;   
+}
+
+.form-list2 li:nth-child(3){
+     width: 189px;  
+     margin: 15px 10px 15px 0;   
+}
+
+.form-list2 li:nth-child(4){
+     width: 194px;  
+     margin: 15px 10px 15px 0;   
+}
+
+.unit-type-holder{
+     width: 100%;   
+}
+
+.unit-type label{
+   vertical-align: top;  
+}
+.unit-type-holder span:first-child{
+    margin: 0 80px 0 0;    
+}
+
+.unit-type label,
+.form-list2 li span.form-label{
+     font-size: 13px;
+     color:#333333;
+}
+
+table.purchase-price-table{
+    border-collapse: collapse; 
+    margin: 35px 0 0;
+}
+
+table.purchase-price-table tr td span{
+    float: right;  
+    margin: 0 0 0 30px;
+}
+
+table.purchase-price-table tr td{
+    font-size: 13px;
+    color:#333333;
+}
+tr.headerrow td,
+tr.headerrow td *{
+    font-size: 14px;
+    color:#333333;
+    font-weight: bold;
+}
+/*ul.step-list li:after{
+    content: "-";
+}*/
 /** END CONTENT **/
 
 /*MODALS*/

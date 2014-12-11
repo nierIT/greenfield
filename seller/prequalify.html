@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | View Floor Plan</title>
+    <title>Greenfield Development Corporation | Pre-Qualification</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
@@ -807,50 +808,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-                
-                <span class="page-title-container">
+              
+                    <span class="page-title-container">
                     
-                    <h2>Zitan</h2>
-                    
-                </span>
-                
-                <span class="header-option-holder">
-                    
-                    <ul class="header-option clearfix">
-                        <li id='help'><i class="fa fa-question-circle"></i></li>
-                        <li id='settings'><i class="fa fa-cog"></i></li>
-                        <li><i class="fa fa-sign-out"></i></li>
-                    </ul>
-                    
-                </span>
-                
-                <div id="help-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                    
-                    <ul class="header-list clearfix">
-                       
-                        <li><a href="#">F.A.Q</a></li>
-                        
-                        <li><a href="#">Manual</a></li>
-                        
-                    </ul>
+                        <h2>Zitan</h2>
 
-                </div>
+                    </span>
 
-                <div id="settings-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                        
-                     <ul class="header-list clearfix">
-                       
-                        <li><a href="#">Settings</a></li>
-                        
-                    </ul>
+                    <span class="header-option-holder">
 
-                </div>   
-        
-                
+                        <ul class="header-option clearfix">
+                            <li id='help'><i class="fa fa-question-circle"></i></li>
+                            <li id='settings'><i class="fa fa-cog"></i></li>
+                            <li><i class="fa fa-sign-out"></i></li>
+                        </ul>
+
+                    </span>
+
+                    <div id="help-drop-holder" class='header-drop'>
+
+                        <div class="arrow-up"></div>
+
+                        <ul class="header-list clearfix">
+
+                            <li><a href="#">F.A.Q</a></li>
+
+                            <li><a href="#">Manual</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="settings-drop-holder" class='header-drop'>
+
+                        <div class="arrow-up"></div>
+
+                         <ul class="header-list clearfix">
+
+                            <li><a href="#">Settings</a></li>
+
+                        </ul>
+
+                    </div>  
+
+
             </header>
                 
             <div class="right-holder">
@@ -861,7 +862,7 @@
                         
                         <ul class="bread-list clearfix">
                             
-                            <li>
+                             <li>
                                 
                                <a href="home.html">Home</a>
                                 
@@ -880,7 +881,7 @@
                             
                             <li>
                                 
-                                <a href="viewfloorplan.html">View Floor Plan</a>
+                                <a href="#">Pre - Qualification</a>
                                 
                             </li>
                             
@@ -898,132 +899,158 @@
                 
                 <div class="right-content">
                     
-                    <div class="info-container">
+                    <div class="form-title-container">
                         
-                        <div class="left-floorplan-container">
-                            
-                            <div class="floorplan-lg">
-                                
-                                <div class="floor-lg-holder">
-                                    
-                                    <img src="../images/fp1.png" alt="Zitan" class='imageswitch imageswitch-1'>
-                                    
-                                </div>
-                                
-                            </div>
-                            
-                            <div class="floorplan-small">
-                                
-                                <div class="floorplan-small-holder">
-                                    
-                                     <img src="../images/fp2.png" alt="Zitan" class='imageswitch imageswitch-2'>
-                                     
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
+                       <div class="form-title-holder">
+                           
+                           Pre-Qualification Form
+                           
+                       </div> 
+                       
+                    </div>
+                    
+                    <div class="info-container prequalify-main">
                         
-                        <div class="right-floorplan-container">
-                            
-                            <div class="floorplan-label-container">
-                                
-                                <span class="floorplan-view-label">
+                       <div class="prequalify-form-container-left">
+                           
+                           <form action="" class='clearfix'>
+                               
+                               <div class="left-form">
                                     
-                                    <a href="#">Open 360 view</a>
-                                    
-                                </span>
+                                    <ul class="form-list clearfix">
+                                        <li>
+                                            <span class="form-label">Occupation</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="" class='biggerwidth'>
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">Job 1</option>
+                                                    <option value="">Job 2</option>
+                                                </select>
+                                                
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Number of Years Working / Business Tenure</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="" >
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                                
+                                                Years
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Date of Birth</span>
+                                            <span class="form-element">
+                                                
+                                                
+                                                <span class="datepicker-container">
+                                                    
+                                                    <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+                                                    
+                                                    <i class="fa fa-calendar"></i>
+                                                    
+                                                </span>
+                                               
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            
+                                            <span class="form-label">Percent of other Obligation</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                        
+                                            </span>
+                                            
+                                        </li>
+                                    </ul>
+
+                               </div>
+                               
+                               <div class="right-form">
                                    
-                                <span class="floorplan-buyers-label">
+                                    <ul class="form-list clearfix">
+                                        <li>
+                                            <span class="form-label">Nature of Business</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="" class='biggerwidth'>
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">Nature 1</option>
+                                                    <option value="">Nature 2</option>
+                                                </select>
+                                                
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Gross Monthly Income (GMI)</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">1000</option>
+                                                    <option value="">2000</option>
+                                                </select>
+                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            
+                                            <span class="form-label">Citizenship</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">Filipino</option>
+                                                    <option value="">Alien</option>
+                                                </select>
+                                                
+                                                Years
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                    </ul>
                                     
-                                   Interested Buyers: 3
-                                    
-                                </span>       
-                                    
-                            </div>
+                                   
+                               </div>
+                               
                             
-                            <div class="unit-details-container">
-                                
-                                <div class="unit-details-holder">
-                                    
-                                    <table class="unit-details-table">
-                                        <thead>
-                                            <tr>
-                                                <td colspan='2'>Unit Details</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Unit Code:</td>
-                                                <td>BAL0906</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Unit Type:</td>
-                                                <td>2BR</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Total Area:</td>
-                                                <td>90.830</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Unit Area:</td>
-                                                <td>71.920</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-                                
-                                <div class="unit-details-holder">
-                                    
-                                    <table class="unit-details-table">
-                                        <thead>
-                                            <tr >
-                                                <td colspan='2'>Estimated Forex Prices</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Php Price:</td>
-                                                <td>9,520,234.23</td>
-                                            </tr>
-                                            <tr>
-                                                <td>USD Price:</td>
-                                                <td>212,235.28</td>
-                                            </tr>
-                                            <tr>
-                                                <td>GBP Price:</td>
-                                                <td>134,234.20</td>
-                                            </tr>
-                                            <tr>
-                                                <td>EUR Price:</td>
-                                                <td>164,231.14</td>
-                                            </tr>
-                                            <tr>
-                                                <td>SGD Price:</td>
-                                                <td>281,234.21</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AuD Price:</td>
-                                                <td>321,213.40</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-                                
-                            </div>
+                           </form>
+                           
+                           
+                       </div>
+                        
+                        <div class="prequalify-form-container-right">
                             
-                            <div class="prequalify-container">
+                            <span class="note-container">
                                 
-                                <div class="prequalify-holder">
-                                    
-                                    <a href='prequalify.html'><button class='btn-login'>Pre - Qualify</button></a> 
-                                    
-                                </div>
+                                *Note:<br/>
+                                Please fill all required fields
                                 
-                                
-                            </div>
+                            </span>
+                            
+                           <span class="next-holder">
+
+                                <a href='raform1.html'><button class='btn-login'>Next</button></a> 
+
+                           </span>
+                               
+                           
                             
                         </div>
                         
@@ -1051,7 +1078,8 @@
             
              $().dropHeader();
             
-             $().switchImage();
+             $( "#datepicker" ).datepicker();
+            
              //$("#list2").scrollList();
             
             
