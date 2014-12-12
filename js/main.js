@@ -558,31 +558,19 @@
                  
                  var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
                  
-             /*    $('.imgHolder img').fadeOut();
-                 
-                 setTimeout(function(){*/
-                 
-                     $('.imgHolder img').attr('src',nextsrc).fadeIn();
+                 $('.imgHolder img').attr('src',nextsrc).fadeIn();
                      
-               //  },400);
-                 
                  indexLi = nextLi;
                  
              }else{
                  
                 nextLi = 1;
                  
-                   var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
-                /* 
-                 $('.imgHolder img').fadeOut();
-                 
-                 setTimeout(function(){*/
-                 
-                     $('.imgHolder img').attr('src',nextsrc).fadeIn();
-                     
-                // },400);
-                 
-                 indexLi = 1;
+                var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
+ 
+                $('.imgHolder img').attr('src',nextsrc).fadeIn();
+
+                indexLi = 1;
                  
              }
              
@@ -598,31 +586,19 @@
                  
                  var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
                  
-                 /*$('.imgHolder img').fadeOut("linear");
-                 
-                 setTimeout(function(){*/
-                 
-                     $('.imgHolder img').attr('src',nextsrc).fadeIn("linear");
+                 $('.imgHolder img').attr('src',nextsrc).fadeIn("linear");
                      
-                 //},400);
-                 
                  indexLi = nextLi;
                  
              }else{
                  
                 nextLi = $(list).length;
                  
-                   var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
+                var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
                  
-               /*  $('.imgHolder img').fadeOut("linear");
+                $('.imgHolder img').attr('src',nextsrc).fadeIn("linear");
                  
-                 setTimeout(function(){*/
-                 
-                     $('.imgHolder img').attr('src',nextsrc).fadeIn("linear");
-                     
-                // },400);
-                 
-                 indexLi = $(list).length;
+                indexLi = $(list).length;
                  
              }
              
