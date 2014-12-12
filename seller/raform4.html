@@ -956,39 +956,37 @@
                                     
                                     <div class="registered-as">
                                         
-                                        <span>
-                                            
-                                            <input type="checkbox" id='sole'>
-                                            <label for="sole">Solely in my name</label>
-                                            
-                                        </span>
-                                        
-                                        <span>
-                                            
-                                            <input type="checkbox" id='both'>
-                                            <label for="both">in both our names as spouses / as co-owners</label>
-                                            
-                                        </span>
-                                        
-                                        <span>
-                                            
-                                            <input type="checkbox" id='corpo'>
-                                            <label for="corpo">in the name of the corporation</label>
-                                            
-                                        </span>
-                                        
-                                         <span>
-                                            
-                                            <input type="checkbox" id='other'>
-                                            <label for="other">others</label>
-                                                                         
-                                        </span>
-                                        
-                                        <span>
-                                           
-                                            <textarea name="" id=""></textarea>
-                                            
-                                        </span>
+                                        <ul class="ra-option-list clearfix">
+                                            <li>
+                                                
+                                                <input type="checkbox" id='sole'>
+                                                <label for="sole">Solely in my name</label>
+                                                
+                                            </li>
+                                            <li>
+                                                
+                                                <input type="checkbox" id='both'>
+                                                <label for="both">in both our names as spouses / as co-owners</label>
+                                                
+                                            </li>
+                                            <li>
+                                                
+                                                 <input type="checkbox" id='corpo'>
+                                                 <label for="corpo">in the name of the corporation</label>
+            
+                                            </li>
+                                            <li>
+                                                
+                                                 <input type="checkbox" id='other'>
+                                                 <label for="other">others</label>
+                                                
+                                            </li>
+                                            <li>
+                                                
+                                                 <textarea name="" id=""></textarea>
+                                                
+                                            </li>
+                                        </ul>
                                         
                                     </div>
                                     
@@ -1033,7 +1031,7 @@
                                                     
                                                          <span class="datepicker-container custom-picker">
 
-                                                            <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+                                                            <input type="text" class="datepicker" id='date_1' placeholder="MM / DD / YYYY">
 
                                                             <i class="fa fa-calendar"></i>
 
@@ -1126,7 +1124,7 @@
                                                         <span class="form-label">Date of Issue:</span>
                                                         <span class="datepicker-container custom-picker">
 
-                                                            <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+                                                            <input type="text" class="datepicker" id='date_2' placeholder="MM / DD / YYYY">
 
                                                             <i class="fa fa-calendar"></i>
 
@@ -1142,7 +1140,7 @@
                                                </div>
                                                
                                                <div class="onerow">
-                                                  <div class="col2">
+                                                  <div class="col3">
                                                    
                                                         <span class="form-label">Occupation:</span>
                                                         <select name="" id="" class="form-text">
@@ -1158,7 +1156,7 @@
                                                         
                                                         
                                                    </div>
-                                                   <div class="col3">
+                                                   <div class="col3 last">
                                                    
                                                         <span class="form-label">Employee Type:</span>
                                                          <select name="" id="" class="form-text">
@@ -1172,36 +1170,44 @@
                                                         
                                                    </div>
                                                    
-                                                   <div class="col7 last">
-                                                   
-                                                        <span class="form-label">If principal borrower is an OFW:</span>
-                                                        <span class='ra-date'>
-                                                            Date current contract ends:
-                                                            
-                                                            <span class="datepicker-container custom-picker">
-
-                                                                <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
-
-                                                                <i class="fa fa-calendar"></i>
-
-                                                            </span>
-                                                            
-                                                        </span>
-                                                        
-                                                        <span class='ra-abroad'>
-                                                            
-                                                            Total no. of yrs. Abroad:<input type="text" class='form-text'>
-                                                        </span>
-                                                        
-                                                        <span class='ra-currency'>
-                                                            
-                                                            Currency of income:<input type="text" class='form-text'>
-                                                        </span>
-                                                        
-                                                   </div>
-                                                   
                                                 </div>
                                                
+                                               <div class="onerow">
+                                                    
+                                                    <div class="col3">
+                                                        
+                                                        <span class="form-label">If principal borrower is an OFW:</span>
+                                                        
+                                                    </div>
+                                                    <div class="col3">
+                                                        
+                                                         <span class="form-label"> Date current contract ends:</span>     
+                                                          
+                                                        <span class="datepicker-container custom-picker">
+
+                                                            <input type="text" class="datepicker" id='date_6' placeholder="MM / DD / YYYY">
+
+                                                            <i class="fa fa-calendar"></i>
+
+                                                        </span>
+
+                                                   
+                                                    </div>
+                                                    <div class="col3">
+                                                        
+                                                        <span class="form-label">Total no. of yrs. Abroad:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                    </div>
+                                                    <div class="col3 last">
+                                                        
+                                                         <span class="form-label">Currency of income:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                
                                                <div class="onerow">
                                                   <div class="col3">
                                                    
@@ -1303,7 +1309,7 @@
                                                     
                                                          <span class="datepicker-container custom-picker">
 
-                                                            <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+                                                            <input type="text" class="datepicker" id='date_4'placeholder="MM / DD / YYYY">
 
                                                             <i class="fa fa-calendar"></i>
 
@@ -1396,7 +1402,7 @@
                                                         <span class="form-label">Date of Issue:</span>
                                                         <span class="datepicker-container custom-picker">
 
-                                                            <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
+                                                            <input type="text" class="datepicker" id='date_5' placeholder="MM / DD / YYYY">
 
                                                             <i class="fa fa-calendar"></i>
 
@@ -1426,7 +1432,7 @@
                                                     </div>
                                                 </div>
                                                <div class="onerow">
-                                                  <div class="col2">
+                                                  <div class="col3">
                                                    
                                                         <span class="form-label">Occupation:</span>
                                                         <select name="" id="" class="form-text">
@@ -1442,7 +1448,7 @@
                                                         
                                                         
                                                    </div>
-                                                   <div class="col3">
+                                                   <div class="col3 last">
                                                    
                                                         <span class="form-label">Employee Type:</span>
                                                          <select name="" id="" class="form-text">
@@ -1456,36 +1462,46 @@
                                                         
                                                    </div>
                                                    
-                                                   <div class="col7 last">
-                                                   
-                                                        <span class="form-label">If principal borrower is an OFW:</span>
-                                                        <span class='ra-date'>
-                                                            Date current contract ends:
-                                                            
-                                                            <span class="datepicker-container custom-picker">
-
-                                                                <input type="text" id="datepicker" placeholder="MM / DD / YYYY">
-
-                                                                <i class="fa fa-calendar"></i>
-
-                                                            </span>
-                                                            
-                                                        </span>
-                                                        
-                                                        <span class='ra-abroad'>
-                                                            
-                                                            Total no. of yrs. Abroad:<input type="text" class='form-text'>
-                                                        </span>
-                                                        
-                                                        <span class='ra-currency'>
-                                                            
-                                                            Currency of income:<input type="text" class='form-text'>
-                                                        </span>
-                                                        
-                                                   </div>
-                                                   
+                                                 
                                                 </div>
                                                
+                                                <div class="onerow">
+                                                    
+                                                    <div class="col3">
+                                                        
+                                                        <span class="form-label">If principal borrower is an OFW:</span>
+                                                        
+                                                    </div>
+                                                    <div class="col3">
+                                                        
+                                                         <span class="form-label"> Date current contract ends:</span>     
+                                                        
+                                                        <span class="datepicker-container custom-picker">
+
+                                                            <input type="text" class="datepicker" id='date_6' placeholder="MM / DD / YYYY">
+
+                                                            <i class="fa fa-calendar"></i>
+
+                                                        </span>
+
+                                                 
+                                                        
+                                                    </div>
+                                                    <div class="col3">
+                                                        
+                                                        <span class="form-label">Total no. of yrs. Abroad:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                    </div>
+                                                    <div class="col3 last">
+                                                        
+                                                         <span class="form-label">Currency of income:</span>
+                                                        <input type="text" class='form-text'>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                
                                                <div class="onerow">
                                                   <div class="col3">
                                                    
@@ -1630,12 +1646,445 @@
                                                         </select>
                                                         
                                                   </div>
+                                                  
                                                 </div>
                                                 
                                                
                                             </div>
                                             
+                                            <div class="label-of-container">
+                                            
+                                                Buyer's Representative
+
+                                            </div>
+
+                                            <div class="form-of-container">
+
+                                                <div class="onepcssgrid-1000 custom-onep">
+                                                    
+                                                    <div class="onerow">
+                                                      <div class="col5">
+
+                                                            <span class="form-label">Last Name:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                      <div class="col5">
+
+                                                          <span class="form-label">First Name:</span>
+                                                          <input type="text" class='form-text'>
+
+                                                      </div>
+                                                      <div class="col2 last">
+                                                           <span class="form-label">Middle Initial:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                   </div>
+
+                                                   <div class="onerow">
+
+                                                      <div class="col3">
+
+                                                             <span class="form-label">Birthdate:</span>
+
+                                                             <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" class="datepicker" id='date_7' placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+
+                                                       </div>
+
+                                                      <div class="col2">
+
+                                                          <span class="form-label">Age:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col3">
+
+                                                            <span class="form-label">Citizenship:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col2">
+
+                                                            <span class="form-label">Civil Status:</span>
+                                                            <select name="" id="" class='form-text'>
+                                                                <option value="">Single</option>
+                                                                <option value="">Married</option>
+                                                                <option value="">Widow</option>
+                                                            </select>
+
+                                                      </div>
+
+                                                      <div class="col2 last">
+
+                                                            <span class="form-label">Gender:</span>
+                                                            <select name="" id="" class='form-text'>
+                                                                <option value="">Male</option>
+                                                                <option value="">Female</option>
+                                                            </select>
+
+                                                      </div>
+
+                                                   </div>
+
+                                                   <div class="onerow">
+                                                      <div class="col5">
+
+                                                            <span class="form-label">Passport No./Any valid Government issued ID:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       <div class="col2">
+
+                                                            <span class="form-label">Place of Issue:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       <div class="col3">
+
+                                                            <span class="form-label">Date of Issue:</span>
+                                                            <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" class="datepicker" id='date_8' placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+
+                                                       </div>
+                                                      <div class="col2 last">
+
+                                                          <span class="form-label">Relation to Buyer:</span>
+                                                          <input type="text" class='form-text'>
+
+                                                      </div>
+                                                   </div>
+                                                   
+                                                   <div class="onerow">
+                                                   
+                                                       <div class="col3">
+                                                           
+                                                            <span class="form-label">Office No.:</span>
+                                                            <input type="text" class='form-text'>
+                                                           
+                                                       </div>
+                                                       <div class="col4">
+                                                           
+                                                           
+                                                            <span class="form-label">Cellphone No.:</span>
+                                                            <input type="text" class='form-text'>
+                                                           
+                                                       </div>
+                                                       <div class="col5 last">
+                                                           
+                                                            <span class="form-label">Address:</span>
+                                                            <input type="text" class='form-text'>
+                                                           
+                                                       </div>    
+                                                       
+                                                   </div>
+                                                   
+                                                </div>
+                                                
+                                            </div>    
+                                            
                                         </div>
+                                        
+                                        <div class="label-of-container">
+                                            
+                                                Buyer's Representative
+
+                                            </div>
+
+                                            <div class="form-of-container">
+
+                                                <div class="onepcssgrid-1000 custom-onep">
+                                                    
+                                                    <div class="onerow">
+                                                      <div class="col5">
+
+                                                            <span class="form-label">Last Name:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                      <div class="col5">
+
+                                                          <span class="form-label">First Name:</span>
+                                                          <input type="text" class='form-text'>
+
+                                                      </div>
+                                                      <div class="col2 last">
+                                                           <span class="form-label">Middle Initial:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                   </div>
+
+                                                   <div class="onerow">
+
+                                                      <div class="col3">
+
+                                                             <span class="form-label">Birthdate:</span>
+
+                                                             <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" class="datepicker" id='date_7' placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+
+                                                       </div>
+
+                                                      <div class="col2">
+
+                                                          <span class="form-label">Age:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col3">
+
+                                                            <span class="form-label">Citizenship:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col2">
+
+                                                            <span class="form-label">Civil Status:</span>
+                                                            <select name="" id="" class='form-text'>
+                                                                <option value="">Single</option>
+                                                                <option value="">Married</option>
+                                                                <option value="">Widow</option>
+                                                            </select>
+
+                                                      </div>
+
+                                                      <div class="col2 last">
+
+                                                            <span class="form-label">Gender:</span>
+                                                            <select name="" id="" class='form-text'>
+                                                                <option value="">Male</option>
+                                                                <option value="">Female</option>
+                                                            </select>
+
+                                                      </div>
+
+                                                   </div>
+
+                                                   <div class="onerow">
+                                                      <div class="col5">
+
+                                                            <span class="form-label">Passport No./Any valid Government issued ID:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       <div class="col2">
+
+                                                            <span class="form-label">Place of Issue:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       <div class="col3">
+
+                                                            <span class="form-label">Date of Issue:</span>
+                                                            <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" class="datepicker" id='date_8' placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+
+                                                       </div>
+                                                      <div class="col2 last">
+
+                                                          <span class="form-label">Relation to Buyer:</span>
+                                                          <input type="text" class='form-text'>
+
+                                                      </div>
+                                                   </div>
+                                                   
+                                                   <div class="onerow">
+                                                   
+                                                       <div class="col3">
+                                                           
+                                                            <span class="form-label">Office No.:</span>
+                                                            <input type="text" class='form-text'>
+                                                           
+                                                       </div>
+                                                       <div class="col4">
+                                                           
+                                                           
+                                                            <span class="form-label">Cellphone No.:</span>
+                                                            <input type="text" class='form-text'>
+                                                           
+                                                       </div>
+                                                       <div class="col5 last">
+                                                           
+                                                            <span class="form-label">Address:</span>
+                                                            <input type="text" class='form-text'>
+                                                           
+                                                       </div>    
+                                                       
+                                                   </div>
+                                                   
+                                                </div>
+                                                
+                                            </div>  
+                                            
+                                             <div class="label-of-container">
+                                            
+                                                Corporate Buyer
+
+                                            </div>
+
+                                            <div class="form-of-container">
+
+                                                <div class="onepcssgrid-1000 custom-onep">
+                                                    
+                                                    <div class="onerow">
+                                                      <div class="col12 last">
+
+                                                            <span class="form-label">Corporate Name:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                   </div>
+
+                                                   <div class="onerow">
+
+                                                      <div class="col9">
+
+                                                          <span class="form-label">Nature of Business:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col3 last">
+
+                                                            <span class="form-label">Corporate TIN:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                      </div>
+                                                  
+                                                   </div>
+
+                                                   <div class="onerow">
+
+                                                      <div class="col7">
+
+                                                          <span class="form-label">Community Tax Certificate No.:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col2 ">
+
+                                                            <span class="form-label">Place of Issue:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       
+                                                       <div class="col3 last">
+
+                                                            <span class="form-label">Date of Issue:</span>
+                                                            <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" class="datepicker" id='date_8' placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+
+                                                       </div>
+                                                  
+                                                   </div>
+                                                   
+                                                   <div class="onerow">
+                                                       
+                                                       <div class="col10">
+
+                                                            <span class="form-label">Name of Representative:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       
+                                                       <div class="col2 last">
+
+                                                            <span class="form-label">Gender:</span>
+                                                            <select name="" id="" class='form-text'>
+                                                                <option value="">Male</option>
+                                                                <option value="">Female</option>
+                                                            </select>
+
+                                                      </div>   
+                                                       
+                                                   </div>
+                                                   
+                                                   <div class="onerow">
+                                                       
+                                                       <div class="col6">
+
+                                                            <span class="form-label">Position:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       
+                                                        <div class="col6 last">
+
+                                                            <span class="form-label">Address:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       
+                                                    </div>
+                                                    
+                                                    <div class="onerow">
+
+                                                      <div class="col7">
+
+                                                          <span class="form-label">Passport No./Any valid Government issued ID:</span>
+                                                        <input type="text" class='form-text'>
+
+                                                      </div>
+
+                                                      <div class="col2">
+
+                                                            <span class="form-label">Place of Issue:</span>
+                                                            <input type="text" class='form-text'>
+
+                                                       </div>
+                                                       
+                                                       <div class="col3 last">
+
+                                                            <span class="form-label">Date of Issue:</span>
+                                                            <span class="datepicker-container custom-picker">
+
+                                                                <input type="text" class="datepicker" id='date_8' placeholder="MM / DD / YYYY">
+
+                                                                <i class="fa fa-calendar"></i>
+
+                                                            </span>
+
+                                                       </div>
+                                                  
+                                                   </div>
+                                                   
+                                                </div>
+                                                
+                                            </div> 
                                         
                                     </div>
                                     
@@ -1690,7 +2139,11 @@
             
              $().dropHeader();
             
-             $( "#datepicker" ).datepicker();
+            $('.datepicker').each(function(){
+                $(this).datepicker();
+            });
+            
+            /* $( "#datepicker" ).datepicker();*/
             
              //$("#list2").scrollList();
             
