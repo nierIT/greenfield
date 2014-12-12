@@ -3,15 +3,15 @@
 
 .reservation-content {
     text-align: center;
-    padding-left:50px;
+    padding-left: 35px;
     padding-top: 10px;
     padding-bottom: 10px
 }
 
 .reservation-content > .filter {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 37px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .list-selection > select {
@@ -81,8 +81,14 @@
     height: 50px;
     line-height: 50px;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    text-indent: -30px;
 }
+
+
 
 .table-group > table > thead > tr > th:last-child {
     width: auto;
@@ -97,6 +103,7 @@
     border-right: 1px solid #bcbcbc;
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 .table-group > table > tbody > tr > td:last-child {
@@ -166,3 +173,61 @@
     border: 1px solid #bcbcbc;
     border-radius: 10px;
 }
+.approval-content {
+    float: none;
+    background-color: red;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    
+}
+.approval-container {
+    padding: 0;
+    width: 100%;
+}
+
+.approval-container > h2 {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.sub-content {
+    width: 50%;
+    
+}
+.sub-content h3 {
+    font-size: 20px;
+}
+
+.sub-content h3,
+.sub-content ul{
+    margin-left: 35px;
+    margin-right: 35px;
+    
+}
+
+ ul.text-content > li {
+    float: none;
+    list-style:square inside;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.form-label{
+    font-size: 13px;
+}
+.form-element > input {
+    padding:5px 0;
+    width: 280px;
+}
+
+.form-element > select {
+    width: 280px;
+}
+.form-element {
+    margin-top: 0;
+}
+

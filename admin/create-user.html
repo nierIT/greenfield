@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation</title>
+    <title>Greenfield Development Corporation | RA Form</title>
     
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sub-style.css">
-    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sub-style.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
     
@@ -21,7 +22,7 @@
                 
                 <div class="logo-holder">
                     
-                     <img src="images/gdc-logo.png" alt="Greenfield">
+                     <img src="../images/gdc-logo.png" alt="Greenfield">
                     
                 </div>
                 
@@ -47,6 +48,23 @@
 
                                     <i class="fa fa-building-o"></i>Company
                                     
+    
+                                </a>
+                                
+                                <i class="fa fa-angle-right company-caret"></i>
+                                
+                            </span>
+                        
+                        </li>
+                        <li class='active-li'>
+                           
+                            <span>
+                            
+                                <a href="#" class='hasSlider' data-slider='link3' data-level='2'>
+
+                                    <i class="fa fa-users"></i>User Management
+                                    
+    
                                 </a>
                                 
                                 <i class="fa fa-angle-right company-caret"></i>
@@ -55,11 +73,15 @@
                         
                         </li>
                         
-                        <li class='active-li'>
+                        
+                        
+                        
+                        
+                        <li>
                         
                             <span>
                             
-                                <a href="#"><i class="fa fa-file-text"></i>Reservations</a>
+                                <a href="#"><i class="fa fa-file-text"></i>Reports</a>
                                 
                             </span>
                             
@@ -73,6 +95,25 @@
                             </span>
                             
                         </li>
+                        <li>
+                        
+                            <span>
+                            
+                                <a href="#"><i class="fa fa-file-text"></i>Reports</a>
+                                
+                            </span>
+                            
+                        </li>
+                        <li>
+                        
+                            <span>
+                            
+                                <a href="#"><i class="fa fa-file-text"></i>Reports</a>
+                                
+                            </span>
+                            
+                        </li>
+                        
                     </ul>
                     
                 </div>
@@ -802,6 +843,40 @@
                         </div>
 
                     </div>
+                    
+                    <!-- User Managment Sidebar Nav -->
+                    
+                    <div class="nav-slider-holder" id="link3-slider">
+
+                        <div class="list-scroll" id='list1'>
+
+                             <span id='up'>
+                                <i class="fa fa-sort-asc"></i>
+                            </span>
+
+                            <ul id="list">
+                              <li>
+                                  <span>
+                                      <a href="#">Create User Group</a>
+                                    
+                                  </span> 
+                              </li>
+                              <li>
+                                  <span>
+                                      <a href="#">View User Group</a>  
+                                     
+                                 </span> 
+                              </li>
+                              
+                            </ul>
+
+                             <span id='down'>
+                                <i class="fa fa-sort-desc"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
     
 
                     
@@ -816,50 +891,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-                
-                <span class="page-title-container">
+              
+                    <span class="page-title-container">
                     
-                    <h2>Reservation</h2>
-                    
-                </span>
-                
-                <span class="header-option-holder">
-                    
-                    <ul class="header-option clearfix">
-                        <li id='help'><i class="fa fa-question-circle"></i></li>
-                        <li id='settings'><i class="fa fa-cog"></i></li>
-                        <li><i class="fa fa-sign-out"></i></li>
-                    </ul>
-                    
-                </span>
-                
-                <div id="help-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                    
-                    <ul class="header-list clearfix">
-                       
-                        <li><a href="#">F.A.Q</a></li>
-                        
-                        <li><a href="#">Manual</a></li>
-                        
-                    </ul>
+                        <h2>Zitan</h2>
 
-                </div>
+                    </span>
 
-                <div id="settings-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                        
-                     <ul class="header-list clearfix">
-                       
-                        <li><a href="#">Settings</a></li>
-                        
-                    </ul>
+                    <span class="header-option-holder">
 
-                </div>   
-        
-                
+                        <ul class="header-option clearfix">
+                            <li id='help'><i class="fa fa-question-circle"></i></li>
+                            <li id='settings'><i class="fa fa-cog"></i></li>
+                            <li><i class="fa fa-sign-out"></i></li>
+                        </ul>
+
+                    </span>
+
+                    <div id="help-drop-holder" class='header-drop'>
+
+                        <div class="arrow-up"></div>
+
+                        <ul class="header-list clearfix">
+
+                            <li><a href="#">F.A.Q</a></li>
+
+                            <li><a href="#">Manual</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="settings-drop-holder" class='header-drop'>
+
+                        <div class="arrow-up"></div>
+
+                         <ul class="header-list clearfix">
+
+                            <li><a href="#">Settings</a></li>
+
+                        </ul>
+
+                    </div>  
+
+
             </header>
                 
             <div class="right-holder">
@@ -870,17 +945,25 @@
                         
                         <ul class="bread-list clearfix">
                             
-                            <li>
+                             <li>
                                 
                                <a href="home.html">Home</a>
                                 
                             </li>
                             <li>
                                 
-                                 Reservation
+                                 <a href="#">User Management</a>
                                 
                             </li>
-                
+                            
+                            <li>
+                                
+                                Create User
+                                
+                            </li>
+                            
+                            
+                            
                             
                         </ul>
                         
@@ -896,248 +979,100 @@
                 
                 <div class="right-content">
                     
-                    <div class="info-container reservation-content">
-                       
-                        <span class="filter">Filter by: </span>
+                    
+                    
+                    
+<div class="info-container prequalify-main">
                         
-                        <div class="list-selection">
+                       <div class="prequalify-form-container-left">
                            
-                            <select>
-                              <option value="Pending Approval 1">Pending Approval 1</option>
-                              <option value="Pending Approval 2">Pending Approval 2</option>
-                              <option value="Pending Approval 3">Pending Approval 3</option>
-                              <option value="Pending Approval 4">Pending Approval 4</option>
-                            </select>  
-                            
-                            <button class="btn-default" type="button">Go</button>
+                           <form action="" class='clearfix'>
                                
-                        </div >
-                        
-                            
-                        
-                        <div class="input-group">
-                           
-                            <input type="text" name="FirstName" value="Mickey">
+                               <div class="approval-container">
+                                   
+                                    <h2>Create User</h2>
+                                    
+                                   <div class="approval-content">
 
-                            <button class="btn-default" type="button">Search</button>
+                                        <div class="sub-content">
+
+                                    <ul class="form-list clearfix">
+                                        <li>
+                                            <span class="form-label">Username:</span>
+                                            <span class="form-element">
+                                                
+                                                <input type="text" name="Username" value="">
+                                                
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Employee Name:</span>
+                                            <span class="form-element">
+                                                
+                                                <input type="text" name="Employee Name" value="">
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Email:</span>
+                                            <span class="form-element">
+                                                
+                                                <input type="text" name="Email" value="">
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            
+                                            <span class="form-label">Sales/User Level:</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                        
+                                            </span>
+                                            
+                                        </li>
+                                    </ul>
+
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                    
+                               </div>
+                             
+                               
+                            
+                           </form>
+                           
+                           
+                       </div>
+                        
+                        <div class="prequalify-form-container-right">
+                            
+                            <span class="note-container">
+                                
+                                *Note:<br/>
+                                Please fill all required fields
+                                
+                            </span>
+                            
+                           <span class="next-holder">
+
+                                <a href='raform.html'><button class='btn-login'>Approve</button></a> 
+
+                           </span>
+                               
+                           
                             
                         </div>
-
                         
                     </div>
-                    
-                    <div class="table-group">
-                     
-                        <table>
-                        
-                            <thead>
-                               
-                                <tr>
-                           
-                                    <th>Name</th>
-
-                                    <th>Status</th>
-
-                                    <th>Action</th>
-                            
-                                </tr>
-                                
-                            </thead>
-                            
-                            
-                            <tbody class="scrollContent">
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos <span class="name-balloons">SMS</span></td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                
-                            
-                            </tbody>
-                            
-                          
-                          
-                          
-                        </table>
-                    </div>
-                    
-                    
 
                 </div>
                 
@@ -1147,9 +1082,9 @@
         
     </div>
     
-    <script src='js/jquery-1.11.1.min.js'></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src='../js/jquery-1.11.1.min.js'></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/main.js"></script>
    
     <script>
         
@@ -1160,6 +1095,8 @@
              $(".list-scroll").scrollList();
             
              $().dropHeader();
+            
+             $( "#datepicker" ).datepicker();
             
              //$("#list2").scrollList();
             
