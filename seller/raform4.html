@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/960.css">
     <link rel="stylesheet" href="../css/onepcssgrid.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
-    
+    <link rel="stylesheet" href="../css/sumoselect.css">
 </head>
 <body class='clearfix'>
     
@@ -1159,11 +1159,11 @@
                                                    <div class="col3 last">
                                                    
                                                         <span class="form-label">Employee Type:</span>
-                                                         <select name="" id="" class="form-text">
+                                                         <select name="" id="" class="form-text employment-drop" data-drop-for='individual-1'>
                                                             <option value="">Local</option>
                                                             <option value="">OFW</option>
                                                         </select>
-                                                        <span class='toggle-holder'>
+                                                        <span class='toggle-holder display-none' id='individual-1-textbox'>
                                                             
                                                             Country:<input type="text" class='form-text'>
                                                         </span>
@@ -1172,7 +1172,7 @@
                                                    
                                                 </div>
                                                
-                                               <div class="onerow">
+                                               <div class="onerow display-none" id='individual-1-row'>
                                                     
                                                     <div class="col3">
                                                         
@@ -1231,14 +1231,14 @@
                                                         
                                                    </div>
                                                    
-                                                   <div class="col3">
+                                                   <div class="col2">
                                                    
                                                         <span class="form-label">Position:</span>
                                                         <input type="text" class='form-text'>
                                                         
                                                    </div>
                                                    
-                                                   <div class="col2">
+                                                   <div class="col3">
                                                    
                                                         <span class="form-label">Employment Status:</span>
                                                         <select name="" id="" class="form-text">
@@ -1451,11 +1451,11 @@
                                                    <div class="col3 last">
                                                    
                                                         <span class="form-label">Employee Type:</span>
-                                                         <select name="" id="" class="form-text">
+                                                         <select name="" id="" class="form-text employment-drop"  data-drop-for='individual-2'>
                                                             <option value="">Local</option>
                                                             <option value="">OFW</option>
                                                         </select>
-                                                        <span class='toggle-holder'>
+                                                        <span class='toggle-holder display-none'id='individual-2-textbox'>
                                                             
                                                             Country:<input type="text" class='form-text'>
                                                         </span>
@@ -1465,7 +1465,7 @@
                                                  
                                                 </div>
                                                
-                                                <div class="onerow">
+                                                <div class="onerow display-none" id='individual-2-row'>
                                                     
                                                     <div class="col3">
                                                         
@@ -1525,14 +1525,14 @@
                                                         
                                                    </div>
                                                    
-                                                   <div class="col3">
+                                                   <div class="col2">
                                                    
                                                         <span class="form-label">Position:</span>
                                                         <input type="text" class='form-text'>
                                                         
                                                    </div>
                                                    
-                                                   <div class="col2">
+                                                   <div class="col3">
                                                    
                                                         <span class="form-label">Employment Status:</span>
                                                         <select name="" id="" class="form-text">
@@ -1587,53 +1587,83 @@
                                                     <div class="col6">
                                                         
                                                            <span class="form-label">How did you learn about the project?</span>
-                                                            <select name="" id="" class="form-text">
-                                                                <option value="">Showroom</option>
-                                                                <option value="">Telemarketing</option>
+                                                            <select name="" id="" class="form-text employment-drop" data-drop-for='know-1'>
+                                                               
+                                                                <option value="">&nbsp;</option>
+                                                                
+                                                                <option value="" class='multiple multiple-drop multiple-drop-1'>Showroom</option>
+                                                                <option value="" class='multiple multiple-drop multiple-drop-2'>Telemarketing</option>
                                                                 <option value="">Personal Client / BN</option>
                                                                 <option value="">Email Inquiry</option>
                                                                 <option value="">Billboard / Banners</option>
-                                                                <option value="">Referral</option>
-                                                                <option value="">Website</option>
-                                                                <option value="">Saturation Drives/Flyering</option>
-                                                                <option value="">Exhibit Booth</option>
-                                                                <option value="">Print Ad</option>
-                                                                <option value="">Others</option>
+                                                                <option value="" class='multiple multiple-text'>Referral</option>
+                                                                <option value="" class='multiple multiple-text'>Website</option>
+                                                                <option value="" class='multiple multiple-text'>Saturation Drives/Flyering</option>
+                                                                <option value="" class='multiple multiple-text'>Exhibit Booth</option>
+                                                                <option value="" class='multiple multiple-text'>Print Ad</option>
+                                                                <option value="" class='multiple multiple-text'>Others</option>
                                                                 
                                                             </select>
                                                         
                                                     </div>
                                                     
-                                                    <div class="col6 last">
+                                                    <div class="col6 display-none last" id='know-1-row'>
+                                                           
+                                                            <span class="form-label">&nbsp;</span>
                                                             
+                                                            <input type="text" class='form-text multiple-text-field display-none'>
+                                                            
+                                                             <select name="" id="" class="form-text display-none multiple-drop-field multiple-drop-1-field">
+                                                               
+                                                                <option value="">Walk-in</option>
+                                                                <option value="">By-appointment</option>
+                                                                
+                                                            </select>
+                                                            
+                                                            <select name="" id="" class="form-text display-none multiple-drop-field multiple-drop-2-field">
+                                                               
+                                                                <option value="">Phone inquiry (53-GREEN)</option>
+                                                                <option value="">Sales initiated</option>
+                                                                
+                                                            </select>
                                                     </div>
                                                     
                                                 </div>
                                                 
                                                 <div class="onerow">
                                                  
-                                                  <div class="col6">
+                                                  <div class="col4">
                                                       
-                                                      <span class="form-label">How did you learn about the project?</span>
-                                                       <select name="" id="" class="form-text">
-                                                            <option value="">Location/Accessibility</option>
-                                                            <option value="">Security</option>
-                                                            <option value="">Reputation of Developer</option>
-                                                            <option value="">Amenities/Facilities</option>
-                                                            <option value="">Price</option>
-                                                            <option value="">Payment Terms &amp; Discounts</option>
-                                                            <option value="">House model/Finishes</option>
-                                                            <option value="">Technology (fiber-to-the-home)</option>
-                                                            <option value="">Others</option>
-                                                        </select>
+                                                      <span class="form-label">Reasons for Buying:</span>
+                                                      <select multiple="multiple" class="SlectBox form-text ">
+                                                            <option value="1">Location/Accessibility</option>
+                                                            <option value="2">Security</option>
+                                                            <option value="3">Reputation of Developer</option>
+                                                            <option value="4">Amenities/Facilities</option>
+                                                            <option value="5">Price</option>
+                                                            <option value="6">Payment Terms &amp; Discounts</option>
+                                                            <option value="7">House model/Finishes</option>
+                                                            <option value="8">Technology (fiber-to-the-home)</option>
+                                                      </select>
                                                             
                                                   </div>
                                                   
-                                                   <div class="col1">
-                                                  
+                                                   <div class="col3">
+                                                      
+                                                          <span class="form-label">
+                                                           
+                                                              <input type="checkbox" id='reasonother'> 
+
+                                                              <label for="reasonother">Others</label>
+                                                           
+                                                           </span>
+                                                            
+                                                          <input type="text" class='form-text' disabled id='reasontext'>
+                                                          
+                                                      
                                                   </div>
                                                   
-                                                   <div class="col5">
+                                                   <div class="col5 last">
                                                       
                                                        <span class="form-label">Purpose for Buying:</span>
                                                        <select name="" id="" class="form-text">
@@ -2107,7 +2137,7 @@
                             
                            <span class="next-holder">
 
-                                <a href='raform3.html'><button class='btn-login'>Next</button></a> 
+                                <a href='raform5.html' ><button class='btn-login'>Next</button></a> 
 
                            </span>
                                
@@ -2128,7 +2158,7 @@
     <script src='../js/jquery-1.11.1.min.js'></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src="../js/main.js"></script>
-   
+    <script src='../js/jquery.sumoselect.js'></script>
     <script>
         
         $(document).ready(function(e){
@@ -2138,14 +2168,27 @@
              $(".list-scroll").scrollList();
             
              $().dropHeader();
-            
-            $('.datepicker').each(function(){
+
+             $('.datepicker').each(function(){
                 $(this).datepicker();
+             });
+            
+            $("employment-drop").dropShow();
+        
+            window.asd = $('.SlectBox').SumoSelect({ csvDispCount: 3 });
+            
+            $("#reasonother").change(function() {
+                
+                if(this.checked) {
+                   
+                    $('#reasontext').prop("disabled", false);
+               
+                }else{
+                    
+                    $('#reasontext').prop("disabled", true);
+                    
+                }
             });
-            
-            /* $( "#datepicker" ).datepicker();*/
-            
-             //$("#list2").scrollList();
             
             
         });
