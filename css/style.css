@@ -196,6 +196,7 @@ select.forgot-input{
     width: 60%;
     height: 100%;
     display: table;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .form-container-login{
@@ -222,19 +223,19 @@ select.forgot-input{
 }
 
 .login-txtbox-holder{
-   width: 100%;
-    background: #b7b8a1;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
     padding: 7px 0;
     border-radius: 5px;
 }
 
 .login-txtbox-holder input{
-   width: 83%;
+    width: 83%;
     background: transparent;
     border: 0;
     /* height: 100%; */
     padding: 5px 0 5px 15px;
-    color:#3b4224;
+    color:#333333;
 }
 
 .login-txtbox-holder input:focus,
@@ -292,19 +293,20 @@ select.forgot-input{
     cursor: pointer;
 }
 
-.forgot-link-holder,
 .terms-link-holder{
     cursor: pointer;
     font-size: 13px;
-    color: #333333
+    color: #000000!important;
+    text-decoration: underline;
 }
 
 .terms-link-holder{
      float: right;   
+     text-align: center;
 }
 
 .error-msg-login-holder{
-    color: red;
+    color: #FF6600!important;
     font-size: 13px;
     padding: 0 0 0 15px;
     opacity: 0;
@@ -342,7 +344,8 @@ select.forgot-input{
     font-size: 20px;
 }
 
-.terms-message p{
+.terms-message p,
+.terms-container p{
     margin: 15px 0 0;
     font-size: 13px;
 }
@@ -661,7 +664,7 @@ position: relative;*/
 
 ul#list {
     width: 100%;
-    height: 276px;
+     height: 276px; 
     overflow-y: hidden;
     position: relative;
 }
@@ -1234,6 +1237,15 @@ span.floorplan-buyers-label{
     left: 15px;
 }
 
+.print-holder{
+     width: 188px;
+     margin: 40px 15px 0;
+}
+
+.print-btn{
+    margin: 5px 0;
+}
+
 .left-form,
 .right-form{
     width: 40%;
@@ -1310,8 +1322,9 @@ span.line{
 
 .form-container,
 .information-container{
-     padding: 0 10px 0 35px; 
-    margin: 0 20px 0 0;
+     padding: 0 5px 0 35px;
+    margin: 0 15px 0 0;
+    overflow-x: hidden!important;
     /*width: 100%;*/
 }
 
@@ -1320,6 +1333,7 @@ span.line{
     height: 534px;
     overflow: auto;
 }
+
 .upper-prop-info{
     margin: 40px 0 0;
 }
@@ -1510,6 +1524,28 @@ tr.headerrow td{
 .instruct{
     margin: 15px 0;
 }
+
+.options{
+    overflow-x: hidden!important;
+}
+
+.options  li{
+    width: 100%;   
+}
+
+.CaptionCont {
+    overflow: hidden;
+}
+
+.optWrapper{
+     width: initial!important;
+}
+
+.btn-disable{
+    background: #CCCCCC;
+    color: #FFFFFF;
+
+}
 /** END CONTENT **/
 
 /*MODALS*/
@@ -1608,4 +1644,8 @@ tr.headerrow td{
     color: white;
     cursor: pointer;
 }
+/* 
+.show-list{
+    display: block!important;
+} */
 /*END MODALS*/
