@@ -909,6 +909,8 @@
                 
                 <div class="right-content">
                     
+                    <form action="" class='clearfix'>
+
                     <div class="form-title-container">
                         
                        <div class="form-title-holder">
@@ -1012,13 +1014,57 @@
 
                                <button class='btn-login print-btn'>Print</button> 
 								
-							   <button class='btn-login print-btn'>Upload</button> 
+							                 <div class='btn-login print-btn upload'>Upload</div> 
+                    
+                           </span>
+
+                           <span class="print-details-holder display-none">
+
+                              <div class="raform-holder">
+                          
+                                  <h6>Upload Signed RA Form</h6>
+
+                                  <span class="file-holder">
+
+                                    <label id='filename-signra'>test.zip</label>
+
+                                    <i class="fa fa-times" data-file-id='signra'></i>
+
+                                  </span>
+
+
+                                </div>
+
+                                <div class="raform-holder">
+                                  
+                                  <h6>Upload additional requirements</h6>
+
+                                  <span class="file-holder">
+
+                                    <label id='filename-id1'>txt.jpg</label>
+
+                                    <i class="fa fa-times" data-file-id='id1'></i>
+
+                                  </span>
+
+                                  <span class="file-holder">
+
+                                    <label id='filename-id2'>sample.jpg</label>
+
+                                    <i class="fa fa-times" data-file-id='id2'></i>
+
+                                  </span>
+
+  
+
+                                </div>
+                          
 
                            </span>
 
                            <span class="next-holder">
 
-                                <a href='raform5.html' ><button class='btn-login btn-disable' disabled>Proceed to Payment</button></a> 
+                                <a href='raform5.html' ><button class='btn-login btn-disable proceedbtn' disabled>Proceed to Payment</button></a> 
 
                            </span>
                                
@@ -1028,12 +1074,104 @@
                         
                     </div>
 
+                    </form>
+  
                 </div>
                 
             </div>
               
         </div>
         
+        <div class="mainModalContainer">
+
+          <div class="uploadHolder"> 
+
+              <div class="overlay"></div>
+
+              <div class="modalContent modal-upload">
+
+                <div class="closeHolder">
+
+                  <i class="fa fa-times"></i>
+                              
+                              Close
+                              
+                </div>
+                
+
+                <div class="messageContainer">
+
+                  <div class="messageHolder">
+
+                    <span class="note-container2">
+                      
+                      *Note:<br>
+                       ( Maximum file size: 10 MB, allowed extensions: .zip .jpg .gif .bmp .tiff .pdf )
+
+                    </span>
+
+                    <div class="upload-raform-container">
+                        
+                     <!--  <form action="" class='clearfix'> -->
+
+                        <div class="raform-holder">
+                          
+                          <h5>Upload Signed RA Form</h5>
+
+                          <input type="file" id='signra'class='uploadbtn-check'><br>
+
+                          <span class="error-msg-login-holder2 opacity-one"> <!--ADD "opacity-one" class to display error message-->
+                               
+                               Invalid file format
+                               
+                           </span>
+
+                        </div>
+
+                        <div class="raform-holder">
+                          
+                          <h5>Upload additional requirements</h5>
+
+                          <label for="id1">ID Picture 1</label>
+
+                          <input type="file" id='id1' class='uploadbtn-check'><br>
+
+                          <span class="error-msg-login-holder2 opacity-one"> <!--ADD "opacity-one" class to display error message-->
+                               
+                               Invalid file format
+                               
+                           </span><br>
+
+                           <label for="id1">ID Picture 2</label>
+
+                          <input type="file" id='id2' class='uploadbtn-check'><br>
+
+                          <span class="error-msg-login-holder2 opacity-one"> <!--ADD "opacity-one" class to display error message-->
+                               
+                               Invalid file format
+                               
+                           </span>
+
+                        </div>
+
+                        <button class='btn-login btn-disable uploadbtn' disabled>Next</button><!-- REMOVE btn-disable CSS when OK -->
+        
+                      <!-- </form> -->
+
+                    </div>
+               
+
+                  </div>
+
+                </div>
+                
+
+              </div>
+
+            </div>
+           
+          </div>
+
     </div>
     
     <script src='../js/jquery-1.11.1.min.js'></script>
@@ -1048,8 +1186,15 @@
                 
              $(".list-scroll").scrollList();
             
-             $().dropHeader();            
+             $().dropHeader();
+
+             $("upload").modalShow();   
+
+             $("uploadbtn").checkFields();          
             
+             $().uploadFile();
+
+
         });
         
     </script>

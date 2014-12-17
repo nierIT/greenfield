@@ -837,5 +837,101 @@
          });
          
      }
+
+    $.fn.checkFields = function(){
+
+        var element = this;
+
+        var btnClass = '.'+element.selector;
+
+        var fieldClass = btnClass + '-check';
+
+        var validate = true;
+
+        setInterval(function(){
+
+            validate = true;
+
+            $(fieldClass).each(function(){
+
+                 if ($.trim($(this).val()).length == 0){
+
+                    validate = false;
+                   
+                    return false;
+                 }
+
+            });
+           
+           if(validate == true){
+
+                $(btnClass).removeClass('btn-disable').prop('disabled', false);
+         
+           }else{
+
+                $(btnClass).addClass('btn-disable').prop('disabled', true);
+          
+           }
+
+        },500);
+        
+
+    }
+
+   
+
+    $.fn.uploadFile = function(){
+
+      
+
+        $('.uploadbtn').click(function(){
+
+            $('.raform-holder input[type="file"]').each(function(){
+
+                var id='#filename-'+$(this).attr('id');
+
+                var path = $(this).val(),
+                    file = path.substr(path.lastIndexOf('\\') + 1);
+
+                $(id).text(file);
+
+            });
+
+        
+            $('.uploadHolder').fadeOut("linear",function(){
+
+              $('.print-details-holder').fadeIn();
+
+               $('.proceedbtn').removeClass('btn-disable').prop('disabled', false);
+
+            });
+            
+            $('.file-holder i').each(function(){
+
+                $(this).click(function(){
+
+                     var fileid = '#'+$(this).attr('data-file-id');
+
+                     var labelid = '#filename-'+$(this).attr('data-file-id');
+
+                    $(fileid).wrap('<form>').parent('form').trigger('reset');
+                    
+                    $(fileid).unwrap();
+                    
+                    $(labelid).text('<empty>');
+
+                    $('.proceedbtn').addClass('btn-disable').prop('disabled', true);
+
+                });
+
+            });
+
+         });
+
+
+
+    }
+
+
      
 })(jQuery);

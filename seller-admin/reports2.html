@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | Reservation List</title>
+    <title>Greenfield Development Corporation | Reports</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -13,7 +13,7 @@
     
     <div class="left-abs"></div>
     <!--<div class="right-abs"></div>-->
-    <div class="main-container main-logo-container no-overflow">
+    <div class="main-container main-logo-container">
         
         <nav class="left-container">
             
@@ -56,7 +56,7 @@
                         
                         </li>
                         
-                        <li class='active-li'>
+                        <li>
                         
                             <span>
                             
@@ -65,8 +65,7 @@
                             </span>
                             
                         </li>
-                        
-                        <li>
+                        <li  class='active-li'>
                         
                             <span>
                             
@@ -821,7 +820,7 @@
                 
                 <span class="page-title-container">
                     
-                    <h2>Reservation List</h2>
+                    <h2>Reservation</h2>
                     
                 </span>
                 
@@ -879,7 +878,7 @@
                             </li>
                             <li>
                                 
-                                 Reservation
+                                 Reports
                                 
                             </li>
                 
@@ -905,10 +904,10 @@
                         <div class="list-selection">
                            
                             <select>
-                              <option value="Pending Approval 1">Pending Approval 1</option>
-                              <option value="Pending Approval 2">Pending Approval 2</option>
-                              <option value="Pending Approval 3">Pending Approval 3</option>
-                              <option value="Pending Approval 4">Pending Approval 4</option>
+                              <option value="Pending Approval 1">All1</option>
+                              <option value="Pending Approval 2">All2</option>
+                              <option value="Pending Approval 3">All3</option>
+                              <option value="Pending Approval 4">All4</option>
                             </select>  
                             
                             <button class="btn-default" type="button">Go</button>
@@ -924,11 +923,17 @@
                             <button class="btn-default" type="button">Search</button>
                             
                         </div>
-
+                        <div class="csv-btm-group">
+                            <button class="btn-default btn-dark" type="button">Import CSV</button>
+                            <button class="btn-default btn-dark" type="button">Export CSV</button>
+                        </div>
+                        
+                       
+    
                         
                     </div>
                     
-                    <div class="table-group seller-reservation-table">
+                    <div class="table-group reservation-table">
                      
                         <table>
                         
@@ -1132,9 +1137,11 @@
                                 
                             
                             </tbody>
-   
+                            
+                          
+                          
+                          
                         </table>
-                        
                     </div>
                     
                     
