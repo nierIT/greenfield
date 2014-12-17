@@ -65,7 +65,8 @@
                             </span>
                             
                         </li>
-                        <li  class='active-li'>
+                        
+                        <li class='active-li'>
                         
                             <span>
                             
@@ -820,7 +821,7 @@
                 
                 <span class="page-title-container">
                     
-                    <h2>Reservation</h2>
+                    <h2>Reports</h2>
                     
                 </span>
                 
@@ -899,34 +900,38 @@
                     
                     <div class="info-container reservation-content">
                        
-                        <span class="filter">Filter by: </span>
-                        
-                        <div class="list-selection">
-                           
-                            <select>
-                              <option value="Pending Approval 1">All1</option>
-                              <option value="Pending Approval 2">All2</option>
-                              <option value="Pending Approval 3">All3</option>
-                              <option value="Pending Approval 4">All4</option>
-                            </select>  
-                            
-                            <button class="btn-default" type="button">Go</button>
-                               
-                        </div >
-                        
-                            
-                        
-                        <div class="input-group">
-                           
-                            <input type="text" name="FirstName" value="Mickey">
+                        <div class="header-input">
+                            <span class="filter">Filter by: </span>
 
-                            <button class="btn-default" type="button">Search</button>
-                            
+                            <div class="list-selection">
+
+                                <select>
+                                  <option value="Incomplete">Incomplete</option>
+                                  <option value="Complete">Complete</option>
+                                  <option value="Approved">Approved</option>
+                                  <option value="Pending for Approval">Pending for Approval</option>
+                                </select>  
+
+                                <button class="btn-default" type="button">Go</button>
+
+                            </div >
+
+
+
+                            <div class="input-group">
+
+                                <input type="text" name="FirstName" value="">
+
+                                <button class="btn-default" type="button">Search</button>
+
+                            </div>
+                            <div class="csv-btm-group">
+                                <button class="btn-default btn-dark" type="button">Import CSV</button>
+                                <button class="btn-default btn-dark" type="button">Export CSV</button>
+                            </div>     
                         </div>
-                        <div class="csv-btm-group">
-                            <button class="btn-default btn-dark" type="button">Import CSV</button>
-                            <button class="btn-default btn-dark" type="button">Export CSV</button>
-                        </div>
+                       
+                        
                         
                        
     
