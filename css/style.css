@@ -41,7 +41,7 @@ div.information-container::-webkit-scrollbar-thumb {
    margin: 10px 0; 
 }
 
-h4{
+h1,h2,h3,h4,h5,h6{
  font-weight: bold!important;
     color: #333333;
 }
@@ -109,10 +109,14 @@ body{
 select.forgot-input{
  width: 100%;   
 }
+
+.no-overflow{
+    overflow: hidden!important;
+}
+
 /** LOGIN **/
 
 .main-logo-container{
-   
     overflow: auto;
     overflow-x: hidden;
    /* position: relative;*/
@@ -312,7 +316,14 @@ select.forgot-input{
     opacity: 0;
 }
 
-.opacity-one .error-msg-login-holder{
+.error-msg-login-holder2{
+    color: #FF6600!important;
+    font-size: 13px!important;
+    opacity: 0;
+    margin: 0 10px 0 0;
+}
+
+.opacity-one{
     opacity: 1;
 }
 
@@ -331,16 +342,23 @@ select.forgot-input{
     width: 185px;
 }
 
-.modal-terms{
+.modal-terms,
+.modal-upload{
     border-radius: 10px;
     padding: 0 15px;
 }
 
-.modal-terms .closeHolder{
+.modal-upload{
+    height: 435px!important;
+}
+
+.modal-terms .closeHolder,
+.modal-print .closeHolder{
      font-size: 15px;   
 }
 
-.modal-terms .closeHolder i{
+.modal-terms .closeHolder i,
+.modal-print .closeHolder i{
     font-size: 20px;
 }
 
@@ -1184,6 +1202,8 @@ span.floorplan-buyers-label{
     width: 100%;
     padding: 13px 0;
     background: rgba(245, 245, 245, 0.6);
+    color: #333333;
+    background: #ABCE36;
 }
 
 .form-title-holder{
@@ -1221,6 +1241,12 @@ span.floorplan-buyers-label{
     color: #FF6600;
     font-size: 13px;
     margin: 50px 0 0 20px;
+}
+
+.note-container2{
+    color: #737373;
+    font-size: 13px;
+    
 }
 
 .next-container{
@@ -1322,10 +1348,9 @@ span.line{
 
 .form-container,
 .information-container{
-     padding: 0 5px 0 35px;
+    padding: 0 5px 0 35px;
     margin: 0 15px 0 0;
     overflow-x: hidden!important;
-    /*width: 100%;*/
 }
 
 .information-container{
@@ -1336,6 +1361,8 @@ span.line{
 
 .upper-prop-info{
     margin: 40px 0 0;
+    width: 100%;
+    font-size: 13px;
 }
 
 .form-list2 li{
@@ -1546,16 +1573,85 @@ tr.headerrow td{
     color: #FFFFFF;
 
 }
+
+.raform-holder{
+    width: 100%;
+     margin: 20px 0 0;
+}
+
+.raform-holder *{
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.raform-holder label{
+    margin: 0 20px 0 0;
+}
+
+.uploadbtn{
+    margin: 20px 0 0;
+    width: 144px;
+}
+
+.upload{
+    text-align: center;
+    font: -webkit-small-control;
+}
+
+.print-details-holder{
+    padding: 0 0 0 20px;
+}
+
+.print-details-holder *:not(h6){
+    font-size: 11px;
+}
+
+.print-details-holder h6{
+    font-size: 12px;
+}
+
+.file-holder{
+    width: 100%;
+}
+
+.file-holder i{
+    cursor: pointer;
+    color: #666666;
+
+    -webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    transition: all .3s ease-in-out;  
+}
+
+.file-holder i:hover{
+  color: red;
+    
+    -webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    transition: all .3s ease-in-out;
+}
+
+
+.seller-table > table > thead > tr > th{
+     width: 80%!important;
+}
+.seller-table > table > tbody > tr > td{
+    width: 80%!important;
+}
 /** END CONTENT **/
 
 /*MODALS*/
 
 .termsHolder,
-.thumb-listHolder{
+.thumb-listHolder,
+.uploadHolder{
  position: fixed;
   display: none;
   width: 100%;
   height: 100%;
+  z-index: 3;
 }
 
 .overlay {
@@ -1649,3 +1745,4 @@ tr.headerrow td{
     display: block!important;
 } */
 /*END MODALS*/
+

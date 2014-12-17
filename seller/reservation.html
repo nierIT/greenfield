@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | Monthly Amortization</title>
+    <title>Greenfield Development Corporation | Reservation List</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sub-style.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
@@ -57,21 +56,11 @@
                         
                         </li>
                         
-                        <li>
-                        
-                            <span>
-                            
-                                <a href="#"><i class="fa fa-file-text"></i>Reservations</a>
-                                
-                            </span>
-                            
-                        </li>
-                        
                         <li class='active-li'>
                         
                             <span>
                             
-                                <a href="#"><i class="fa fa-file-text"></i>Reports</a>
+                                <a href="#"><i class="fa fa-file-text"></i>Reservations</a>
                                 
                             </span>
                             
@@ -820,50 +809,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-              
-                    <span class="page-title-container">
+                
+                <span class="page-title-container">
                     
-                        <h2>Reservation Details</h2>
+                    <h2>Reservation List</h2>
+                    
+                </span>
+                
+                <span class="header-option-holder">
+                    
+                    <ul class="header-option clearfix">
+                        <li id='help'><i class="fa fa-question-circle"></i></li>
+                        <li id='settings'><i class="fa fa-cog"></i></li>
+                        <li><i class="fa fa-sign-out"></i></li>
+                    </ul>
+                    
+                </span>
+                
+                <div id="help-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                    
+                    <ul class="header-list clearfix">
+                       
+                        <li><a href="#">F.A.Q</a></li>
+                        
+                        <li><a href="#">Manual</a></li>
+                        
+                    </ul>
 
-                    </span>
+                </div>
 
-                    <span class="header-option-holder">
+                <div id="settings-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                        
+                     <ul class="header-list clearfix">
+                       
+                        <li><a href="#">Settings</a></li>
+                        
+                    </ul>
 
-                        <ul class="header-option clearfix">
-                            <li id='help'><i class="fa fa-question-circle"></i></li>
-                            <li id='settings'><i class="fa fa-cog"></i></li>
-                            <li><i class="fa fa-sign-out"></i></li>
-                        </ul>
-
-                    </span>
-
-                    <div id="help-drop-holder" class='header-drop'>
-
-                        <div class="arrow-up"></div>
-
-                        <ul class="header-list clearfix">
-
-                            <li><a href="#">F.A.Q</a></li>
-
-                            <li><a href="#">Manual</a></li>
-
-                        </ul>
-
-                    </div>
-
-                    <div id="settings-drop-holder" class='header-drop'>
-
-                        <div class="arrow-up"></div>
-
-                         <ul class="header-list clearfix">
-
-                            <li><a href="#">Settings</a></li>
-
-                        </ul>
-
-                    </div>  
-
-
+                </div>   
+        
+                
             </header>
                 
             <div class="right-holder">
@@ -873,33 +862,18 @@
                     <span class="bread-holder">
                         
                         <ul class="bread-list clearfix">
-                           
+                            
                             <li>
-                               
-                                <a href="home.html">Home</a>
+                                
+                               <a href="home.html">Home</a>
                                 
                             </li>
-                            
                             <li>
-                               
-                                <a href="#">Reports</a>
+                                
+                                 Reservation
                                 
                             </li>
-                            
-                             <li>
-                               
-                                <a href="#">Monthly Amortization</a>
-                                 
-                            </li>
-                            
-                            <li>
-                               
-                                <a href="#">Juan Pablo Diego</a>
-                                 
-                            </li>
-                            
-                            
-                            
+                
                             
                         </ul>
                         
@@ -914,173 +888,185 @@
                 </div>
                 
                 <div class="right-content">
-                   
-                    <div class="sub-header">
+                    
+                    <div class="info-container reservation-content">
+                       
+                        <span class="filter">Filter by: </span>
+                        
+                        <div class="list-selection">
                            
-                            <h3>Monthly Amortization</h3>
-                    </div>
-
-                    <div class="info-container prequalify-main">
+                            <select>
+                              <option value="Pending Approval 1">Pending Approval 1</option>
+                              <option value="Pending Approval 2">Pending Approval 2</option>
+                              <option value="Pending Approval 3">Pending Approval 3</option>
+                              <option value="Pending Approval 4">Pending Approval 4</option>
+                            </select>  
+                            
+                            <button class="btn-default" type="button">Go</button>
+                               
+                        </div >
                         
+                            
                         
+                        <div class="input-group">
+                           
+                            <input type="text" name="FirstName" value="Mickey">
 
-                        <div class="prequalify-form-container-left padding-off">                  
-
-                            <div class="table-group amortization-table">
-
-                                <table>
-
-                                    <thead>
-
-                                        <tr>
-
-                                            <th>Month</th>
-
-                                            <th>Amortization</th>
-
-                                            <th>
-                                                <select>
-                                                  <option value="Forex1">Forex1</option>
-                                                  <option value="Forex1">Forex1</option>
-                                                  <option value="Forex1">Forex1</option>
-                                                  <option value="Forex1">Forex1</option>
-                                                </select>
-                                            </th>
-
-                                        </tr>
-
-                                    </thead>
-
-
-                                    <tbody class="scrollContent">
-
-                                        <tr>
-
-                                            <td>1</td>
-
-                                            <td>30,000</td>
-
-                                            <td>324.00 USD</td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-
-
-
-
-                                    </tbody>
-
-                                </table>
-
-                            </div>
-
+                            <button class="btn-default" type="button">Search</button>
+                            
                         </div>
 
-                        <div class="prequalify-form-container-right">
-                            <div class="sub-right-container">
-                                <p> *Note:</p>
-                            <p>Please fill all required fields</p>
-                            </div>
-                            
-
-                          
-                            
-<<<<<<< HEAD
-                            <div class="print-holder">
-=======
-                            <div class="btn-container">
-                                 <span>
-                                    <a class="btn-wide" href="">Print</a> 
-                                 </span>
-                             
->>>>>>> 4fdce02ae5b15586c2a82b68f8691f9f5c3990bb
-                              
-                              <button class='btn-login print-btn'>Print</button> 
-                            
-                            </div>
-
-                        </div>
-
+                        
                     </div>
+                    
+                    <div class="table-group seller-reservation-table seller-table">
+                     
+                        <table>
+                        
+                            <thead>
+                               
+                                <tr>
+                           
+                                    <th>Name</th>
+
+                                    <th>Status</th>
+                            
+                                </tr>
+                                
+                            </thead>
+                            
+                            
+                            <tbody class="scrollContent">
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos <span class="name-balloons">SMS</span></td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+                                
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                </tr>
+                                
+                                
+                            
+                            </tbody>
+   
+                        </table>
+                        
+                    </div>
+                    
+                    
 
                 </div>
                 
@@ -1103,8 +1089,6 @@
              $(".list-scroll").scrollList();
             
              $().dropHeader();
-            
-             $( "#datepicker" ).datepicker();
             
              //$("#list2").scrollList();
             
