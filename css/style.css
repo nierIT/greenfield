@@ -1646,7 +1646,9 @@ tr.headerrow td{
 
 .termsHolder,
 .thumb-listHolder,
-.uploadHolder{
+.uploadHolder,
+.deleteHolder,
+.lockHolder{
  position: fixed;
   display: none;
   width: 100%;

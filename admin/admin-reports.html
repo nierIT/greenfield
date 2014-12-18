@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | Monthly Amortization</title>
+    <title>Greenfield Development Corporation | Reports</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sub-style.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
     
     <div class="left-abs"></div>
     <!--<div class="right-abs"></div>-->
-    <div class="main-container main-logo-container">
+    <div class="main-container main-logo-container ">
         
         <nav class="left-container">
             
@@ -52,6 +51,23 @@
                                 </a>
                                 
                                 <i class="fa fa-angle-right company-caret"></i>
+                                                          
+                            </span>
+                        
+                        </li>
+                        
+                        <li>
+                           
+                            <span>
+                            
+                                <a href="#" class='hasSlider' data-slider='link3' data-level='3'>
+
+                                    <i class="fa fa-users"></i>User Management
+                                    
+    
+                                </a>
+                                
+                                <i class="fa fa-angle-right company-caret"></i>
                                 
                             </span>
                         
@@ -61,7 +77,40 @@
                         
                             <span>
                             
-                                <a href="#"><i class="fa fa-file-text"></i>Reservations</a>
+                                <a href="#" class='hasSlider' data-slider='link4' data-level='4'>
+
+                                    <i class="fa fa-users"></i>User Roles
+                                    
+    
+                                </a>
+                                
+                                <i class="fa fa-angle-right company-caret"></i>
+                                                                                
+                            </span>
+                            
+                        </li>
+                        
+                        <li>
+                        
+                            <span>
+                                
+                                <a href="#" class='hasSlider' data-slider='link5' data-level='5'>
+
+                                    <i class="fa fa-edit"></i>CMS
+                                    
+                                </a>
+                                
+                                <i class="fa fa-angle-right company-caret"></i>
+                               
+                            </span>
+                            
+                        </li>
+                    
+                        <li>
+                        
+                            <span>
+                            
+                                <a href="#"><i class="fa fa-file-text"></i>Reservation</a>
                                 
                             </span>
                             
@@ -71,7 +120,7 @@
                         
                             <span>
                             
-                                <a href="#"><i class="fa fa-file-text"></i>Reports</a>
+                                <a href="#"><i class="fa fa-list-alt"></i>Reports</a>
                                 
                             </span>
                             
@@ -806,6 +855,114 @@
                         </div>
 
                     </div>
+                    
+                    <!-- User Managment Sidebar Nav -->
+                    
+                    <div class="nav-slider-holder" id="link3-slider">
+
+                        <div class="list-scroll" id='list1'>
+
+                             <span id='up'>
+                                <i class="fa fa-sort-asc"></i>
+                            </span>
+
+                            <ul id="list">
+                              <li>
+                                  <span>
+                                      <a href="#">User Group</a>
+                                    
+                                  </span> 
+                              </li>
+                              <li>
+                                  <span>
+                                      <a href="#">View User List</a>  
+                                     
+                                 </span> 
+                              </li>
+                              
+                            </ul>
+
+                             <span id='down'>
+                                <i class="fa fa-sort-desc"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- User Roles Sidebar Nav -->
+                    
+                    <div class="nav-slider-holder" id="link4-slider">
+
+                        <div class="list-scroll" id='list1'>
+
+                             <span id='up'>
+                                <i class="fa fa-sort-asc"></i>
+                            </span>
+
+                            <ul id="list">
+                              <li>
+                                  <span>
+                                      <a href="#">Create User Group</a>
+                                    
+                                  </span> 
+                              </li>
+                              <li>
+                                  <span>
+                                      <a href="#">View User Group</a>  
+                                     
+                                 </span> 
+                              </li>
+                              
+                            </ul>
+
+                             <span id='down'>
+                                <i class="fa fa-sort-desc"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+                    
+                    <!-- CMS Sidebar Nav -->
+                    
+                    <div class="nav-slider-holder" id="link5-slider">
+
+                        <div class="list-scroll" id='list1'>
+
+                             <span id='up'>
+                                <i class="fa fa-sort-asc"></i>
+                            </span>
+
+                            <ul id="list">
+                              <li>
+                                  <span>
+                                      <a href="#">Create Project</a>
+                                    
+                                  </span> 
+                              </li>
+                              <li>
+                                  <span>
+                                      <a href="#">View List of Project</a>  
+                                     
+                                 </span> 
+                              </li>
+                              <li>
+                                  <span>
+                                      <a href="#">Forex</a>  
+                                     
+                                 </span> 
+                              </li>
+                              
+                            </ul>
+
+                             <span id='down'>
+                                <i class="fa fa-sort-desc"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
     
 
                     
@@ -820,50 +977,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-              
-                    <span class="page-title-container">
+                
+                <span class="page-title-container">
                     
-                        <h2>Reservation Details</h2>
+                    <h2>Reports</h2>
+                    
+                </span>
+                
+                <span class="header-option-holder">
+                    
+                    <ul class="header-option clearfix">
+                        <li id='help'><i class="fa fa-question-circle"></i></li>
+                        <li id='settings'><i class="fa fa-cog"></i></li>
+                        <li><i class="fa fa-sign-out"></i></li>
+                    </ul>
+                    
+                </span>
+                
+                <div id="help-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                    
+                    <ul class="header-list clearfix">
+                       
+                        <li><a href="#">F.A.Q</a></li>
+                        
+                        <li><a href="#">Manual</a></li>
+                        
+                    </ul>
 
-                    </span>
+                </div>
 
-                    <span class="header-option-holder">
+                <div id="settings-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                        
+                     <ul class="header-list clearfix">
+                       
+                        <li><a href="#">Settings</a></li>
+                        
+                    </ul>
 
-                        <ul class="header-option clearfix">
-                            <li id='help'><i class="fa fa-question-circle"></i></li>
-                            <li id='settings'><i class="fa fa-cog"></i></li>
-                            <li><i class="fa fa-sign-out"></i></li>
-                        </ul>
-
-                    </span>
-
-                    <div id="help-drop-holder" class='header-drop'>
-
-                        <div class="arrow-up"></div>
-
-                        <ul class="header-list clearfix">
-
-                            <li><a href="#">F.A.Q</a></li>
-
-                            <li><a href="#">Manual</a></li>
-
-                        </ul>
-
-                    </div>
-
-                    <div id="settings-drop-holder" class='header-drop'>
-
-                        <div class="arrow-up"></div>
-
-                         <ul class="header-list clearfix">
-
-                            <li><a href="#">Settings</a></li>
-
-                        </ul>
-
-                    </div>  
-
-
+                </div>   
+        
+                
             </header>
                 
             <div class="right-holder">
@@ -873,33 +1030,18 @@
                     <span class="bread-holder">
                         
                         <ul class="bread-list clearfix">
-                           
+                            
                             <li>
-                               
-                                <a href="home.html">Home</a>
+                                
+                               <a href="home.html">Home</a>
                                 
                             </li>
-                            
                             <li>
-                               
-                                <a href="#">Reports</a>
+                                
+                                 Reports
                                 
                             </li>
-                            
-                             <li>
-                               
-                                <a href="#">Monthly Amortization</a>
-                                 
-                            </li>
-                            
-                            <li>
-                               
-                                <a href="#">Juan Pablo Diego</a>
-                                 
-                            </li>
-                            
-                            
-                            
+                
                             
                         </ul>
                         
@@ -914,166 +1056,259 @@
                 </div>
                 
                 <div class="right-content">
-                   
-                    <div class="sub-header">
+                    
+                    <div class="info-container reservation-content">
+                       
+                        <div class="header-input">
+                            <span class="filter">Filter by: </span>
+
+                            <div class="list-selection">
+
+                                <select>
+                                  <option value="Pending Approval 1">All1</option>
+                                  <option value="Pending Approval 2">All2</option>
+                                  <option value="Pending Approval 3">All3</option>
+                                  <option value="Pending Approval 4">All4</option>
+                                </select>  
+
+                                <button class="btn-default" type="button">Go</button>
+
+                            </div >
+
+
+
+                            <div class="input-group">
+
+                                <input type="text" name="FirstName" value="Mickey">
+
+                                <button class="btn-default" type="button">Search</button>
+
+                            </div>
+                            <div class="csv-btm-group">
+                                <button class="btn-default btn-dark" type="button">Import CSV</button>
+                                <button class="btn-default btn-dark" type="button">Export CSV</button>
+                            </div>     
+                        </div>
+                       
+                        
+                        
+                       
+    
+                        
+                    </div>
+                    
+                    <div class="table-group reservation-table">
+                     
+                        <table>
+                        
+                            <thead>
+                               
+                                <tr>
                            
-                            <h3>Monthly Amortization</h3>
-                    </div>
+                                    <th>Name</th>
 
-                    <div class="info-container prequalify-main">
-                        
-                        
+                                    <th>Status</th>
 
-                        <div class="prequalify-form-container-left padding-off">                  
-
-                            <div class="table-group amortization-table">
-
-                                <table>
-
-                                    <thead>
-
-                                        <tr>
-
-                                            <th>Month</th>
-
-                                            <th>Amortization</th>
-
-                                            <th>
-                                                <select>
-                                                  <option value="Forex1">Forex1</option>
-                                                  <option value="Forex1">Forex1</option>
-                                                  <option value="Forex1">Forex1</option>
-                                                  <option value="Forex1">Forex1</option>
-                                                </select>
-                                            </th>
-
-                                        </tr>
-
-                                    </thead>
-
-
-                                    <tbody class="scrollContent">
-
-                                        <tr>
-
-                                            <td>1</td>
-
-                                            <td>30,000</td>
-
-                                            <td>324.00 USD</td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-                                        
-                                        <tr>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                            <td> </td>
-
-                                        </tr>
-
-
-
-
-                                    </tbody>
-
-                                </table>
-
-                            </div>
-
-                        </div>
-
-                        <div class="prequalify-form-container-right">
-                            <div class="sub-right-container">
-                                <p> *Note:</p>
-                            <p>Please fill all required fields</p>
-                            </div>
+                                    <th>Action</th>
                             
+                                </tr>
+                                
+                            </thead>
+                            
+                            
+                            <tbody class="scrollContent">
+                                
+                                <tr>
 
+                                    <td>Jose Miguel Villalobos <span class="name-balloons">SMS</span></td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Jose Miguel Villalobos</td>
+
+                                    <td>Pending for Approval</td>
+
+                                    <td>
+                                        <a href="#">View</a>
+                                    </td>
+
+                                </tr>
+                                
+                                
+                            
+                            </tbody>
+                            
                           
-                            
-
-                            <div class="print-holder">
-                             
-                              <button class='btn-login print-btn'>Print</button> 
-                            
-                            </div>
-
-                        </div>
-
+                          
+                          
+                        </table>
                     </div>
+                    
+                    
 
                 </div>
                 
@@ -1096,8 +1331,6 @@
              $(".list-scroll").scrollList();
             
              $().dropHeader();
-            
-             $( "#datepicker" ).datepicker();
             
              //$("#list2").scrollList();
             
