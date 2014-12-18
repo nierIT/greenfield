@@ -1033,6 +1033,8 @@
          
      }
 
+     var CHECKINGGLOBAL;
+
     $.fn.checkFields = function(){
 
         var element = this;
@@ -1043,7 +1045,7 @@
 
         var validate = true;
 
-        setInterval(function(){
+        CHECKINGGLOBAL=setInterval(function(){
 
             validate = true;
 
@@ -1141,6 +1143,54 @@
             }
 
            $('.btn-next').removeClass('btn-disable').prop('disabled', false);
+
+        }); 
+
+         $(".col12  input[name='paymentscheme']").click(function(){
+            
+           if($('input:radio[name=paymentscheme]:checked').attr('id') === "card"){
+
+                 $('.btn-next').removeClass('btn-disable').prop('disabled', false);
+
+                 $('.upload-col').fadeOut();
+
+                 clearInterval(CHECKINGGLOBAL);
+            
+            }else if($('input:radio[name=paymentscheme]:checked').attr('id') === "check"){
+
+                 $('.btn-next').addClass('btn-disable').prop('disabled', true);
+
+                 $('.upload-col').fadeIn();
+
+                 CHECKINGGLOBAL=setInterval(function(){
+
+                        validate = true;
+
+                        $('.btn-next-check').each(function(){
+
+                             if ($.trim($(this).val()).length == 0){
+
+                                validate = false;
+                               
+                                return false;
+                             }
+
+                        });
+                       
+                       if(validate == true){
+
+                            $('.btn-next').removeClass('btn-disable').prop('disabled', false);
+                     
+                       }else{
+
+                            $('.btn-next').addClass('btn-disable').prop('disabled', true);
+                      
+                       }
+
+                    },500);
+
+            }
+
 
         });
 

@@ -244,6 +244,7 @@ select.forgot-input{
 
 .login-txtbox-holder input:focus,
 .btn-login:focus,
+.btn-cancel:focus,
 .btn-floorplan:focus
 .forgot-input:focus{
     outline: 0;
@@ -281,6 +282,16 @@ select.forgot-input{
     width: 100%;
     color: white;
     background: #6d9c32;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.btn-cancel{
+    width: 100%;
+    color: white;
+    background: #8AC43F;
     border: none;
     border-radius: 3px;
     padding: 10px 0;
@@ -1701,22 +1712,95 @@ tr.headerrow td{
     width: 100%;
     height: 330px;
 }
+
+.next-payment-holder a button{
+    margin: 5px 0;
+}
+
+.uplabel{
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.filepayment{
+    margin: 15px 0 0;
+}
+
+.upload-col{
+    margin: 0 0 0 25px!important;
+}
+
+.confirm-container{
+   background: rgba(255, 255, 255, 0.4);
+   height: 100%;
+   padding: 0;
+   position: relative;
+}
+
+.paymentdetails-container{
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.right-confirm-container{
+    height: 100%;
+}
+
+.confirmation-holder{
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.payment-details-holder {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.removeweight{
+    font-weight: normal!important;
+}
+
+.btn-homepage{
+    width: 65%;
+    padding: 20px 0;
+    margin: 40px 0 0;
+}
+
+.payment-details-table{
+    text-align: left;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.note-payment-details{
+    text-align: left;
+}
 /** END CONTENT **/
 
 /*MODALS*/
 
 .termsHolder,
 .thumb-listHolder,
-<<<<<<< HEAD
 .thumb-list2Holder,
 .uploadHolder,
 .unit-viewHolder,
-.floorviewHolder{
-=======
-.uploadHolder,
+.floorviewHolder,
 .deleteHolder,
 .lockHolder{
->>>>>>> 441771af0eea526bd7486f1c7ca863bb789d6523
+
  position: fixed;
   display: none;
   width: 100%;
