@@ -280,14 +280,14 @@
          $('.image-gallery-list li').each(function(){
          
             $(this).click(function(){
-            
+
                 var element = this;
                 
                 var imgLink = '#'+$(element).attr('data-img-link');
                 
                 $(imgLink).show(function(){
                     
-                    $('.right-holder').addClass('right-holder-slide');
+                    $('#header-container-main, #main-right-holder').addClass('right-holder-slide');
                     
                     setTimeout(function(){
                         
@@ -566,6 +566,92 @@
 		});
 
 	}
+
+     $.fn.modalShowThumb = function(){
+
+        var element = this;
+
+        var btnClass = element.selector;
+
+        var containerDiv = "."+btnClass+"Holder";
+
+
+        $('.'+btnClass).children().each(function() {
+
+            $(this).click(function(){
+
+                var imglink=$(this).attr('data-img-link');
+
+                var imglabel=$(this).attr('data-img-label');
+
+                var img = $('<img>'); 
+                    img.attr('src', imglink);
+                    img.appendTo('.imgHolder');
+
+                $('.viewname-holder').html(imglabel);
+
+                $(containerDiv).fadeIn("linear");
+
+
+            });
+
+            
+        });
+
+        $('.closeHolder,.overlay').click(function(){
+    
+            $(containerDiv).fadeOut("linear");
+
+             setTimeout(function(){
+            
+                $('.imgHolder img').remove();
+                
+            },300);
+
+
+        });
+
+    }
+
+    $.fn.modalShowFloorPlan = function(){
+
+        var element = this;
+
+        var btnClass = element.selector;
+
+        var containerDiv = "."+btnClass+"Holder";
+
+
+        $('.'+btnClass).click(function(){
+
+            var imglink=$(this).attr('data-img-link');
+
+            var img = $('<img>');
+                img.attr('src', imglink);
+                img.appendTo('.imgHolder');
+
+        
+            $(containerDiv).fadeIn("linear");
+
+
+        });
+
+
+        $('.closeHolder,.overlay').click(function(){
+    
+            $(containerDiv).fadeOut("linear");
+
+             setTimeout(function(){
+            
+                $('.imgHolder img').remove();
+                
+            },300);
+             
+
+        });
+
+    }
+
      
      $.fn.thumbnailShow = function(){
 
@@ -602,14 +688,16 @@
 
 		});
           
-         $('.nextImg i').click(function(){
+         $(containerDiv+' .modalContent .messageContainer .nextImg i').click(function(){
             
             var nextLi = indexLi + 1;
              
              if($(list).length >= nextLi){
                  
                  var nextsrc = $('.'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
-                 
+                
+                 console.log($(list).length+' '+nextsrc);
+
                  $('.imgHolder img').attr('src',nextsrc).fadeIn();
                      
                  indexLi = nextLi;
@@ -628,7 +716,7 @@
              
          });
          
-         $('.prevImg i').click(function(){
+         $(containerDiv+' .modalContent .messageContainer .prevImg i').click(function(){
             
              var nextLi = indexLi - 1;
              
@@ -673,6 +761,113 @@
 		});
 
 	}
+
+    $.fn.thumbnailShow2 = function(){
+
+        var element = this;
+
+        var btnClass = element.selector;
+
+        var containerDiv = "."+btnClass+"Holder";
+
+        var list = "."+btnClass+" li";
+         
+        var indexLi;
+         
+        var parentID;
+         
+        $('.'+btnClass).children().each(function() {
+            
+            $(this).click(function(){
+                
+                indexLi = $(this).index() + 1;
+                
+                $(this).addClass('enlarge');
+                
+                var newElement = "<img src='"+$(this).children('img').attr('data-img-lg')+"' />";
+              
+                $('.imgHolder').append(newElement);
+                
+                $(containerDiv).fadeIn("linear");
+                
+                parentID=$(this).parents('.image-gallery-full-holder').attr('id');
+
+                console.log(parentID);
+
+            });
+
+        });
+          
+         $(containerDiv+' .modalContent .messageContainer .nextImg i').click(function(){
+            
+            var nextLi = indexLi + 1;
+              console.log(parentID);
+             if($('#'+parentID+' '+list).length >= nextLi){
+                 
+                 var nextsrc = $('#'+parentID+' .'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
+
+                 $('.imgHolder img').attr('src',nextsrc).fadeIn();
+                     
+                 indexLi = nextLi;
+                 
+             }else{
+                 
+                nextLi = 1;
+                 
+                var nextsrc = $('#'+parentID+' .'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
+ 
+                $('.imgHolder img').attr('src',nextsrc).fadeIn();
+
+                indexLi = nextLi;
+                 
+             }
+             
+         });
+         
+         $(containerDiv+' .modalContent .messageContainer .prevImg i').click(function(){
+            
+             var nextLi = indexLi - 1;
+             
+             
+             if(nextLi > 0){
+                 
+                 var nextsrc = $('#'+parentID+' .'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
+                 
+                 $('.imgHolder img').attr('src',nextsrc).fadeIn("linear");
+                     
+                 indexLi = nextLi;
+                 
+             }else{
+                 
+                nextLi = $('#'+parentID+' '+list).length;
+                 
+                var nextsrc = $('#'+parentID+' .'+btnClass+' li:nth-child('+nextLi+') img').attr('data-img-lg');
+                 
+                $('.imgHolder img').attr('src',nextsrc).fadeIn("linear");
+                 
+                indexLi = $('#'+parentID+' '+list).length;
+                 
+             }
+             
+         });
+         
+        $('.closeHolder,.overlay').click(function(){
+            
+            $('.enlarge').removeClass('enlarge');
+            
+           
+            
+            $(containerDiv).fadeOut("linear");
+            
+            setTimeout(function(){
+            
+                $('.imgHolder img').remove();
+                
+            },300);
+
+        });
+
+    }
      
    $.fn.dropHeader = function(){
         
@@ -883,7 +1078,6 @@
     $.fn.uploadFile = function(){
 
       
-
         $('.uploadbtn').click(function(){
 
             $('.raform-holder input[type="file"]').each(function(){
@@ -932,6 +1126,24 @@
 
     }
 
+     $.fn.excelFile = function(){
 
+        $(".payment-scheme-holder span input[name='paymentscheme']").click(function(){
+            
+            if($('input:radio[name=paymentscheme]:checked').attr('id') === "standard"){
+
+                $('.btn-download').addClass('btn-disable').prop('disabled', true);
+
+            }else if($('input:radio[name=paymentscheme]:checked').attr('id') === "nonstandard"){
+
+                $('.btn-download').removeClass('btn-disable').prop('disabled', false);
+
+            }
+
+           $('.btn-next').removeClass('btn-disable').prop('disabled', false);
+
+        });
+
+     }
      
 })(jQuery);

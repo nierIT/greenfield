@@ -1007,131 +1007,152 @@
                     
                     <div class="info-container prequalify-main">
                         
-                       <div class="prequalify-form-container-left">
-                           
-                           <form action="" class='clearfix'>
+                        <form action="" class='clearfix'>
+
+                           <div class="prequalify-form-container-left">
                                
                                <div class="form-container">
-                                   
-                                    <h4>Purchase Price Computation</h4>
-                                    
-                                   
-                                   <div class="left-form-table">
                                        
-                                       <table class="purchase-price-table">
-                                          <thead>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td colspan="2">Total Contract Price</td>
-                                               </tr>
+                                        <h4>Purchase Price Computation</h4>
+                                        
+                                       <div class="payment-scheme-holder">
+                                         
+                                         <span>
                                            
-                                          </thead>
-                                          <tbody>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td>List Price (w/VAT)</td>
-                                                   <td>Php:<span>1,000.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>List Price (w/o VAT)</td>
-                                                   <td>Php:<span>880.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Less: Discount (Schedule 1)</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: Interest</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>Total Selling Price</td>
-                                                   <td>Php:<span>1,000.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: VAT: <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>%</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>Total Contract Price:</td>
-                                                   <td>Php:<span>1,200.000.00</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>Add: Other Charges</td>
-                                                   <td>Php:<span>0.00</span></td>
-                                               </tr>
-                                               <tr class='headerrow'>
-                                                   <td>TCP + other Charges</td>
-                                                   <td>Php:<span>1,200.000.00</span></td>
-                                               </tr>
+                                           <input type="radio" class='pscheme' id='standard' name='paymentscheme'>
+
+                                           <label for="standard">Standard Payment Scheme</label>
+
+                                         </span>
+
+                                         <span>
+                                           
+                                           <input type="radio" class='pscheme' id='nonstandard' name='paymentscheme'>
+
+                                           <label for="nonstandard">Non-Standard Payment Scheme</label>
+
+                                         </span>
+
+
+
+                                       </div>
+
+                                       <div class="left-form-table">
+                                           
+                                           <table class="purchase-price-table">
+                                              <thead>
+                                                  
+                                                   <tr class='headerrow'>
+                                                       <td colspan="2">Total Contract Price</td>
+                                                   </tr>
                                                
-                                          </tbody>
+                                              </thead>
+                                              <tbody>
+                                                  
+                                                   <tr class='headerrow'>
+                                                       <td>List Price (w/VAT)</td>
+                                                       <td>Php:<span>1,000.000.00</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>List Price (w/o VAT)</td>
+                                                       <td>Php:<span>880.000.00</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>Less: Discount (Schedule 1)</td>
+                                                       <td>Php:<span>0.00</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>Add: Interest</td>
+                                                       <td>Php:<span>0.00</span></td>
+                                                   </tr>
+                                                   <tr class='headerrow'>
+                                                       <td>Total Selling Price</td>
+                                                       <td>Php:<span>1,000.000.00</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>Add: VAT: <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>%</td>
+                                                       <td>Php:<span>0.00</span></td>
+                                                   </tr>
+                                                   <tr class='headerrow'>
+                                                       <td>Total Contract Price:</td>
+                                                       <td>Php:<span>1,200.000.00</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>Add: Other Charges</td>
+                                                       <td>Php:<span>0.00</span></td>
+                                                   </tr>
+                                                   <tr class='headerrow'>
+                                                       <td>TCP + other Charges</td>
+                                                       <td>Php:<span>1,200.000.00</span></td>
+                                                   </tr>
+                                                   
+                                              </tbody>
+                                               
+                                           </table>
                                            
-                                       </table>
+                                       </div>
                                        
+                                       <div class="left-form-table payment-table">
+                                           
+                                           <table class="purchase-price-table">
+                                              <thead>
+                                                  
+                                                   <tr class='headerrow'>
+                                                       <td colspan="2">Payment Terms:</td>
+                                                   </tr>
+                                               
+                                              </thead>
+                                              <tbody>
+                                                  
+                                                   <tr>
+                                                       <td coslpan='2'>Schedule 1</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>
+                                                           
+                                                           <select name="" id="">
+                                                               <option value="">Deferred Cash</option>
+                                                           </select>
+                                                           
+                                                       </td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>List Price (w/o VAT)</td>
+                                                       <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
+                                                       <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
+                                                       <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                   </tr>
+                                                    <tr>
+                                                       <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
+                                                       <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                   </tr>
+                                                   
+                                                   <tr class='headerrow'>
+                                                       <td>Total SC Discount:</td>
+                                                       <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+                                                   </tr>
+                                                   
+                                              </tbody>
+                                               
+                                           </table>
+                                           
+                                       </div>
+                                        
                                    </div>
-                                   
-                                   <div class="left-form-table payment-table">
-                                       
-                                       <table class="purchase-price-table">
-                                          <thead>
-                                              
-                                               <tr class='headerrow'>
-                                                   <td colspan="2">Payment Terms:</td>
-                                               </tr>
-                                           
-                                          </thead>
-                                          <tbody>
-                                              
-                                               <tr>
-                                                   <td coslpan='2'>Schedule 1</td>
-                                               </tr>
-                                               <tr>
-                                                   <td>
-                                                       
-                                                       <select name="" id="">
-                                                           <option value="">Deferred Cash</option>
-                                                       </select>
-                                                       
-                                                   </td>
-                                               </tr>
-                                               <tr>
-                                                   <td>List Price (w/o VAT)</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               <tr>
-                                                   <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                                <tr>
-                                                   <td>( <span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>% ) Payment Discount</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               
-                                               <tr class='headerrow'>
-                                                   <td>Total SC Discount:</td>
-                                                   <td>Php:<span class='vat-underline'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-                                               </tr>
-                                               
-                                          </tbody>
-                                           
-                                       </table>
-                                       
-                                   </div>
-                                    
-                               </div>
-                             
+        
+                              
                                
-                            
-                           </form>
-                           
-                           
-                       </div>
-                        
+                               
+                           </div>
+
+                         
+
                         <div class="prequalify-form-container-right">
                             
                             <span class="note-container">
@@ -1140,10 +1161,18 @@
                                 Please fill all required fields
                                 
                             </span>
-                            
+
+                            <span class="print-holder">
+
+                               <button class='btn-login btn-disable btn-download' disabled>Download Excel File
+For Computation</button> 
+                
+                    
+                           </span>
+
                            <span class="next-holder">
 
-                                <a href='raform3.html'><button class='btn-login'>Next</button></a> 
+                                <a href='raform3.html'><button class='btn-login btn-disable btn-next' disabled>Next</button></a> 
 
                            </span>
                                
@@ -1151,6 +1180,8 @@
                             
                         </div>
                         
+                      </form>
+
                     </div>
 
                 </div>
@@ -1175,6 +1206,7 @@
             
              $().dropHeader();
             
+             $().excelFile();
             
              //$("#list2").scrollList();
             

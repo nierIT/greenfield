@@ -895,8 +895,14 @@
                         
                        <div class="upper-info-container">
                            
+                           
+                           
                            <div class="floor-container">
-                               
+                                   
+                                <span class="floor-label">
+                                    Floor
+                                </span>
+                                
                                 <span id='up2'>
                                     <i class="fa fa-sort-asc"></i>
                                 </span>
@@ -927,11 +933,11 @@
                                   
                                   <thead>
                                       
-                                       <tr class='unit-view'>
-                                           <td colspan='8'>Serendra View</td>
-                                           <td colspan='8'>Fort Strip View</td>
-                                           <td colspan='10'>Forbes Park View</td>
-                                      
+                                       <tr class='unit-view' >
+                                           <td colspan='8' data-img-link='../images/ortigasview.jpg' data-img-label='Ortigas View'>Ortigas Complex(Shaw)</td>
+                                           <td colspan='6' data-img-link='../images/rizalview.jpg' data-img-label='Rizal (Sto.Cristo)'>Rizal(Sto. Cristo)</td>
+                                           <td colspan='6' data-img-link='../images/makatiview.jpg' data-img-label='Makati (Pavilion)'>Makati(Pavilion)</td>
+                                           <td colspan='6' data-img-link='../images/wackwackview.jpg' data-img-label='Wack Wack/Mandaluyong (EDSA)'>Wack Wack / Mandaluyong(EDSA)</td>
                                        </tr>
                                        <tr class='unit-letter'>
                                            <td>A</td>
@@ -1287,9 +1293,9 @@
                                
                                <ul class="tab-unit-list clearfix">
                                    
-                                   <li class='active-tab-unit'>Tab 1</li>
-                                   <li>Tab 2</li>
-                                   <li>Tab 3</li>
+                                   <li class='active-tab-unit'>Monthly Amortization</li>
+                                   <li>TCP</li>
+                                   <li>Price per SQM.</li>
                                    
                                </ul>
                                    
@@ -1341,9 +1347,10 @@
 
                                <div class="lower-info-btn-container">
 
-                                   <a href='viewfloorplan.html'><button class='btn-floorplan' >View Floor Plan</button></a> 
+                                   <div class='btn-floorplan btnfloor floorview' data-img-link='../images/zitan-floorplan-2.jpg'>View Floor Plan</div>
 
-                                   <a href='viewunit.html'><button class='btn-login' >View Selected Unit</button></a> 
+                                   <a href='viewfloorplan.html'><button class='btn-login' >View Selected Unit</button></a> 
+
                                </div>
                            
                            </div>
@@ -1360,6 +1367,64 @@
         </div>
         
     </div>
+
+    <div class="mainModalContainer">
+
+      <div class="unit-viewHolder"> 
+
+        <div class="overlay"></div>
+
+          <div class="modalContent modal-terms modal-thumb modal-thumb2">
+            
+            <div class="viewname-holder"></div>
+
+            <div class="closeHolder">
+
+              <i class="fa fa-times"></i>
+                          
+                          Close
+                          
+            </div>
+            
+
+            <div class="messageContainer">
+              
+              <div class="imgHolder"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="floorviewHolder"> 
+
+          <div class="overlay"></div>
+
+          <div class="modalContent floorContent">
+         
+            <div class="closeHolder">
+
+              <i class="fa fa-times"></i>
+                          
+                          Close
+                          
+            </div>
+            
+
+            <div class="messageContainer availableunitContainer">
+              
+              <div class="imgHolder imgHolder2"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+       
+
     
     <script src='../js/jquery-1.11.1.min.js'></script>
     <script src="../js/jquery-ui.min.js"></script>
@@ -1375,6 +1440,11 @@
             
              $().dropHeader();
             
+             $("terms").modalShow();
+
+             $("unit-view").modalShowThumb();
+
+             $("floorview").modalShowFloorPlan();
              //$("#list2").scrollList();
             
             
