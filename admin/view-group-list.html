@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | Edit User</title>
+    <title>Greenfield Development Corporation | View User List</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sub-style.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
@@ -56,7 +55,8 @@
                             </span>
                         
                         </li>
-                        <li class='active-li'>
+                        
+                        <li>
                            
                             <span>
                             
@@ -73,13 +73,13 @@
                         
                         </li>
                         
-                        <li>
+                        <li class='active-li'>
                         
                             <span>
                             
                                 <a href="#" class='hasSlider' data-slider='link4' data-level='4'>
 
-                                    <i class="fa fa-users"></i>User Roles
+                                    <i class="fa fa-users"></i>User Groups
                                     
     
                                 </a>
@@ -89,6 +89,7 @@
                             </span>
                             
                         </li>
+                        
                         <li>
                         
                             <span>
@@ -97,12 +98,10 @@
 
                                     <i class="fa fa-edit"></i>CMS
                                     
-    
                                 </a>
                                 
                                 <i class="fa fa-angle-right company-caret"></i>
                                
-                                
                             </span>
                             
                         </li>
@@ -116,6 +115,7 @@
                             </span>
                             
                         </li>
+                        
                         <li>
                         
                             <span>
@@ -977,50 +977,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-              
-                    <span class="page-title-container">
+                
+                <span class="page-title-container">
                     
-                        <h2>Zitan</h2>
-
-                    </span>
-
-                    <span class="header-option-holder">
-
-                        <ul class="header-option clearfix">
-                            <li id='help'><i class="fa fa-question-circle"></i></li>
-                            <li id='settings'><i class="fa fa-cog"></i></li>
-                            <li><i class="fa fa-sign-out"></i></li>
-                        </ul>
-                                       
-                                        </span>
-                                        
-                    <div id="help-drop-holder" class='header-drop'>
+                    <h2>User Groups</h2>
                     
+                </span>
+                
+                <span class="header-option-holder">
+                    
+                    <ul class="header-option clearfix">
+                        <li id='help'><i class="fa fa-question-circle"></i></li>
+                        <li id='settings'><i class="fa fa-cog"></i></li>
+                        <li><i class="fa fa-sign-out"></i></li>
+                    </ul>
+                    
+                </span>
+                
+                <div id="help-drop-holder" class='header-drop'>
+                   
                     <div class="arrow-up"></div>
-                       
-                        <ul class="header-list clearfix">
-                           
-                            <li><a href="#">F.A.Q</a></li>
-                            
-                            <li><a href="#">Manual</a></li>
-                            
-                        </ul>
-                        
-                    </div>
                     
-                    <div id="settings-drop-holder" class='header-drop'>
+                    <ul class="header-list clearfix">
+                       
+                        <li><a href="#">F.A.Q</a></li>
+                        
+                        <li><a href="#">Manual</a></li>
+                        
+                    </ul>
 
-                        <div class="arrow-up"></div>
+                </div>
 
-                         <ul class="header-list clearfix">
+                <div id="settings-drop-holder" class='header-drop'>
+                   
+                    <div class="arrow-up"></div>
+                        
+                     <ul class="header-list clearfix">
+                       
+                        <li><a href="#">Settings</a></li>
+                        
+                    </ul>
 
-                            <li><a href="#">Settings</a></li>
-
-                        </ul>
-
-                    </div>  
-
-
+                </div>   
+        
+                
             </header>
                 
             <div class="right-holder">
@@ -1031,25 +1031,22 @@
                         
                         <ul class="bread-list clearfix">
                             
-                             <li>
+                            <li>
                                 
                                <a href="home.html">Home</a>
                                 
                             </li>
                             <li>
                                 
-                                 <a href="#">User Management</a>
-                                
+                               <a href="home.html">User Groups</a>
+                               
                             </li>
-                            
                             <li>
                                 
-                                Create User
-                                
+                               <a href="home.html">View Group List</a>
+                               
                             </li>
-                            
-                            
-                            
+                
                             
                         </ul>
                         
@@ -1063,115 +1060,182 @@
                     
                 </div>
                 
-                <div class="right-content">
+                <div class="right-content ">
                     
-                    <div class="info-container prequalify-main">
-                        
-                       <div class="prequalify-form-container-left">
+                    <div class="info-container reservation-content">
+                    
+                        <div class="header-input">
                            
-                           <form action="" class='clearfix'>
-                               
-                               <div class="approval-container form-container">
-                                   
-                                    <h4>Create User</h4>
-                                    
-                                   <div class="approval-content">
-                                       
-                                        <div class="sub-content">
-                                        
-                                    <ul class="form-list clearfix">
-                                        <li>
-                                            <span class="form-label">Username:</span>
-                                            <span class="form-element">
-                                                
-                                                <input type="text" name="Username" value="">
-                                                
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span class="form-label">Employee Name:</span>
-                                            <span class="form-element">
-                                                
-                                                <input type="text" name="Employee Name" value="">
-                                                
-                                            </span>
-                                            
-                                        </li>
-                                        <li>
-                                            <span class="form-label">Email:</span>
-                                            <span class="form-element">
-                                                
-                                                <input type="text" name="Email" value="">
-                                                
-                                            </span>
-                                            
-                                        </li>
-                                        <li>
-                                            
-                                            <span class="form-label">Sales / User Level:</span>
-                                            <span class="form-element">
-                                                
-                                                <select name="" id="">
-                                                    <option value="" disabled selected>Select</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                </select>
-                                                
-                                            </span>
-                                            
-                                        </li>
-                                        <li>
-                                            
-                                            <span class="form-label">User Role</span>
-                                            <span class="form-element">
-                                                
-                                                <select name="" id="">
-                                                    <option value="" disabled selected>Select</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                </select>
-                                                
-                                            </span>
-                                            
-                                        </li>
-                                    </ul>
+                            <span class="filter">Filter by: </span>
 
-                                        </div>
-                                        
-                                    </div>
-                                   
-                                    
-                               </div>
-                             
-                               
-                            
-                           </form>
-                           
-                           
-                       </div>
-                        
-                        <div class="prequalify-form-container-right">
-                            
-                            <span class="note-container">
-                                
-                                *Note:<br/>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis placerat, fermentum nulla ut, ullamcorper nunc. In eu ipsum vitae tortor faucibus iaculis ac varius purus.
-                                
-                            </span>
-                            
-                            <div class="print-holder">
-                              
-                                <button class='btn-login print-btn'>Save</button> 
-                               
-                                <a href="#">Cancel</a>
-                            
+                            <div class="list-selection">
+
+                                <select>
+                                  <option value="Pending Approval 1">All1</option>
+                                  <option value="Pending Approval 2">All2</option>
+                                  <option value="Pending Approval 3">All3</option>
+                                  <option value="Pending Approval 4">All4</option>
+                                </select>  
+
+                                <button class="btn-default" type="button">Go</button>
+
+                            </div >
+
+
+
+                            <div class="input-group">
+
+                                <input type="text" name="FirstName" value="">
+
+                                <button class="btn-default" type="button">Search</button>
+
                             </div>
-                               
-                           
                             
                         </div>
+                       
                         
                     </div>
+                    
+                    <div class="table-group view-group-list-table">
+                     
+                        <table>
+                        
+                            <thead>
+                               
+                                <tr>
+                           
+                                    <th>Group Name</th>
+
+                                    <th>User Role</th>
+                                    
+                                    <th>Status</th>
+                                    
+                                    <th></th>
+                            
+                                </tr>
+                                
+                            </thead>
+                            
+                            
+                            <tbody class="scrollContent">
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                <tr>
+
+                                    <td>Sales</td>
+
+                                    <td>Seller</td>
+                                    
+                                    <td>Active</td>
+                                    
+                                    <td><a href="#">View</a></td>
+
+                                </tr>
+                                
+                                
+                                
+                            </tbody>
+                            
+                        </table>
+                        
+                    </div>
+                    
+                    
 
                 </div>
                 
@@ -1180,8 +1244,6 @@
         </div>
         
     </div>
-    
-    
     
     <script src='../js/jquery-1.11.1.min.js'></script>
     <script src="../js/jquery-ui.min.js"></script>
@@ -1196,8 +1258,6 @@
              $(".list-scroll").scrollList();
             
              $().dropHeader();
-            
-             $( "#datepicker" ).datepicker();
             
              //$("#list2").scrollList();
             

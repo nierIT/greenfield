@@ -1799,8 +1799,8 @@ tr.headerrow td{
 .unit-viewHolder,
 .floorviewHolder,
 .deleteHolder,
-.lockHolder{
-
+.lockHolder,
+.editHolder{
  position: fixed;
   display: none;
   width: 100%;
