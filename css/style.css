@@ -1707,10 +1707,16 @@ tr.headerrow td{
 
 .termsHolder,
 .thumb-listHolder,
+<<<<<<< HEAD
 .thumb-list2Holder,
 .uploadHolder,
 .unit-viewHolder,
 .floorviewHolder{
+=======
+.uploadHolder,
+.deleteHolder,
+.lockHolder{
+>>>>>>> 441771af0eea526bd7486f1c7ca863bb789d6523
  position: fixed;
   display: none;
   width: 100%;

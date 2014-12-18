@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Greenfield Development Corporation | Reports</title>
+    <title>Greenfield Development Corporation | RA Form</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sub-style.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
@@ -55,8 +56,7 @@
                             </span>
                         
                         </li>
-                        
-                        <li>
+                        <li class='active-li'>
                            
                             <span>
                             
@@ -89,7 +89,6 @@
                             </span>
                             
                         </li>
-                        
                         <li>
                         
                             <span>
@@ -98,10 +97,12 @@
 
                                     <i class="fa fa-edit"></i>CMS
                                     
+    
                                 </a>
                                 
                                 <i class="fa fa-angle-right company-caret"></i>
                                
+                                
                             </span>
                             
                         </li>
@@ -115,8 +116,7 @@
                             </span>
                             
                         </li>
-                        
-                        <li class='active-li'>
+                        <li>
                         
                             <span>
                             
@@ -863,27 +863,39 @@
                         <div class="list-scroll" id='list1'>
 
                              <span id='up'>
+                               
                                 <i class="fa fa-sort-asc"></i>
+                                
                             </span>
 
                             <ul id="list">
+                             
                               <li>
+                                 
                                   <span>
+                                     
                                       <a href="#">User Group</a>
                                     
                                   </span> 
+                                  
                               </li>
+                              
                               <li>
+                                 
                                   <span>
+                                     
                                       <a href="#">View User List</a>  
                                      
                                  </span> 
+                                 
                               </li>
                               
                             </ul>
 
                              <span id='down'>
+                               
                                 <i class="fa fa-sort-desc"></i>
+                                
                             </span>
 
                         </div>
@@ -977,50 +989,50 @@
         <div class="right-container">
                 
             <header class='header-container'>
-                
-                <span class="page-title-container">
+              
+                    <span class="page-title-container">
                     
-                    <h2>Reports</h2>
+                        <h2>Zitan</h2>
+
+                    </span>
+
+                    <span class="header-option-holder">
+
+                        <ul class="header-option clearfix">
+                            <li id='help'><i class="fa fa-question-circle"></i></li>
+                            <li id='settings'><i class="fa fa-cog"></i></li>
+                            <li><i class="fa fa-sign-out"></i></li>
+                        </ul>
+                                       
+                                        </span>
+                                        
+                    <div id="help-drop-holder" class='header-drop'>
                     
-                </span>
-                
-                <span class="header-option-holder">
-                    
-                    <ul class="header-option clearfix">
-                        <li id='help'><i class="fa fa-question-circle"></i></li>
-                        <li id='settings'><i class="fa fa-cog"></i></li>
-                        <li><i class="fa fa-sign-out"></i></li>
-                    </ul>
-                    
-                </span>
-                
-                <div id="help-drop-holder" class='header-drop'>
-                   
                     <div class="arrow-up"></div>
+                       
+                        <ul class="header-list clearfix">
+                           
+                            <li><a href="#">F.A.Q</a></li>
+                            
+                            <li><a href="#">Manual</a></li>
+                            
+                        </ul>
+                        
+                    </div>
                     
-                    <ul class="header-list clearfix">
-                       
-                        <li><a href="#">F.A.Q</a></li>
-                        
-                        <li><a href="#">Manual</a></li>
-                        
-                    </ul>
+                    <div id="settings-drop-holder" class='header-drop'>
 
-                </div>
+                        <div class="arrow-up"></div>
 
-                <div id="settings-drop-holder" class='header-drop'>
-                   
-                    <div class="arrow-up"></div>
-                        
-                     <ul class="header-list clearfix">
-                       
-                        <li><a href="#">Settings</a></li>
-                        
-                    </ul>
+                         <ul class="header-list clearfix">
 
-                </div>   
-        
-                
+                            <li><a href="#">Settings</a></li>
+
+                        </ul>
+
+                    </div>  
+
+
             </header>
                 
             <div class="right-holder">
@@ -1031,17 +1043,25 @@
                         
                         <ul class="bread-list clearfix">
                             
-                            <li>
+                             <li>
                                 
                                <a href="home.html">Home</a>
                                 
                             </li>
                             <li>
                                 
-                                 Reports
+                                 <a href="#">User Management</a>
                                 
                             </li>
-                
+                            
+                            <li>
+                                
+                                Create User
+                                
+                            </li>
+                            
+                            
+                            
                             
                         </ul>
                         
@@ -1057,258 +1077,128 @@
                 
                 <div class="right-content">
                     
-                    <div class="info-container reservation-content">
-                       
-                        <div class="header-input">
-                            <span class="filter">Filter by: </span>
-
-                            <div class="list-selection">
-
-                                <select>
-                                  <option value="Pending Approval 1">All1</option>
-                                  <option value="Pending Approval 2">All2</option>
-                                  <option value="Pending Approval 3">All3</option>
-                                  <option value="Pending Approval 4">All4</option>
-                                </select>  
-
-                                <button class="btn-default" type="button">Go</button>
-
-                            </div >
-
-
-
-                            <div class="input-group">
-
-                                <input type="text" name="FirstName" value="Mickey">
-
-                                <button class="btn-default" type="button">Search</button>
-
-                            </div>
-                            <div class="csv-btm-group">
-                                <button class="btn-default btn-dark" type="button">Import CSV</button>
-                                <button class="btn-default btn-dark" type="button">Export CSV</button>
-                            </div>     
-                        </div>
-                       
+                    <div class="info-container prequalify-main">
                         
-                        
-                       
-    
-                        
-                    </div>
-                    
-                    <div class="table-group reservation-table">
-                     
-                        <table>
-                        
-                            <thead>
-                               
-                                <tr>
+                       <div class="prequalify-form-container-left">
                            
-                                    <th>Name</th>
+                           <form action="" class='clearfix'>
+                               
+                               <div class="approval-container form-container">
+                                   
+                                    <h4>Create User</h4>
+                                    
+                                   <div class="approval-content">
+                                       
+                                        <div class="sub-content">
+                                        
+                                    <ul class="form-list clearfix">
+                                        <li>
+                                            <span class="form-label">Username:</span>
+                                            <span class="form-element">
+                                                
+                                                <input type="text" name="Username" value="juanpablo1234" disabled>
+                                                
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Employee Name:</span>
+                                            <span class="form-element">
+                                                
+                                                <input type="text" name="Employee Name" value="Juan Pablo" disabled>
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            <span class="form-label">Email:</span>
+                                            <span class="form-element">
+                                                
+                                                <input type="text" name="Email" value="jpablo@gmail.com" disabled>
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            
+                                            <span class="form-label">Sales / User Level:</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="" disabled>
+                                                    <option value="" disabled selected>Seller</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                        <li>
+                                            
+                                            <span class="form-label">User Role</span>
+                                            <span class="form-element">
+                                                
+                                                <select name="" id="" disabled>
+                                                    <option value="" disabled selected>Seller</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                                
+                                            </span>
+                                            
+                                        </li>
+                                    </ul>
 
-                                    <th>Status</th>
-
-                                    <th>Action</th>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                    
+                               </div>
+                             
+                               
                             
-                                </tr>
-                                
-                            </thead>
+                           </form>
+                           
+                           
+                       </div>
+                        
+                        <div class="prequalify-form-container-right">
                             
+                            <span class="note-container">
+                                
+                                *Note:<br/>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis placerat, fermentum nulla ut, ullamcorper nunc. In eu ipsum vitae tortor faucibus iaculis ac varius purus.
+                                
+                            </span>
                             
-                            <tbody class="scrollContent">
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos <span class="name-balloons">SMS</span></td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                <tr>
-
-                                    <td>Jose Miguel Villalobos</td>
-
-                                    <td>Pending for Approval</td>
-
-                                    <td>
-                                        <a href="#">View</a>
-                                    </td>
-
-                                </tr>
-                                
-                                
+                            <div class="print-holder">
+                             
+                              
+                                <ul class="right-side-bar-links">
+                                   
+                                    <li><a  href="#">Edit</a></li>
+                                    
+                                    
+                                    
+                                    <li>
+                                       
+                                        <a href="#" class="delete">Delete User</a>
+                                        
+                                    </li>
+                                    
+                                    
+                                    <li><a href="#lock-user" class="lock">Lock User</a></li>
+                                    
+                                    
+                                </ul>
                             
-                            </tbody>
+                            </div>
+                               
+                           
                             
-                          
-                          
-                          
-                        </table>
+                        </div>
+                        
                     </div>
-                    
-                    
 
                 </div>
                 
@@ -1316,6 +1206,94 @@
               
         </div>
         
+    </div>
+    
+    <div class="mainModalContainer">
+       
+        <div class="deleteHolder"> 
+           
+            <div class="overlay"></div>
+            
+            <div class="modalContent modal-terms small-modal">
+               
+                <div class="closeHolder">
+                   
+                    <i class="fa fa-times"></i>
+                    
+                    Close
+                    
+                </div>
+                
+                <div class="messageContainer">
+                   
+                    <div class="contentHolder">
+                       
+                        <div class="delete-message">
+                           
+                            <p>Are you sure you want to delete this User?</p>
+                            
+                            <div class="modal-buttons">
+                               
+                                <a class="btn-default" href="#">No</a>
+                                
+                                <a class="btn-default" href="#">Yes</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    
+    <div class="mainModalContainer">
+       
+        <div class="lockHolder"> 
+           
+            <div class="overlay"></div>
+            
+            <div class="modalContent modal-terms small-modal">
+               
+                <div class="closeHolder">
+                   
+                    <i class="fa fa-times"></i>
+                    
+                    Close
+                    
+                </div>
+                
+                <div class="messageContainer">
+                   
+                    <div class="contentHolder">
+                       
+                        <div class="delete-message">
+                           
+                            <p>Are you sure you want to lock this User?</p>
+                            
+                            <div class="modal-buttons">
+                               
+                                <a class="btn-default" href="#">No</a>
+                                
+                                <a class="btn-default" href="#">Yes</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
     </div>
     
     <script src='../js/jquery-1.11.1.min.js'></script>
@@ -1332,8 +1310,15 @@
             
              $().dropHeader();
             
+             $( "#datepicker" ).datepicker();
+            
              //$("#list2").scrollList();
             
+             $("delete").modalShow();
+             
+             $("lock").modalShow();
+            
+
             
         });
         

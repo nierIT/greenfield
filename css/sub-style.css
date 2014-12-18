@@ -51,7 +51,6 @@ margin-top: 6px;
 .input-group > input {
     height: 33px;
     width: 200px;
-
     padding-left:10px;
     
 }
@@ -76,14 +75,12 @@ margin-top: 6px;
 }
 
 
-.btn-default:hover { 
-    background-color: #8ac43f;
-}
 .btn-dark {
     background-color: #6d9d32;
 }
 
-.btn-dark:hover {
+.btn-dark:hover,
+.btn-default:hover{
     background-color: #628c2e;
 }
 
@@ -307,11 +304,18 @@ margin-top: 6px;
 .form-element > input {
     padding:5px 0;
     width: 280px;
+    text-indent: 10px;
 }
 
 .form-element > select {
     width: 280px;
+    border: 1px solid #afafaf;
 }
+
+.form-element > select[disabled] { 
+    background-color: #f0f0f0; 
+}
+
 .form-element {
     margin-top: 0;
 }
@@ -334,6 +338,7 @@ margin-top: 6px;
 .btn-container {
     width: 100%;
 }
+
 .btn-container  {
     float: none;
     margin-top: 30px;
@@ -342,4 +347,54 @@ margin-top: 6px;
 
 .btn-container  span{
     float: none;
+}
+.print-holder {
+    text-align: center;
+}
+
+.print-holder > button {
+    margin-bottom: 20px;
+}
+.print-holder > a{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.right-side-bar-links > li{
+    float: none;
+    width: 100%;
+    text-decoration: underline;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+.contentHolder {
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+.deleteHolder .delete-message,
+.lockHolder .delete-message{
+    text-align: center;
+    width: 100%;
+}
+
+.small-modal {
+    width: 380px;
+    height: 200px;
+}
+.modal-buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    }
+.modal-buttons > a {
+    padding-left: 50px;
+    padding-right: 50px;
 }
