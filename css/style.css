@@ -1648,7 +1648,8 @@ tr.headerrow td{
 .thumb-listHolder,
 .uploadHolder,
 .deleteHolder,
-.lockHolder{
+.lockHolder,
+.editHolder{
  position: fixed;
   display: none;
   width: 100%;
