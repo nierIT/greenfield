@@ -1,0 +1,84 @@
+
+.hide{
+	display: none;
+}
+
+.make-table{
+	display:table;
+}
+
+.slider-container{
+
+	position: absolute;
+	width: 240px;
+	height: 100%;
+	background: #6e9b2f;
+	z-index: -1;
+	left: 0;
+
+	-webkit-transition: all .5s ease-in-out ;
+	-moz-transition: all .5s ease-in-out ;
+	-o-transition: all .5s ease-in-out ;
+	transition: all .5s ease-in-out;  
+}
+
+.slider-active{
+	left: 240px;
+	
+	-webkit-transition: all .5s ease-in-out ;
+	-moz-transition: all .5s ease-in-out ;
+	-o-transition: all .5s ease-in-out ;
+	transition: all .5s ease-in-out;  
+
+}
+
+.slider-active2{
+	left: 480px;
+	
+	-webkit-transition: all .5s ease-in-out ;
+	-moz-transition: all .5s ease-in-out ;
+	-o-transition: all .5s ease-in-out ;
+	transition: all .5s ease-in-out;  
+
+}
+
+.nav-slider-holder2{
+	display: table;
+}
+
+ul#list2 {
+    width: 100%;
+     height: 276px; 
+    overflow-y: hidden;
+    position: relative;
+}
+
+ul#list2 li{
+     width: 100%; 
+    position: relative;
+    cursor: pointer;
+}
+
+ul#list2 li span{
+    width: 83%;
+    margin: 0 10px;
+    border-bottom: 1px solid white;
+    padding: 12px 10px;
+    font-size: 14px;
+}
+
+ul#list2 li a{
+    color:white;    
+}
+
+ul#list2 li:last-child,
+.no-border-bottom span{
+     border-bottom:none!important;
+}
+
+.list-scroll2{
+    width: 100%;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;  
+}
