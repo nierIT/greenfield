@@ -1,0 +1,122 @@
+@media all and (max-width: 1024px) {
+  
+}
+
+@media all and (max-width: 768px) {
+
+  .left-container-login{ 
+		display:none;
+   } 
+   
+   .main-logo-login-container{
+		background: rgba(255, 255, 255, 0.5);
+   }
+   
+   .right-container-login{
+		background: rgba(255, 255, 255, 0.75);
+		width: 90%;
+		height: 93%;
+		margin: auto;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		border-radius: 15px;
+   }
+   
+   .logo-container img {
+		width: 340px;
+	}
+	
+	.left-holder-login2{
+		margin: 0 0 30px 0;
+		height: initial;
+		display: table;
+	}
+   
+   .login-form{
+		width: 55%;
+   }
+   
+   .footer-login-container2{
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		text-align: center;
+   }
+   
+   .left-holder,
+   .slider-container{
+		left: -240px;
+		position: absolute;
+   }
+   
+   .right-container{
+		width: 100%;
+		left: 0;
+   }
+   
+   header#header-container-main{
+		background: white;
+   }
+   
+   .header-option li i{
+		color:#505252;
+   }
+   
+   .task-icon-container{
+		display:block;
+		float: right;
+   }
+   
+   .page-title-container h2{
+		display:none;
+   }
+   
+   .page-title-container{
+		margin: 0;
+		padding: 8px 0 0 20px;
+   }
+   
+   .header-option-holder{
+		padding: 13px 8px 0 0;
+   }
+   
+   .image-gallery-container{
+		margin: 0;
+		width: 100%!important;
+   }
+   
+   .image-gallery-list{
+		padding: 0;
+   }
+   
+   .image-gallery-list li{
+		width: 100%!important;
+		margin:0;
+		border: none;
+		height: initial;
+   }
+   
+   .logo-right-container{
+		position: absolute;
+		height: 60px;
+		width: 100%;
+		display:block;
+		text-align: center;
+   }
+
+   .image-gallery-list li span.gallery-label{
+   		background: #6d9b30;
+		font-size: 20pt;
+   }
+
+   .image-gallery-list li img{
+		padding: 0 0 60px 0;
+   }
+
+   .view-details-holder{
+   		display: block;
+   }
+}

@@ -6,13 +6,14 @@
     
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/sub-style.css">
     
     <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body>
     
-    <div class="main-container main-logo-container">
+    <div class="main-container main-logo-container main-logo-login-container"><!-- TABLET CLASS main-logo-login-container  -->
         
         <div class="left-container-login">
             
@@ -45,9 +46,19 @@
         </div>
         
         <div class="right-container-login">
-                
+             
             <div class="form-container-login">
                 
+				<div class="left-holder-login left-holder-login2"> <!-- TABLET -->
+                
+					<div class="logo-container">
+						
+						<img src="images/gdc-logo.png" alt="Greenfield">
+						
+					</div>
+					
+				</div> <!-- END TABLET -->
+				
                 <form action="" class='login-form' id='home-login'>
                    
                     <ul class="form-list clearfix">
@@ -111,40 +122,22 @@
                     </ul>
                     
                 </form>
+				
+				 <footer class="footer-login-container footer-login-container2"> <!-- TABLET -->
                 
-                 <form action="" class='forgot-form display-none' id='forgot-login'>
-                   
-                       <table class="forgot-table">
-                          
-                           <tbody>
-                              
-                               <tr>
-                                   <td><label for='email'>Email:</label></td>
-                                   <td><input type="email" id='email' class='forgot-input'></td>
-                               </tr>
-                               
-                               <tr>
-                                   <td><label for='secu-question'>Select Security Question:</label></td>
-                                   <td><select name="" id="secu-question" class='forgot-input'>
-                                       <option value="0" selected>Select Question</option>
-                                       <option value="1">What is your name?</option>
-                                   </select></td>
-                               </tr>
-                               
-                               <tr>
-                                   <td><label for='answer'>Answer:</label></td>
-                                   <td><input type="text" id='answer'  class='forgot-input'></td>
-                               </tr>
-                               
-                               <tr>
-                                   <td></td>
-                                   <td><input type="submit" value='Change Password' class='btn-login'></td>
-                               </tr>
-                           </tbody>
-                           
-                       </table>
-                    
-                </form>
+					<div class="copyright-holder">
+						
+						&copy; 2014 Greenfield Development Corporation
+						
+					</div>
+					
+					<div class="vendor-holder">
+						
+						Powered by: <a href="http://www.yondu.com">YONDU</a>
+						
+					</div>
+					
+				</footer> <!-- END TABLET -->
                 
             </div>
             

@@ -135,6 +135,10 @@ select.forgot-input{
     display: table;
 }
 
+.left-holder-login2{
+	display:none;
+}
+
 .logo-container{
     float: none;
     text-align: center;
@@ -620,6 +624,12 @@ position: relative;*/
     margin: 0 auto;
 }
 
+.task-icon-container{
+	font-size: 30px;
+	color: #505252;
+	display: none;
+}
+
 .page-title-container{
     margin: 12px 0 0 35px;
 }
@@ -669,12 +679,28 @@ position: relative;*/
     bottom: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 15px 0 15px 15px;
+   
     font-size: 18px;
     text-transform: capitalize;
     left:0;
 }
+
+.place-name-holder{
+    color: white;
+    padding: 15px 0 15px 15px;
+}
+
+.view-details-holder{
+    float: right;
+    padding: 17px 15px 15px;
+    font-size: 15pt;
+    display: none;
+}
+
+.view-details-holder a{
+     color: white;
+}
+
 .image-gallery-list li img{
     width: 100%;
     height: 100%;
@@ -694,6 +720,12 @@ position: relative;*/
     font-size: 30px; 
     color: white;
 }
+
+.logo-right-container{
+	height: 100%;
+    display: none;
+}
+
 
 .image-gallery-full-container{
     width: 100%;
@@ -1229,6 +1261,10 @@ table.legend-table tbody tr td:last-child{
     text-align: center;
 }
 
+.logo-right-container img{
+	max-width: 100%;
+    max-height: 90%;
+}
 .floor-lg-holder img,
 .floorplan-small-holder img{
     max-width: 100%;
