@@ -582,12 +582,9 @@ position: relative;*/
     transition: all .5s ease-in-out;
 }
 
-.active-li{
-    background: #6e9b2f;
-}
-
 .active-li span{
     border-left: 5px solid #66646e;
+     background: #6e9b2f;
 }
 
 .active-li i{
@@ -628,6 +625,7 @@ position: relative;*/
 	font-size: 30px;
 	color: #505252;
 	display: none;
+    cursor: pointer;
 }
 
 .page-title-container{
@@ -1262,7 +1260,8 @@ table.legend-table tbody tr td:last-child{
 }
 
 .logo-right-container img{
-	max-width: 100%;
+	margin: 0 0 0 40px;
+    max-width: 100%;
     max-height: 90%;
 }
 .floor-lg-holder img,
@@ -1373,7 +1372,7 @@ span.floorplan-buyers-label{
 }
 
 .prequalify-main{
-   padding: 0 0 80px;  
+   padding: 0 0 47px;  
     position: relative;
 }
 

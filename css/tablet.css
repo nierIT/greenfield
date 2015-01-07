@@ -50,6 +50,12 @@
    .slider-container{
 		left: -240px;
 		position: absolute;
+
+		-webkit-transition: all .5s ease-in-out ;
+	    -moz-transition: all .5s ease-in-out ;
+	    -o-transition: all .5s ease-in-out ;
+	    transition: all .5s ease-in-out;
+
    }
    
    .right-container{
@@ -102,9 +108,11 @@
    .logo-right-container{
 		position: absolute;
 		height: 60px;
-		width: 100%;
-		display:block;
+		width: 70%;
+		display: block;
 		text-align: center;
+		z-index: 0;
+		right: 150px;
    }
 
    .image-gallery-list li span.gallery-label{
@@ -119,4 +127,121 @@
    .view-details-holder{
    		display: block;
    }
+
+   #settings-drop-holder{
+   		top: 70px;
+		right: 42px;
+   }
+
+   #help-drop-holder{
+		top: 70px;
+		right: 54px;
+   }
+
+   .show-nav{
+   		left: 0px;
+
+   		-webkit-transition: all .5s ease-in-out ;
+	    -moz-transition: all .5s ease-in-out ;
+	    -o-transition: all .5s ease-in-out ;
+	    transition: all .5s ease-in-out;
+   }
+	
+	.logo-holder{
+		height: 60px;
+	}
+
+   .logo-holder img{
+		display: none;
+   }
+
+   .active-li span{
+   		border-left: 10px solid #66646e;
+   }
+
+   .link-list li a{
+   		font-size: 14pt;
+   }
+
+   .task-icon-container2{
+   		padding: 9px 20px 0;
+   }
+	
+	.link-list li{
+		height: initial;
+		font-size: 14pt;
+	}
+
+
+	.link-list li span{
+		float: none;
+		display: block;
+	}
+
+	.second-level-list{
+		height: 283px;
+		overflow-x:hidden; 
+		overflow-y:auto; 
+	}
+
+	.second-level-list li{
+		background: white;
+		border-top: none;
+		padding: 0 0 0 50px;
+		width: calc(100% - 50px)!important;
+	}
+	
+	.second-level-list li a,
+	.second-level-list li i{
+		padding: 0;
+		color: #666666;
+	}
+
+	.second-level-list li span{
+		background: white;
+		border-left:none;
+	}
+	
+	.active-li>span>a{
+		padding: 0 0 0 16px;
+	}
+
+	.active-li i{
+		margin: 18px 40px 0 0;
+	}
+	
+	.nav-slider-holder{
+		display: none;
+	}
+
+	.link-slider-slide-third-level{
+		left: 0;
+	}
+
+	#up i, #down i, #up2 i, #down2 i{
+		font-size: 25pt;
+	}
+	
+	ul#list2{
+		height: 305px;
+	}
+
+	ul#list2 li a{
+		font-size: 14pt;
+	}
+
+	.second-level-list li.active-li,
+	.second-level-list li.active-li span{
+		background: #88AD57;
+	} 
+
+	.second-level-list li.active-li span a{
+		padding: 0;
+		color: white;
+	}
+
+	.second-level-list li.active-li span i{
+		color: white;
+	}
+
 }
