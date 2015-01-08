@@ -151,10 +151,6 @@
 		height: 60px;
 	}
 
-   .logo-holder img{
-		display: none;
-   }
-
    .active-li span{
    		border-left: 10px solid #66646e;
    }
@@ -209,10 +205,6 @@
 	.active-li i{
 		margin: 18px 40px 0 0;
 	}
-	
-	.nav-slider-holder{
-		display: none;
-	}
 
 	.link-slider-slide-third-level{
 		left: 0;
@@ -243,5 +235,284 @@
 	.second-level-list li.active-li span i{
 		color: white;
 	}
+
+	.company-container{
+		width: 100%;
+		background: #6d9b30;
+		display: block;
+	}
+	
+	.company-holder{
+		padding: 10px 0 10px  20px;
+		font-size: 16pt;
+		color: white;
+		width: 450px;
+	}
+
+	.viewavailunits-holder a{
+		color: white;
+	}
+
+	.bread-holder{
+		margin: 13px 0 0 23px;
+	}
+	
+	.back-holder{
+		margin: 6px 25px 0 0;
+	}
+
+	.back-holder a{
+		line-height: 0; 
+    	font-size: 0;
+   	 	color: transparent; 
+	}
+
+	.back-holder a i{
+		color: #333333;
+		font-size: 24pt;
+	}
+	
+	.right-container-projectinfo{
+		height: 100%;
+	}
+
+	.info-container-projectinfo{
+		padding: 0;
+		background: white;
+		height: 100%;
+	}
+
+	.info-left{
+		width: 100%;
+		margin: 0;
+	}
+
+	.info-right{
+		width: 100%;
+	}
+
+	.info-left-img-holder{
+		max-width: 100%;
+		width: 100%;
+		height: 450px;
+		text-align: center;
+	}
+
+	.info-left-img-holder img{
+		max-width: 100%;
+		max-height: 100%;
+		width: initial;
+	}
+	
+	.project-info-name,
+	.project-thumbnails,
+	.logo-holder img,
+	.nav-slider-holder,
+	.project-button-holder{
+		display: none;
+	}
+	
+	.info-right-holder-label-container{
+		width: 100%;
+		display: block;
+	}
+
+	.info-right-holder-label-holder{
+		padding: 10px 0 10px 50px;
+		font-size: 20pt;
+		font-weight: bold;
+		color: #5a5a5a;
+		width: 450px;
+	}
+
+	.info-right-holder-gallery-holder{
+		float: right;
+		padding: 12px 20px 0 0;
+		color: #5a5a5a;
+		font-size: 13pt;
+	}
+	
+	.info-right-holder-gallery-holder a i{
+		font-size: 20pt;
+		margin: 0 0 0 10px;
+	}
+
+	.info-right-holder{
+		top: 0;
+		padding: 0 0 0 50px;
+		margin: 0 50px 0 0;
+		height: 315px;
+	}
+	
+	.right-holder{
+		overflow: hidden;
+	}
+
+	.projectinfo-gallery-list li img{
+		padding: 0;
+	}
+
+	.projectinfo-gallery-list li  hr{
+		background: #6d9b30;
+		height: 20px;
+		margin: -4px 0 0 0;
+	}
+	
+	.lower-info-btn-container{
+		display: none;
+	}
+
+	.unit-container{
+		width: 86%;
+	}
+
+	.lower-info-holder{
+		padding: 10px 0;
+	}
+
+	table.legend-table thead th{
+		padding: 0;
+	}
+
+	table.legend-table thead th:last-child{
+		padding:0 0 0 10px;
+	}
+
+	table.unit-table tbody tr td{
+		padding: 8px 10px;
+	}
+
+	ul.floor-list li{
+		height: 34px;
+	}
+
+	ul.tab-unit-list li{
+		padding: 10px 40px;
+	}
+
+	.info-container-avail{
+		padding: 20px 0;
+	}
+
+	table.unit-table thead tr.unit-letter td{
+		padding: 5px 10px;
+	}
+
+	table.details-table{
+		width: 82%;
+	}
+
+	.floor-label{
+		margin: 10px 0 21px;
+	}
+
+	.right-floorplan-container{
+		display: none;
+	}
+
+	.left-floorplan-container{
+		width: 100%;
+	}
+
+	.links-container{
+		display: block;
+	}
+
+	.floorplan-lg,
+	.floorplan-small{
+		width: 100%;
+	}
+	
+	.floorplan-small{
+		margin: 25px 0 0;
+	}
+
+	.floor-lg-holder{
+		height: 575px;
+	}
+
+	.info-floorplan{
+		padding: 35px 0 10px;
+	}
+
+	.floorplan-small-holder{
+		margin: 0 auto;
+		float: none;
+	}
+
+	.form-title-container{
+		background:#a1be79;
+	}
+
+	.form-title-holder{
+		font-size: 14pt;
+		margin: 0 0 0 23px;
+	}
+	
+	.prequalify-form-container-left{
+		width: 100%;
+	}
+
+	.prequalify-form-container-right{
+		width: 100%;
+		bottom: 0;
+		height: 110px;
+	}
+
+	.note-container{
+		position: absolute;
+		bottom: 15px;
+		margin: 50px 0 0 23px;
+	}
+
+	.next-holder{
+		right: 25px;
+		bottom: 15px;
+		left: initial;
+	}
+
+	.left-form, 
+	.right-form{
+		width: 82%;
+		padding: 0 70px;
+	}
+
+	.form-label, 
+	.form-text{
+		margin-bottom: 0;
+	}
+
+	.form-element{
+		margin: 0;
+	}
+
+	.form-element .biggerwidth{
+		width: 100%!important;
+	}
+
+	.form-element select{
+		width: 85%!important;
+	}
+
+	.left-form ul.form-list li:nth-child(2){
+		width: 53%;
+	}
+
+	.left-form ul.form-list li:nth-child(3){
+		width: 40%;
+		margin: 5px 0 5px 44px;
+	}
+
+	.datepicker-container{
+		width: 100%!important;
+	}
+
+	.form-tablet select{
+		width: 100%!important;
+	}
+
+	/* .right-prequal-container{
+		height: 100%;
+	} */
 
 }

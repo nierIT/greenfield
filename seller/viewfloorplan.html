@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" /> <!--  TABLET meta tag for viewport -->
+
     <title>Greenfield Development Corporation | View Floor Plan</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
 </head>
 <body class='clearfix'>
     
-    <div class="left-abs"></div>
+   <!--  <div class="left-abs"></div> -->
     <!--<div class="right-abs"></div>-->
     <div class="main-container main-logo-container ">
         
@@ -22,6 +26,12 @@
                     
                      <img src="../images/gdc-logo.png" alt="Greenfield">
                     
+                     <span class='task-icon-container task-icon-container2'> <!-- TABLET -->
+                  
+                        <i class="fa fa-tasks"></i>
+                      
+                      </span> <!-- END TABLET -->
+
                 </div>
                 
                 <div class="link-container">
@@ -52,7 +62,7 @@
                                 
                             </span>
 
-                            <ul class="second-level-list hide">
+                            <ul class=" clearfix second-level-list hide">
                               <li><a href="#">Company 1</a></li>
                               <li class='has-level-three-slider'>Company 2
 							  
@@ -369,14 +379,26 @@
         
         <div class="right-container">
                 
-            <header class='header-container'>
+            <header class='header-container' id='header-container-main'> <!-- TABLET  add ID-->
                 
                 <span class="page-title-container">
                     
+                    <span class='task-icon-container'> <!-- TABLET -->
+					
+						<i class="fa fa-tasks"></i>
+					
+					</span> <!-- END TABLET -->
+
                     <h2>Zitan</h2>
                     
                 </span>
                 
+                <span class='logo-right-container'> <!-- TABLET -->
+        				
+					<img src="../images/greenfield-logo_horizontal.png" alt="Greenfield">
+					
+				</span> <!-- END TABLET -->
+
                 <span class="header-option-holder">
                     
                     <ul class="header-option clearfix">
@@ -417,7 +439,23 @@
             </header>
                 
             <div class="right-holder">
-                      
+                
+                <div class="company-container"> <!-- TABLET -->
+					
+					<div class="company-holder">
+						
+						Zitan
+
+					</div>
+
+					<div class="viewavailunits-holder">
+						
+						<a href="prequalify.html">Pre-Qualify</a>
+
+					</div>
+
+				</div><!-- END TABLET -->
+				      
                 <div class="bread-container">
                     
                     <span class="bread-holder">
@@ -453,16 +491,24 @@
                     
                     <span class="back-holder">
                          
-                         <a href="#"><i class="fa fa-arrow-circle-left"></i> Back</a>
+                         <a href="availableunits.html"><i class="fa fa-arrow-circle-left"></i> Back</a>
                          
                     </span>
                     
                 </div>
                 
-                <div class="right-content">
-                    
-                    <div class="info-container">
+                <div class="right-content info-container-projectinfo">
+                   
+                    <div class="info-container info-floorplan"> <!-- TABLET add info-floorplan class -->
                         
+                        <div class="links-container">
+						
+							<a href="#">Open 360 view</a>
+
+							Interested Buyers: <span>3</span>
+								
+						</div>
+
                         <div class="left-floorplan-container">
                             
                             <div class="floorplan-lg">

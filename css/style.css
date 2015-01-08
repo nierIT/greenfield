@@ -1260,10 +1260,11 @@ table.legend-table tbody tr td:last-child{
 }
 
 .logo-right-container img{
-	margin: 0 0 0 40px;
+	margin: 5px 0 0 40px;
     max-width: 100%;
-    max-height: 90%;
+    max-height: 85%;
 }
+
 .floor-lg-holder img,
 .floorplan-small-holder img{
     max-width: 100%;
@@ -1907,6 +1908,72 @@ tr.headerrow td{
 .note-payment-details{
     text-align: left;
 }
+
+.viewavailunits-holder{
+    float: right;
+    margin: 12px 20px 0 0;
+}
+
+.details-table-container{
+    width: 100%;
+}
+
+table.details-table{
+    position: relative;
+    left: 80px;
+    border-collapse: collapse;
+}
+
+table.details-table tbody tr td span{
+    float: none;
+    margin: 0 0 0 25px;
+}
+
+table.details-table thead tr td,
+table.details-table tbody tr td{
+    padding: 1px 0 1px 30px;
+}
+
+table.details-table thead tr td{
+    color:#4f4f4f;
+}
+
+table.details-table tbody tr td,
+table.details-table tbody tr td span{
+    font-weight: bold;
+    color:#363636;
+}
+
+table.details-table tbody tr:nth-child(odd){
+    background: #cccccc;
+}
+
+table.details-table tbody tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+.info-right-holder-label-container{
+    display: none;
+}
+
+.links-container{
+   float: none;
+    margin: 0 0 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.links-container a{
+    text-decoration: underline;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+
+.links-container span{
+    float: none;
+    font-weight: bold;
+}
 /** END CONTENT **/
 
 /*MODALS*/
@@ -2053,6 +2120,9 @@ tr.headerrow td{
     height: 100%;
 }
 
+.company-container{
+    display: none;
+}
 
 /** STYLE 2 **/
 
