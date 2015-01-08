@@ -69,18 +69,18 @@
 	margin: 0;
 }
 
-.col1 { width: 5.5%; }
-.col2 { width: 14%; }
-.col3 { width: 22.5%; }
-.col4 { width: 31%; }
-.col5 { width: 39.5%; }
-.col6 { width: 48%; }
-.col7 { width: 56.5%; }
-.col8 { width: 65%; }
-.col9 { width: 73.5%; }
-.col10 { width: 82%; }
-.col11 { width: 90.5%; }
-.col12 { width: 99%; margin: 0; }
+.col1 { width: 5.5%!important; }
+.col2 { width: 14%!important; }
+.col3 { width: 22.5%!important; }
+.col4 { width: 31%!important; }
+.col5 { width: 39.5%!important; }
+.col6 { width: 48%!important; }
+.col7 { width: 56.5%!important; }
+.col8 { width: 65%!important; }
+.col9 { width: 73.5%!important; }
+.col10 { width: 82%!important; }
+.col11 { width: 90.5%!important; }
+.col12 { width: 99%!important; margin: 0; }
 
 .col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
 	width: 100%;

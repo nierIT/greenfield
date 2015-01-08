@@ -246,7 +246,7 @@
 		padding: 10px 0 10px  20px;
 		font-size: 16pt;
 		color: white;
-		width: 450px;
+		width: 50%;
 	}
 
 	.viewavailunits-holder a{
@@ -278,7 +278,6 @@
 
 	.info-container-projectinfo{
 		padding: 0;
-		background: white;
 		height: 100%;
 	}
 
@@ -287,8 +286,9 @@
 		margin: 0;
 	}
 
-	.info-right{
-		width: 100%;
+	.info-right,
+	.form3-adjust-table-container{
+		width: 100%!important;
 	}
 
 	.info-left-img-holder{
@@ -322,7 +322,7 @@
 		font-size: 20pt;
 		font-weight: bold;
 		color: #5a5a5a;
-		width: 450px;
+		width: 50%;
 	}
 
 	.info-right-holder-gallery-holder{
@@ -495,12 +495,12 @@
 	}
 
 	.left-form ul.form-list li:nth-child(2){
-		width: 53%;
+		width: 60%;
 	}
 
 	.left-form ul.form-list li:nth-child(3){
-		width: 40%;
-		margin: 5px 0 5px 44px;
+		width: 25%;
+		margin: 5px 0 5px 17px;
 	}
 
 	.datepicker-container{
@@ -511,8 +511,123 @@
 		width: 100%!important;
 	}
 
-	/* .right-prequal-container{
+	.right-prequal-container{
 		height: 100%;
-	} */
+		overflow: hidden;
+	} 
 
+	.prequalify-main{
+		height: calc(100% - 160px);
+		padding: 0;
+	}
+
+	.step-holder{
+		margin: 0 55px 0 0;
+		float: right;
+	}
+
+	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11{
+		float: left!important;
+	}
+
+	.right-container-raform{
+		height: 100%!important;
+		overflow: hidden;
+	}
+
+	.print-holder{
+		display: none;
+	}
+	
+	div.left-form-table{
+		width: 52%;
+	}
+
+	div.payment-table{
+		width: 42%;
+		margin: 0 0 0 15px;
+	}
+
+	table.purchase-price-table tr td:first-child{
+		padding: 5px 25px 5px 0;
+	}
+
+	.form3-adjust{
+		height: calc(100% - 112px);
+	}
+
+	.form4-adjust{
+		height: calc(100% - 112px);
+	}
+
+	.form5-adjust{
+		height: calc(100% - 112px);
+	}
+	
+	.right-content{
+		background: white;
+	}
+
+	.note-container{
+		width: 50%;
+	}
+	
+	.print-holder-form5{
+		display: block;
+	}
+
+	.print-holder{
+		width: 50%;
+		margin: 26px 15px;
+	}
+
+	.print-btn{
+		width: 30%;
+		margin: 5px;
+	}
+
+	.form5-prequalify-form-container{
+		height: 200px;
+	}
+
+	.form5-prequalify-form-container .note-container{
+		position: relative;
+	}
+
+	.print-details-holder{
+		display: none!important;
+	}
+
+	.payment-adjustment{
+		height: calc(100% - 115px)!important;
+	}
+
+	.next-payment-holder{
+		width: 40%;
+	}
+
+	.next-payment-holder a button{
+		width: 45%;
+	}
+
+	.confirmation-holder{
+		background: rgba(255, 255, 255, 0.78);
+		border-radius: 10px;
+		padding: 50px;
+	}
+	
+	.right-confirm-container,
+	.confirm-container{
+		background: none;
+		height: 100%;
+	}
+
+	.reservation-main{
+		height: 100%;
+	}
+
+	.admin-link-list li a{
+		font-size: 12pt;
+	}
+	
 }

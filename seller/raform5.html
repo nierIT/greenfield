@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" /> <!--  TABLET meta tag for viewport -->
+
     <title>Greenfield Development Corporation | RA Form</title>
     
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/tablet.css">
     <link rel="stylesheet" href="../css/jquery-ui.css">
-    <link rel="stylesheet" href="../css/960.css">
     <link rel="stylesheet" href="../css/onepcssgrid.css">
     <link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.css">
-    <link rel="stylesheet" href="../css/sumoselect.css">
 </head>
 <body class='clearfix'>
     
-    <div class="left-abs"></div>
+    <!-- <div class="left-abs"></div> -->
     <!--<div class="right-abs"></div>-->
     <div class="main-container main-logo-container ">
         
@@ -24,8 +26,14 @@
                 
                 <div class="logo-holder">
                     
-                     <img src="../images/gdc-logo.png" alt="Greenfield">
+                    <img src="../images/gdc-logo.png" alt="Greenfield">
                     
+                    <span class='task-icon-container task-icon-container2'> <!-- TABLET -->
+                  
+                        <i class="fa fa-tasks"></i>
+                      
+                    </span> <!-- END TABLET -->
+
                 </div>
                 
                 <div class="link-container">
@@ -56,7 +64,7 @@
                                 
                             </span>
 
-                            <ul class="second-level-list hide">
+                            <ul class="clearfix second-level-list hide">
                               <li><a href="#">Company 1</a></li>
                               <li class='has-level-three-slider'>Company 2
 							  
@@ -371,15 +379,27 @@
             
         </nav>
         
-        <div class="right-container">
+        <div class="right-container right-container-raform"> <!-- TABLET  add class right-container-raform-->
                 
-            <header class='header-container'>
+            <header class='header-container' id='header-container-main'><!-- TABLET  add ID-->
               
                     <span class="page-title-container">
-                    
+                    	
+                    	<span class='task-icon-container'> <!-- TABLET -->
+					
+							<i class="fa fa-tasks"></i>
+						
+						</span> <!-- END TABLET -->
+
                         <h2>Zitan</h2>
 
                     </span>
+
+                    <span class='logo-right-container'> <!-- TABLET -->
+        				
+						<img src="../images/greenfield-logo_horizontal.png" alt="Greenfield">
+						
+					</span> <!-- END TABLET -->
 
                     <span class="header-option-holder">
 
@@ -420,7 +440,8 @@
 
             </header>
                 
-            <div class="right-holder">
+            <div class="right-holder info-container-projectinfo"> <!-- TABLET add class info-container-projectinfo
+             -->
                       
                 <div class="bread-container">
                     
@@ -464,7 +485,7 @@
                     
                     <span class="back-holder">
                          
-                         <a href="#"><i class="fa fa-arrow-circle-left"></i> Back</a>
+                         <a href="raform4.html"><i class="fa fa-arrow-circle-left"></i> Back</a>
                          
                     </span>
                     
@@ -472,8 +493,6 @@
                 
                 <div class="right-content">
                     
-                    
-
                     <div class="form-title-container">
                         
                        <div class="form-title-holder">
@@ -503,7 +522,7 @@
                     </div>
                     
                     
-                    <div class="info-container prequalify-main">
+                    <div class="info-container prequalify-main form5-adjust">
                         
                        <div class="prequalify-form-container-left">
                            
@@ -564,7 +583,7 @@
                            
                        </div>
                         
-                        <div class="prequalify-form-container-right">
+                        <div class="prequalify-form-container-right form5-prequalify-form-container">
                             
                             <span class="note-container">
                                 
@@ -573,7 +592,7 @@
                                 
                             </span>
                             
-                            <span class="print-holder">
+                            <span class="print-holder print-holder-form5">
 
                                <button class='btn-login print-btn'>Print</button> 
 								

@@ -1379,7 +1379,7 @@ span.floorplan-buyers-label{
 
 .prequalify-form-container-left{
     float: left;
-    padding: 50px 0 0;
+    padding: 50px 0;
     width: calc(100% - 222px);
 }
 
@@ -1586,8 +1586,9 @@ span.line{
 
 .form-label,
 .form-text{
-     width: 100%; 
+    width: 100%; 
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .form-text{
@@ -1961,6 +1962,7 @@ table.details-table tbody tr:nth-child(even){
     margin: 0 0 20px;
     width: 100%;
     text-align: center;
+    display: none;
     font-weight: bold;
 }
 
